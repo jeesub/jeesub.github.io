@@ -19,5 +19,7 @@ kekyll 블로그는 마크다운 언어로 작성을 하면 html로 변환해서
 github을 사용하듯이 하면 된다. 로컬에서 글을 쓰고 repository에 push 해주면 된다.
 
 #### 포스팅 하기 전에 local에서 확인하기
-`jekyll serve --watch`<br>
+~~~
+jekyll serve --watch
+~~~
 명령어로 local에서 미리 볼 수 있다.
