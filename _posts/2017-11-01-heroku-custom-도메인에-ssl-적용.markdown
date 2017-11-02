@@ -28,7 +28,7 @@ CSR Generator로 CSR을 만들어서 붙여넣어준다.
 메일로 crt file과 ca-bundle file이 올 것이다.<br>
 두 파일을 합하면, 최종적으로 사용 가능한 인증서가 만들어진다.<br>
 ~~~
-cat yourdomain_com.crt yourdomain_com.ca-bundle > yourdomain_com.crt
+cat yourdomain_com.crt yourdomain_com.ca-bundle > server.crt
 ~~~
 
 #### heroku에 인증서 등록하기
