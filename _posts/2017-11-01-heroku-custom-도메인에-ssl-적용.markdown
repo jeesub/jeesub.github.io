@@ -18,14 +18,18 @@ gogetssl에서 살 경우 인증서가 엄청나게 저렴하다.<br>
 cf) www와 non-www의 경우 comodo positive SSL로도 가능하다.<br>
 
 ![CSR Configuration]({{ site.url }}/assets/img/2017-11-01-02.jpg)
-CSR Generator로 CSR을 만들어서 붙여넣어준다.<br>
+CSR Generator로 CSR을 만들어서 붙여넣어준다.
+* private key는 노출되면 안된다! 불안하다면, 직접 만들어서 사용한다.
 
 ![validation]({{ site.url }}/assets/img/2017-11-01-03.jpg)
 도메인에 대한 본인 확인을 해야 한다.<br>
 저번에는 도메인 메일을 사용하지 않아서 server에 파일을 올려 인증을 받았지만, 이번엔 메일 인증을 사용했다.<br>
 
-모든 과정이 완료 되면 인증서와 private key가 메일로 와 있을 것이다. (다운로드도 가능하다.) 나중을 위해 잘 보관해 놓는다.<br>
-private key 정보는 유출되지 않도록 유의한다.
+메일로 crt file과 ca-bundle file이 올 것이다.<br>
+두 파일을 합하면, 최종적으로 사용 가능한 인증서가 만들어진다.<br>
+~~~
+cat yourdomain_com.crt yourdomain_com.ca-bundle > yourdomain_com.crt
+~~~
 
 #### heroku에 인증서 등록하기
 CLI 등록도 가능하고, 웹 등록도 가능하다.<br>
