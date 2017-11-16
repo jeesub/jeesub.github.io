@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "heroku에 rails5 설치하기"
-categories: heroku, RoR
+categories: [heroku, rails]
 ---
 
 #### rails5 설치하기
@@ -12,7 +12,7 @@ rails를 설치한다.<br>
 ~~~
 $ gem install rails -v 5.1.4
 ~~~
-새로운 app을 만든다. 
+새로운 app을 만든다.
 ~~~
 $ rails _5.1.4_ new application_name
 ~~~

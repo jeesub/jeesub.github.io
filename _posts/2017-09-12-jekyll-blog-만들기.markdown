@@ -2,7 +2,7 @@
 layout: post
 title:  "jekyll blog 만들기"
 date:   2017-09-12 17:51:30 +0900
-categories: jekyll
+categories: [jekyll]
 ---
 heroku에 rails5로 만든 앱을 올리다 보니, rails4를 사용하던 때와는 다른 에러들이 나오기 시작했다. 홈페이지를 여러개 만들어야 하는 상황이라 문제와 해결방법을 기록할 블로그를 만들기로 했다. 기왕 블로그를 시작하는 김에 새로운 블로그 툴을 사용해보려고 jekyll로 만들었다. 기존에는 tistory, naver blog, blogger 등 기본 제공형 블로그와 wordpress를 사용해본 경험이 있다. 기존 블로그에서 느낀 가장 불편한 점은 editor였다. 종종 글을 작성할 때 editor와 구현된 글(html로 변환된 글) 사이의 괴리가 있었기때문에 html 편집기로 들어가 태그를 수정해줘야했다. jekyll은 마크다운 언어로 글을 작성하기때문에 해당 문제는 없을 것으로 기대했다.
 

@@ -1,5 +1,5 @@
 title: 섭사장의 블로그
-description: 섭사장의 RoR 까먹기 방지용 블로그입니다.
+description: 섭사장의 스타트업, 기획, 개발, 마케팅 블로그입니다.
 
 url: http://jisup.github.io
 baseurl: ""
@@ -9,20 +9,22 @@ permalink: blog/:title/
 markdown: kramdown
 highlighter: rouge
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 10
 
 navigation:
  - title: Home
    url: /index.html
  - title: About
    url: /about
+ - title: Categories
+   url: /category
  - title: Contact
    url: /contact
 
 social:
    github: jisup
-   twitter: 
-   facebook: jisup.lee 
+   twitter:
+   facebook: jisup.lee
    email: lee@oecenter.org
 
 google_analytics: "UA-106476938-1"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "heroku-custom-도메인에-ssl-적용"
-categories: heroku, SSL
+categories: [heroku, SSL]
 ---
 heroku에서 돌아가고 있는 web application에 SSL을 적용했다.
 2월에 다른 web application에서 진행했었지만, 다시 하려니 잘 기억이 안나서 다시 기록한다.

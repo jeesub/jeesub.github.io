@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails Address already in use error 해결"
-categories: RoR
+categories: [rails]
 ---
 ~~~
 $ rails server
