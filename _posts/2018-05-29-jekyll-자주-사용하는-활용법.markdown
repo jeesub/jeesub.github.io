@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "jekyll-자주-사용하는-활용법"
+categories: jekyll
+---
+출처: jekyll 공식 블로그
+<br><br>
+
+### jekyll 업데이트
+
+{% highlight bash %}
+$ bundle update jekyll
+{% endhighlight %}
+
+### 코드 구문 작성하기
+
+{% highlight markdown %}
+{% raw %} {% {% endraw %}highlight ruby{% raw %} %} {% endraw %}
+	def foo
+		puts 'bar'
+	end
+{% raw %} {% {% endraw %}endhighlight{% raw %} %} {% endraw %}
+{% endhighlight %}
+
+
+### 외부 링크 삽입
+
+{% highlight markdown %}
+<https://jisup.github.io/>
+{% endhighlight %}
+
+### 이미지 삽입
+
+{% highlight markdown %}
+{% raw %}![My image]({{ "/assets/image.jpg" | absolute_url }}) {% endraw %}
+{% endhighlight %}
