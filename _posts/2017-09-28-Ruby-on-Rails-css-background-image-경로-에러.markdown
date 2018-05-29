@@ -14,7 +14,7 @@ rails는 asset pipeline을 사용하는데, 이 때 hash값이 생긴다.
 asset pipeline: <http://guides.rubyonrails.org/asset_pipeline.html>
 <br><br>
 
-#### Sprockets 활용하기
+### Sprockets 활용하기
 sass를 이용 중이라면 쉽게 해결할 수 있다.<br>
 {% highlight css %}
 background-image: image-url("image.png")

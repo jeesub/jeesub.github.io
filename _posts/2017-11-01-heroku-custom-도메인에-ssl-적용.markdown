@@ -8,7 +8,7 @@ heroku에서 돌아가고 있는 web application에 SSL을 적용했다.
 실제 web application으로 사용하기 위해 hobby plan으로 변경을 했다.
 예전에는 별도의 add-on을 사용해야 했으나, 이제는 인증서가 있고, 유료 plan을 사용 중이면 SSL 적용을 할 수 있다.
 
-#### SSL 인증서 구매하기
+### SSL 인증서 구매하기
 예전에 한 번 이용한 적 있는 <https://www.gogetssl.com>에서 인증서를 구매했다.
 gogetssl에서 살 경우 인증서가 엄청나게 저렴하다.<br>
 
@@ -27,11 +27,12 @@ private key는 노출되면 안된다! 불안하다면, 직접 만들어서 사�
 
 메일로 crt file과 ca-bundle file이 올 것이다.
 두 파일을 합하면, 최종적으로 사용 가능한 인증서가 만들어진다.<br>
-~~~
-$ cat yourdomain_com.crt yourdomain_com.ca-bundle > server.crt
-~~~
 
-#### heroku에 인증서 등록하기
+{% highlight bash %}
+$ cat yourdomain_com.crt yourdomain_com.ca-bundle > server.crt
+{% endhighlight %}
+
+### heroku에 인증서 등록하기
 CLI 등록도 가능하고, 웹 등록도 가능하다.
 이전엔 CLI 등록을 해봤으니 이번엔 웹으로 등록해봤다.<br>
 ![heroku setting]({{ site.url }}/assets/img/2017-11-01/05.jpg)<br>
