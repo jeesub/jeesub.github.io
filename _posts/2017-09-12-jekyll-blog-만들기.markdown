@@ -11,6 +11,19 @@ heroku에 rails5로 만든 앱을 올리다 보니, rails4를 사용하던 때�
 <https://brunch.co.kr/@hee072794/39><br>
 <https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/>
 
+#### 설치 및 블로그 생성
+<https://jekyllrb-ko.github.io/docs/installation/>
+jekyll 공식 홈페이지를 방문하기를 추천한다.<br>
+ruby가 설치되어 있다면, 아래 명령어를 통해 jekyll을 설치할 수 있다.<br>
+ruby gem으로 설치할 수 있다.
+~~~
+$ gem install jekyll bundler
+~~~
+jekyll 사이트를 만든다.
+~~~
+$ jekyll new newblog
+~~~
+
 #### 마크다운
 kekyll 블로그는 마크다운 언어로 작성을 하면 html로 변환해서 화면에 출력해준다. 마크다운 언어의 사용법에 대해서는 다음 링크를 참조<br>
 <https://gist.github.com/ihoneymon/652be052a0727ad59601><br>
@@ -18,8 +31,8 @@ kekyll 블로그는 마크다운 언어로 작성을 하면 html로 변환해서
 #### 실제 포스팅하기
 github을 사용하듯이 하면 된다. 로컬에서 글을 쓰고 repository에 push 해주면 된다.
 
-#### 포스팅 하기 전에 local에서 확인하기
+#### 발행 하기 전에 local에서 확인하기
+local 환경에서 미리 사이트를 확인할 수 있다.
 ~~~
-jekyll serve --watch
+$ bundle exec jekyll serve --watch
 ~~~
-명령어로 local에서 미리 볼 수 있다.

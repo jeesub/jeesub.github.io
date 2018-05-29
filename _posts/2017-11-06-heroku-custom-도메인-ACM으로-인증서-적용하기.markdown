@@ -12,14 +12,14 @@ TLS는 SSL과 같은 것이라고 보고 넘어가자.
 [Automated Certificate Management](https://devcenter.heroku.com/articles/automated-certificate-management).<br>
 Let's Encrypt 인증서를 자동으로 관리해준다.
 custom domain이 추가될때마다 인증서도 등록되고, 마감 한 달 전에 자동 연장된다고 한다.<br>
-너무나 편리하잖아!<br>
+너무나 편리하다.<br>
 안 쓸 이유가 없으니 적용하도록 한다.
 네임서버의 CNAME 세팅은 'your-domain.herokudns.com'으로 되어있어야 한다.<br>
 ~~~
 $ heroku certs:auto:enable
 ~~~
 
-![TLS적용완료]({{ site.url }}/assets/img/2017-11-06-01.jpg)<br>
+![TLS적용완료]({{ site.url }}/assets/img/2017-11-06/01.jpg)<br>
 적용 되었다.<br>
 앞으로도 heroku를 이용하면 돈 주고 인증서를 구매하지 않아도 될 것 같다.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jekyll-카테고리-만들기"
+title:  "jekyll-카테고리-만들기"
 categories: jekyll
 ---
 
