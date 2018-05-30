@@ -1,7 +1,7 @@
 title: 섭사장의 블로그
 description: 섭사장의 스타트업, 기획, 개발, 마케팅 블로그입니다.
 
-url: http://jisup.github.io
+url: https://jisup.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -28,3 +28,4 @@ social:
    email: lee@oecenter.org
 
 google_analytics: "UA-106476938-1"
+timezone: Asia/Seoul

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "jekyll 테마 바꾸기"
-categories: [jekyll]
+categories: jekyll
 ---
 jekyll 블로그의 테마를 바꾸기로 했다.
 

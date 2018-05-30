@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "heroku에 rails5 설치하기"
-categories: [heroku, rails]
+categories: heroku, rails
 ---
 
 ### rails5 설치하기

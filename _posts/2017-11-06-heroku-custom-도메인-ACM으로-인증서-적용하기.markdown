@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "heroku-custom-도메인-ACM으로-인증서-적용하기"
-categories: [heroku, SSL, 인증서, TLS, rails]
+title:  "heroku-custom-도메인-ACM으로-인증서-적용하기"
+categories: heroku, SSL, 인증서, TLS, rails
 ---
 heroku에서 돌아가고 있는 web application에 SSL을 적용하는 방법을 알아봤다.
 그런데, heroku 메뉴얼을 뒤지다 보니 Automated Certificate Management라는 새로운 기능을 발견했다.

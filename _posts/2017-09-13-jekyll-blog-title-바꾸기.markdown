@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "jekyll blog title 바꾸기"
-categories: [jekyll]
+categories: jekyll
 ---
 jekyll 블로그를 만드니 header의 site의 이름 부분에 'Your awesome tilte'이라고 되어있다. footer 부분에도 기본적으로 적용되어 있는 문구들이 나타난다. 해당 부분은 간단하게 바꿀 수 있다.
 
