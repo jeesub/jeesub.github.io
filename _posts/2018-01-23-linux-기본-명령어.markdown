@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "linux 기본 명령어"
+categories: linux
+---
+
+{% highlight bash %}
+# 해당 폴더의 콘텐츠 나열
+ls
+ 
+# 디렉토리(폴더) 만들기
+mkdir <name>
+ 
+# 디렉토리(폴더)로 이동
+cd <name>
+ 
+# 홈 디렉토리로 이동
+cd
+ 
+# 상위 디렉토리로 이동
+cd ..
+ 
+# 파일 이동 or 이름 변경
+mv <origin> <target>
+ 
+# 파일 복사
+cp <origin> <target>
+ 
+# 파일 삭제
+rm <name>
+ 
+# 빈 디렉토리 삭제
+rmdir <name>
+ 
+# 디렉토리 및 하위 파일 강제 삭제
+# * 강제 삭제이므로 주의해서 사용할 것!
+rm -rf <name>
+ 
+# 돌아가고 있는 프로세스 확인
+top
+ps aux | grep "process name"
+ 
+# 프로세스 종료
+kill -KILL <process ID>
+ 
+# 검색(하위 폴더)
+find - -name "<name>"
+ 
+# 내용 검색
+grep "<things>" <file name>
+ 
+# 내용 검색 후 해당 라인 넘버 출력
+grep -n <things> <file name>
+ 
+{% endhighlight %}
