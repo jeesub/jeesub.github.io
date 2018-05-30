@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "sublime-text-사용하기"
+title:  "sublime text 사용하기"
 categories: etc
 ---
 

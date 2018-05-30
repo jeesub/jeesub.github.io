@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "heroku-custom-도메인에-ssl-적용하기"
+title:  "heroku custom 도메인에 SSL 적용하기"
 categories: [heroku, SSL]
 ---
 heroku에서 돌아가고 있는 web application에 SSL을 적용했다.

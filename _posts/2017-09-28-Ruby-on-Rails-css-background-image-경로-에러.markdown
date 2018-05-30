@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ruby-on-Rails-css-background-image-경로-에러"
+title:  "Ruby on Rails css background-image 경로 에러"
 categories: rails
 ---
 background-image를 적용시키기 위해 css 파일에 위와 같은 코드를 넣었다.

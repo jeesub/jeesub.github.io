@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ruby-on-Rails-Address-already-in-use-error-해결"
+title:  "Ruby on Rails Address already in use error 해결"
 categories: rails
 ---
 {% highlight bash %}

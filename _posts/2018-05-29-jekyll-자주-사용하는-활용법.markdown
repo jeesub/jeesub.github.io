@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jekyll-자주-사용하는-활용법"
+title:  "jekyll 자주 사용하는 활용법"
 categories: [jekyll]
 ---
 출처: jekyll 공식 블로그
