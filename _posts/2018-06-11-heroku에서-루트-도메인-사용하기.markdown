@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "heroku에서 루트 도메인 사용하기"
+categories: heroku
+---
+
+### 루트 도메인
+zone apex(bare, naked, root) domain.<br>
+www 없이 표기되는 도메인이다. example.com 같은 도메인을 말한다.
+웹사이트를 운영할 경우, www 혹은 non-www 둘 중 하나로 통일해서 사용한다.
+대다수는 www로 시작하는 도메인을 사용한다.
+
+### CNAME
+CNAME(Canonical NAME)은 DNS(Domain Name Server)에 별칭을 적용하는 것이라고 생각하면 된다.
+CNAME record에 목적지(target)을 지정해주면 된다.
+heroku에서는 www sub domain의 target으로 www.example.com.herokudns.com. 같은 주소를 제공한다.
+
+### heroku + CNAME의 문제
+문제는, heroku와 같은 PaaS를 사용할 때 발생한다.
+www나 non-www 둘 다 접속은 되어야 하는데, 루트 도메인은 CNAME을 지원하지 않는다.<br>
+그렇다면 대안은 A record를 사용하는 것인데, A record는 IP 주소를 target으로 사용해야 한다.
+하지만 PaaS는 고정 IP를 제공하지 않기 때문에, A record는 사용할 수 없다.
+
+### 해결 방법
+gabia를 비롯한 몇몇 업체에서는 루트 도메인에 대한 CNAME도 제공한다.
+호스트에 @, target에 PaaS에서 지원하는 target을 입력하면 된다.
+gabia를 사용하면 쉽게 문제 해결.<br>
+하지만 godaddy와 같은 업체에서는 루트 도메인에 대한 CNAME은 제공하지 않는다.
+루트 도메인에 대한 CNAME을 제공하지 않는 업체에서 도메인을 구매했다면, 대안으로 포워딩을 사용할 수 있다.
+도메인의 DNS 설정에서 루트 도메인을 www.example.com 과 같은 www 도메인으로 포워딩을 해주면, 루트 도메인으로도 해당 사이트에 접속이 된다.(물론, www로 redirect된다.)
+
+참고<br>
+<http://seapy.com/2079><br>
+<https://en.wikipedia.org/wiki/CNAME_record><br>
+<https://devcenter.heroku.com/articles/apex-domains><br>
+<https://devcenter.heroku.com/articles/custom-domains#add-a-custom-root-domain>
