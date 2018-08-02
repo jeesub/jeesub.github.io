@@ -30,7 +30,7 @@ Python 기반으로, 플러그인 기능이 잘 활성화 되어 있다. 다른 
 * Command Palete: 여러 조작을 키보드를 통해 할 수 있다.<br>
 * Split Editing: 화면 분할 코딩을 할 수 있다.<br>
 
-참고<br>
+#### 참고
 <https://www.sublimetext.com/><br>
 <https://packagecontrol.io/><br>
 <https://github.com/equinusocio/material-theme>

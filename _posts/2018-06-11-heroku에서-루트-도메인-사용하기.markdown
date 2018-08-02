@@ -24,12 +24,13 @@ www나 non-www 둘 다 접속은 되어야 하는데, 루트 도메인은 CNAME�
 ### 해결 방법
 gabia를 비롯한 몇몇 업체에서는 루트 도메인에 대한 CNAME도 제공한다.
 호스트에 @, target에 PaaS에서 지원하는 target을 입력하면 된다.
-gabia를 사용하면 쉽게 문제 해결.<br>
+gabia를 사용하면 쉽게 문제 해결.
+
 하지만 godaddy와 같은 업체에서는 루트 도메인에 대한 CNAME은 제공하지 않는다.
 루트 도메인에 대한 CNAME을 제공하지 않는 업체에서 도메인을 구매했다면, 대안으로 포워딩을 사용할 수 있다.
 도메인의 DNS 설정에서 루트 도메인을 www.example.com 과 같은 www 도메인으로 포워딩을 해주면, 루트 도메인으로도 해당 사이트에 접속이 된다.(물론, www로 redirect된다.)
 
-참고<br>
+#### 참고
 <http://seapy.com/2079><br>
 <https://en.wikipedia.org/wiki/CNAME_record><br>
 <https://devcenter.heroku.com/articles/apex-domains><br>

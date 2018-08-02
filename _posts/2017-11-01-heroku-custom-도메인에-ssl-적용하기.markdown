@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "heroku custom 도메인에 SSL 적용하기"
-categories: [heroku, SSL]
+categories: heroku
 ---
 heroku에서 돌아가고 있는 web application에 SSL을 적용했다.
 2월에 다른 web application에서 진행했었지만, 다시 하려니 잘 기억이 안나서 다시 기록한다.
@@ -45,6 +45,6 @@ public crt와 private key에 아까 구매한 인증서의 정보들을 넣어�
 DNS를 업데이트한다.<br>
 CNAME 레코드에 @.yourdomain.com - yourdomain.com.herokudns.com를 추가해준다.
 
-참고<br>
+#### 참고
 <https://www.gogetssl.com><br>
 <https://devcenter.heroku.com/articles/ssl>

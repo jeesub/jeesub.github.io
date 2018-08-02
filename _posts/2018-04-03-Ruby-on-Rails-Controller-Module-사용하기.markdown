@@ -80,5 +80,6 @@ controller의 redirect_to method에서도 helper들을 변경해주어야 한다
 routes.rb, posts_controller.rb, index.html.erb, new.html.erb, show.html.erb, edit.html.erb, _form.html.erb
 <br>
 
-참고<br>
+
+#### 참고
 <http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with>

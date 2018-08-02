@@ -8,5 +8,11 @@ title: Categories
 	<ul>
 		<li><a href="./rails">rails</a></li>
 		<li><a href="./jekyll">jekyll</a></li>
+		<li><a href="./css">css</a></li>
+		<li><a href="./javascript">javascript</a></li>
+		<li><a href="./heroku">heroku</a></li>
+		<li><a href="./aws">aws</a></li>
+		<li><a href="./marketing">marketing</a></li>
+		<li><a href="./etc">etc</a></li>
 	</ul>
 </div>

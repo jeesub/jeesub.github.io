@@ -47,6 +47,6 @@ navigation:
    url: /contact
 {% endhighlight %}
 
-참고<br>
+#### 참고
 <https://jekyllrb.com/docs/plugins/><br>
 <https://letsencrypt.org/>

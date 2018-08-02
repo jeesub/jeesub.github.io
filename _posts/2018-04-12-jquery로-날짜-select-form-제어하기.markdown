@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "jquery로 날짜 select form 제어하기"
-categories: javascript, jquery
+categories: [javascript, jquery]
 ---
 
 ### javascript 날짜 format

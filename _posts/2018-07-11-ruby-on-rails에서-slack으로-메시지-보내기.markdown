@@ -28,19 +28,19 @@ slack 공식 문서에 따르면, 총 네 단계를 따르면 끝이 난다.
 3. incoming webhook을 만든다.
 4. incoming webhook을 사용한다.
 
-##### 1. slack app을 만든다.
+#### 1. slack app을 만든다.
 <https://api.slack.com/apps/new>로 접속해서 새로운 앱을 만든다.
 앱 이름을 정해주고, 앱을 사용하고자 하는 workspace를 선택한다.
 
-##### 2. incoming webhook을 활성화한다.
+#### 2. incoming webhook을 활성화한다.
 앱을 선택하고 나오는 화면에서 incoming webhook을 선택하고 활성화한다.
 
-##### 3. incoming webhook을 만든다.
+#### 3. incoming webhook을 만든다.
 활성화 화면에서 맨 아래로 내려가면 Add New Webhook to Workspace 버튼이 있다.
 클릭해서 새로운 webhook을 만든다.
 post 채널을 선택하도록 나오는데, 실험용 채널을 먼저 선택해서 테스트하고, 정상 작동하면 실제 채널에 적용하면 된다.
 
-##### 4. incoming webhook을 사용한다.
+#### 4. incoming webhook을 사용한다.
 incoming webhook을 만들면 URI가 하나 주어진다. 이 URI로 post 요청을 보내면 사용이 된다.
 
 {% highlight bash %}

@@ -12,7 +12,8 @@ Ruby on Rails Application에 postgreSQL을 DB로 쓰고 있는 프로그램에�
 {% endhighlight %}
 
 그런데, 정렬이 일부만 된 것 같은 결과물이 출력되었다.
-그 이유는, postgreSQL의 collation 때문이라고 한다.<br />
+그 이유는, postgreSQL의 collation 때문이라고 한다.
+
 참고: <https://stackoverflow.com/questions/14191848/postgresql-order-by-is-very-weird><br />
 참고: <https://www.postgresql.org/docs/10/static/collation.html>
 
@@ -29,8 +30,10 @@ Ruby on Rails Application에 postgreSQL을 DB로 쓰고 있는 프로그램에�
 
 ### 다른 해결 방법
 여러가지 해결방법을 두고 고민하다가, ruby 자체의 sort_by 기능을 활용하기로 결정했다.
+
 이미 live로 돌아가고 있는 app이기 때문에, DB를 다시 설치하는 위험을 감수하지 않기로 했다.
 query에 collate을 지정하는 방법은 DB 의존성이 생기기 때문에 선택하지 않기로 했다.
+
 불러오는 데이터 양이 많지 않기때문에, ruby의 sort_by 기능을 사용해도, 부하가 없을 것으로 판단했다.
 
 {% highlight ruby %}

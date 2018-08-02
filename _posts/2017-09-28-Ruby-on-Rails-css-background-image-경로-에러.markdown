@@ -20,5 +20,6 @@ sass를 이용 중이라면 쉽게 해결할 수 있다.<br>
 background-image: image-url("image.png")
 {% endhighlight %}
 와 같이 넣어주면 제대로 된 경로를 불러와준다.<br><br>
-참고<br>
+
+#### 참고
 <https://stackoverflow.com/questions/15257555/how-to-reference-images-in-css-within-rails-4>
