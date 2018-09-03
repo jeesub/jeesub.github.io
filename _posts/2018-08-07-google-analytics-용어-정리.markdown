@@ -21,6 +21,10 @@ A가 웹 사이트에 온 후 30분 동안 아무런 움직임이 없다가 그 
 
 <https://support.google.com/analytics/answer/6086069?hl=ko>
 
+내용 추가: 조금 더 이해하기 쉬운 설명을 찾아서 링크로 첨부한다. '한 번의 접속에서 생기는 행동들'이라고 이해하면 될 것 같다.
+
+<https://support.google.com/analytics/answer/2731565?hl=ko>
+
 #### 사용자(Users)
 순수 사용자.
 

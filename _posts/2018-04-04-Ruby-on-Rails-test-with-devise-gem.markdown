@@ -29,9 +29,9 @@ setup do
 end
 {% endhighlight %}
 
-### yml 설정
+### fixture 설정
 
-공식 문서에서 찾기 힘든 부분이 yml 설정이었다.
+공식 문서에서 찾기 힘든 부분이 fixture 설정이었다.
 본인의 model에 맞게 설정해주어야 한다.
 confirmation을 사용할 경우, confirmed_at을 꼭 넣어줘야 에러가 나지 않는다.
 
