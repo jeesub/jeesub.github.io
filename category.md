@@ -13,6 +13,7 @@ title: Categories
 		<li><a href="./heroku">heroku</a></li>
 		<li><a href="./aws">aws</a></li>
 		<li><a href="./marketing">marketing</a></li>
+		<li><a href="./gsuite">G Suite</a></li>
 		<li><a href="./etc">etc</a></li>
 	</ul>
 </div>
