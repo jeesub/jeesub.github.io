@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "G Suite 이메일 수신, 발신 설정"
+categories: gsuite
+---
+
+#### G Suite custom domain email
+
+G Suite을 사용하면 custom 도메인 이메일을 사용할 수 있다.
+예전엔 10개 계정까지 무료였기때문에 스타트업들의 사랑을 받았다.
+현재는 무료 가입은 불가능하다.
+
+비슷한 서비스로는 line works가 있다.
+
+line works: <https://line.worksmobile.com/kr/>
+
+#### 도메인 소유권 확인
+
+공식문서: <https://support.google.com/a/answer/60216?hl=ko>
+
+도메인 소유권을 확인하고 나면 G Suite의 다양한 서비스들을 사용할 수 있다.
+소유권 확인은 Google에서 제공하는 인증 방법 중 본인이 편한 것으로 진행하면 된다.
+
+#### DNS 설정
+
+Domain Name System.
+DNS 설정을 통해 G Suite을 사용할 수 있다.
+DNS는 도메인을 구입한 업체에서 제공해주는 것을 사용하거나, 별도의 DNS 서비스를 사용한다.
+유료 DNS 서비스의 경우 DDoS 방어 등 다양한 기능을 제공한다.
+
+DNS Records는 기본 틀은 같지만 DNS 서비스에 따라 약간씩 상이하다.
+본인이 사용하는 DNS 서비스의 문서를 보고 설정하면 된다.
+A Record, CNAME은 주로 웹 서비스를 제공하는데 사용하고, MX Record는 메일 시스템에 활용한다.
+
+##### MX record
+
+공식문서: <https://support.google.com/a/answer/174125?hl=ko>
+
+MX Record는 Mail Exchange Record를 말한다.
+즉, 메일의 송수신을 위해 메일 서버의 위치를 알려주는 역할을 한다.
+DNS 설정에서 MX 레코드를 추가해주면 되는데, Google에서 제공하는 Record를 사용하면 된다.
+
+이 때 주의할 점은, root domain에 대해서는 CNAME record를 설정하면 안된다는 점이다.
+
+##### root(apex, naked) domain CNAME Record
+
+CNAME record는 Canonical Name record로, 서버의 위치를 알려주는 레코드이다.
+CNAME Record에는 root domain을 사용하지 못하도록 되어있다.
+
+참고: <https://www.ietf.org/rfc/rfc1912.txt>
+
+root domain에는 A Record를 사용해야 한다.
+A Record는 IP 주소를 통해 서버의 위치를 알려주는 레코드이다.
+그런데, CNAME Record에 root domain을 사용하게되는 이유는, 대안인 A Record의 한계 때문이다.
+요즘은 cloud 서버를 많이 사용하는데, cloud 서버를 제공하는 회사들은 고정 IP 주소를 제공하지 않는 경우가 많다.
+그렇기때문에, 고정 IP 주소를 알 수 없는 경우에는 root domain에 대한 Record를 만드는 것이 불가능하다.
+
+사용중인 DNS 서비스가 CNAME에 root 도메인을 사용할 수 있도록 제공해서 root domain CNAME을 사용중이었다.
+비표준이지만 사용할 수 있도록 제공해준 것이다.
+그러나 root domain CNAME은 메일에 영향을 줄 수 있고, 몇몇 소수 메일 서비스의 메일이 수신되지 않는 문제가 있어서 대안 방식을 제공하는 DNS로 옮겨야 했다.
+대안 방식은 ANAME, ALIAS 등이 있다.
+레코드는 CNAME Record를 만들때와 비슷하게 만들면 된다.
+동작 원리는, DNS에서 해당 IP를 확인하고 A Record처럼 제공하는 방식이다.
+그렇기 때문에 CNAME이 root domain일 때 발생하는 문제를 해결할 수 있었다.
+
+결론, A Record를 사용할 수 있다면 사용하고, 아니라면 대안 방법을 제공하는 DNS 서비스를 활용하면 된다.
+
+##### 추가 Record 설정
+
+아래에 나오는 SPF, DKIM, DMARC은 권장사항이기때문에 하지 않아도 된다.
+하지만 수신 서버가 까다롭게 검증하면, 아래의 설정이 없는 메일을 받아들이지 않는다.
+회사 메일을 아래의 설정 없이 사용해왔는데, 관계사의 메일서버단에서 메일을 짬시켜버리는 일이 발생해서 추가 설정을 진행했다.
+
+##### SPF 설정
+
+Sender Policy Framework.
+메일 서버를 DNS에 등록해서, 메일이 정상적인 서버에서 발송되었음을 인증해주는 방식.
+서버를 운영해보면, 메일 발신 주소는 쉽게 속일 수 있는 것을 알 수 있다.
+이를 막기위해 DNS에 등록된 SPF를 통해 올바른 서버에서 발송된 메일인지 확인을 거친다.
+
+공식문서: <https://support.google.com/a/answer/33786?hl=ko>
+
+DNS Record에 TXT 레코드를 추가하거나, SPF 레코드를 제공하면 SPF 레코드를 추가한다.
+G Suite 외에 웹 서버에서 메일 송신이 있거나, 마케터들이 사용하는 메일 서비스가 있다면 해당 서버들도 함께 추가해야 한다.
+SPF 레코드를 여러개 만들지 말고, 하나의 레코드에 include 구문으로 추가해주면 된다.
+
+##### DKIM 설정
+
+DomainKeys Identified Mail.
+공개키-비공개키를 사용해 메일의 유효성을 검증하는 방식.
+공개키를 DNS에 등록해놓는다.
+
+공식문서: <https://support.google.com/a/answer/174124?hl=ko&ref_topic=7564555&visit_id=636722688562088181-1991643479&rd=1>
+
+공식문서에서 제공하는 순서대로 진행하면 된다.
+1. 도메인에 대한 공개키를 생성한다.
+2. DNS 레코드에 TXT 레코드를 추가한다.
+3. G Suite 관리 콘솔에서 DKIM 인증을 활성화 한다.
+<br />DKIM 인증 활성화 방법: <https://support.google.com/a/answer/180504>
+
+##### DMARC 설정
+
+DMARC: <https://dmarc.org/>
+
+Domain-based Message Authentication, Reporting & Conformance.
+SPF와 DKIM을 사용하는 이메일 인증 프로토콜이다.
+DMARC를 통해 인증이 적용되지 않은 메일을 어떻게 처리할지를 선언할 수 있다.
+전송된 메일이 SPF, DKIM 인증에 실패하면 DMARC 정책에 따라 메일이 처리된다.
+
+공식문서: <https://support.google.com/a/answer/2466580?hl=ko>
+
+TXT 레코드를 추가해서 적용할 수 있다.
+
+레코드 명: \"\_dmarc.my_domain.com\"<br />
+레코드 값: \"v=DMARC1; p=none; rua=mailto:me@my_domain.com\"
+
+보고서를 확인하고 차츰 차단율을 높여가면 된다.
+pct의 단위는 퍼센트이다.
+
+레코드 값: \"v=DMARC1; p=quarantine; pct=1; rua=mailto:me@my_domain.com\"
+
+#### 확인
+
+모든 설정이 끝났다면, 구글에서 제공하는 웹 어플리케이션으로 설정을 확인할 수 있다.
+
+확인 URL: <https://toolbox.googleapps.com/apps/checkmx/>
+
+확인해보고 문제가 없다면 설정 완료.
+
+![모두_통과]({{ "/assets/img/2018-09-11/1.png" }})
