@@ -68,8 +68,10 @@ params_on_first_page  # false by default
 
 ##### View 파일에 페이지네이션 부분 추가
 
-{% highlight irb %}
+{% highlight html %}
+
 <%= paginate @users %>
+
 {% endhighlight %}
 
 페이지네이션 customizing을 위해서 views 파일을 만들어준다.
