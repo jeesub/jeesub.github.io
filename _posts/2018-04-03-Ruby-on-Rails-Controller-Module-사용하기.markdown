@@ -28,6 +28,8 @@ controller 파일의 위치를 /app/controllers/admin/ 아래로 옮겨준다.<b
 {% highlight ruby %}
 class Admin::PostsController < ApplicationController
 {% endhighlight %}
+<br />
+해당하는 view 파일들도 app/views/admin/ 아래로 옮겨준다.
 
 #### routes 수정하기
 /admin/post URL을 사용하고자 하기 위해 routes.rb 파일을 다음과 같이 수정한다.
