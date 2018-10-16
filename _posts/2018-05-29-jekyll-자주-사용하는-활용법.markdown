@@ -26,7 +26,7 @@ $ bundle update jekyll
 ### 외부 링크 삽입
 
 {% highlight markdown %}
-<https://jisup.github.io/>
+<https://jeesub.github.io/>
 {% endhighlight %}
 
 ### 이미지 삽입
