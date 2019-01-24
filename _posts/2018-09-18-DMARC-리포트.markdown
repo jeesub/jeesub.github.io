@@ -11,7 +11,7 @@ DMARC: <https://dmarc.org/>
 Domain-based Message Authentication, Reporting & Conformance.
 SPF와 DKIM을 사용하는 이메일 인증 프로토콜이다.
 이전 글에서 G Suite 세팅시 설정하는 방법을 다루었으므로, 자세한 설명은 생략한다.<br />
-[G Suite DMARC 설정하기]({% post_url 2018-09-11-G-Suite-이메일-수신-발신-설정 %})
+G Suite DMARC 설정하기: <https://jeesub.github.io/blog/G-Suite-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%88%98%EC%8B%A0-%EB%B0%9C%EC%8B%A0-%EC%84%A4%EC%A0%95/>
 
 rua 옵션을 설정해 놓았을 경우, 리포트를 메일로 보내준다.
 xml 파일로 온 실제 리포트를 단락씩 가져왔다.

@@ -30,7 +30,7 @@ godaddy에서는 CNAME은 제공하지 않지만 대안으로 포워딩을 사�
 도메인의 DNS 설정에서 루트 도메인을 www.example.com 과 같은 www 도메인으로 포워딩을 해주면, 루트 도메인으로도 해당 사이트에 접속이 된다.(물론, www로 redirect된다.)
 
 * 18.09.06 업데이트: CNAME에 zone apex가 들어갈 경우, MX 설정에 문제를 일으킬 수 있다. 대부분의 메일 서비스에서 오는 메일은 잘 수신 되지만, 몇몇의 경우 제대로 전송되지 않는 문제가 발견되었다. 해결방안으로, ANAME이나 ALIAS Record를 지원하는 DNS를 사용하는 방법을 사용했다.<br>
-[MX 설정 포스트 보러가기]({% post_url 2018-09-11-G-Suite-이메일-수신-발신-설정 %})
+MX 설정 포스트 보러가기:<https://jeesub.github.io/blog/G-Suite-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%88%98%EC%8B%A0-%EB%B0%9C%EC%8B%A0-%EC%84%A4%EC%A0%95/>
 
 #### 참고
 <http://seapy.com/2079><br>
