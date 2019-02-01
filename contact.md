@@ -4,8 +4,8 @@ title: Contact
 ---
 
 <div id="contact">
-  <h1 class="pageTitle">Contact Me</h1>
-  <div class="contactContent">
-		<a href="https://www.facebook.com/jisup.lee">https://www.facebook.com/jisup.lee</a>
+	<h1 class="pageTitle">Contact</h1>
+	<div class="contactContent">
+		<a href="https://www.facebook.com/jeesub.brad.lee">https://www.facebook.com/jeesub.brad.lee</a>
 	</div>
 </div>
