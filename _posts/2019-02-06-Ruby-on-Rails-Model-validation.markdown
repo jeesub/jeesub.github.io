@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby on Rails Model validation"
-categories: marketing
+categories: rails
 ---
 
 #### Model validation
