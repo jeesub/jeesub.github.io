@@ -3,21 +3,28 @@ layout: post
 title:  "jekyll 테마 바꾸기"
 categories: jekyll
 ---
+
 jekyll 블로그의 테마를 바꾸기로 했다.
 
 ### 바꿀 테마 찾기
+
 가장 기본이 되는 방법은 jekyll의 테마가 공유되는 사이트에서 마음에 드는 테마를 찾으면 된다.<br>
-<http://jekyllthemes.org/><br>
+<http://jekyllthemes.org/>
+
 하지만 귀찮으므로 구글 검색을 통해 잘 큐레이션 된 테마를 공유한 사이트를 찾아냈다. 이중에서 하나를 골라 쓰기로 했다.<br>
-<http://brianmaierjr.com/long-haul/><br>
 최종적으로 고른 테마는 Long Haul이다.<br>
-<https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/>
+<http://brianmaierjr.com/long-haul/>
+
+출처: <https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/>
 
 ### 테마 적용하기
-테마 zip 파일을 받아서 압축을 풀어준다. 그러면 jekyll과 유사한 폴더와 파일들이 들어있다. 압축이 풀린 폴더와 파일들 안에 내가 기존에 작성했던 _post 폴더를 덮어주고 git push를 하면 적용은 끝난다.
+
+테마 zip 파일을 받아서 압축을 풀어준다. 그러면 jekyll과 유사한 폴더와 파일들이 들어있다. 압축이 풀린 폴더와 파일들 안에 내가 기존에 작성했던 _post 폴더를 덮어쓴다.
 
 ### 테마 수정하기
-이제부터는 귀찮지만 수정을 해줘야 실제로 사용할 수 있다. 기본 설정은 _config.yml에서 진행한다. 그 이후 index.html, about.md, contact.md 등 파일을 하나씩 수정해나가면 된다. `/assets/img/` 폴더 안에 있는 이미지와 favicon을 바꿔주면 홈페이지 상단 이미지와 favicon을 바꿀 수 있다. `/_include/`폴더 안에 있는 `header.html`과 `footer.html`도 수정을 해준다. Google analytics를 연동하려면 `google_analytics.html` 파일을 수정해준다.
+
+이제부터는 몇가지를 수정해야 실제로 사용할 수 있다. 기본 설정은 _config.yml에서 진행한다. 그 이후 index.html, about.md, contact.md 등 파일을 하나씩 수정해나가면 된다. `/assets/img/` 폴더 안에 있는 이미지와 favicon을 바꿔주면 홈페이지 상단 이미지와 favicon을 바꿀 수 있다. `/_include/`폴더 안에 있는 `header.html`과 `footer.html`도 수정을 해준다. Google analytics를 연동하려면 `google_analytics.html` 파일을 수정해준다.
 
 ### 더 내마음대로 바꾸기
+
 귀차니즘을 이겨내고 더 커스터마이징을 하려면 `/asstes/css/style.css`를 수정해준다. 색만 바뀌어도 느낌이 많이 다르기때문에 기본 색상과 hover 색상만 바꿨다. Long Haul에서 사용한 기본 색상은 `#2e8b57`, 마우스 오버 했을 때 나타나는 색상은 `#1b5233`이다. 에디터에서 찾아서 바꿔주면 색이 바뀐다.
