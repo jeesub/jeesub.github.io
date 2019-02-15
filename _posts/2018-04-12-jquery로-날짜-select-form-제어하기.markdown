@@ -31,10 +31,10 @@ users table의 birthday 날짜를 원하는 날짜로 바꾸는 코드 예제
 
 {% highlight html %}
 <script>
-    // 2016-09-03
-    $("#user_birthday_1i").val("2016");
-    $("#user_birthday_2i").val("9");
-    $("#user_birthday_3i").val("3");
+  // 2016-09-03
+  $("#user_birthday_1i").val("2016");
+  $("#user_birthday_2i").val("9");
+  $("#user_birthday_3i").val("3");
 </script>
 {% endhighlight %}
 

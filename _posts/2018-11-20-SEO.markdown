@@ -46,8 +46,8 @@ title과 description은 페이지마다 달라야 하고, 너무 길지 않아�
 
 {% highlight html %}
 <head>
-	<title>제목</title>
-	<meta name="description" content="설명">
+  <title>제목</title>
+  <meta name="description" content="설명">
 </head>
 {% endhighlight %}
 
@@ -59,11 +59,11 @@ facebook의 부상과 함께 중요해졌다.
 
 {% highlight html %}
 <head>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content= "제목">
-    <meta property="og:description" content="설명">
-    <meta property="og:url" content="URL">
-    <meta property="og:image" content="대표_이미지_URL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content= "제목">
+  <meta property="og:description" content="설명">
+  <meta property="og:url" content="URL">
+  <meta property="og:image" content="대표_이미지_URL">
 </head>
 {% endhighlight %}
 
@@ -77,14 +77,14 @@ facebook의 부상과 함께 중요해졌다.
 
 {% highlight xml %}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-	<url>
-		<loc>https://jeesub.github.io/</loc>
-		<priority>1.00</priority>
-	</url>
-	<url>
-		<loc>https://jeesub.github.io/about/</loc>
-		<priority>0.50</priority>
-	</url>
+  <url>
+    <loc>https://jeesub.github.io/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://jeesub.github.io/about/</loc>
+    <priority>0.50</priority>
+  </url>
 </urlset>
 {% endhighlight %}
 

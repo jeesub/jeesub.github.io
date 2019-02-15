@@ -19,13 +19,13 @@ jekyll 블로그를 사용하다 보니 마크다운 형식을 많이 사용한�
 {% highlight xml %}
 {% raw %}
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 Hello, ${1:this} is a ${2:snippet}.
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<!-- <tabTrigger>hello</tabTrigger> -->
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
 </snippet>
 {% endraw %}
 {% endhighlight %}
@@ -37,16 +37,16 @@ tabTrigger 안에 단축키로 활용할 구문을 넣으면 된다.<br>
 {% highlight xml %}
 {% raw %}
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 {% highlight $1 %}
 
 {% endhighlight %}
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<!-- <tabTrigger>hello</tabTrigger> -->
-	<tabTrigger>hi</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <tabTrigger>hi</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
 </snippet>
 {% endraw %}
 {% endhighlight %}

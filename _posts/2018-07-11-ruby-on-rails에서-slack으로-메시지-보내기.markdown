@@ -59,11 +59,11 @@ require 'net/http'
 uri = URI("https://hooks.slack.com/services/XXXXX/XXXX/XXXX")
 
 Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
-	req = Net::HTTP::Post.new(uri)
-	req.content_type = 'application/json'
-	req.body = "{'text':'Hello, World!'}"
-	http.request(req)
-end	
+  req = Net::HTTP::Post.new(uri)
+  req.content_type = 'application/json'
+  req.body = "{'text':'Hello, World!'}"
+  http.request(req)
+end
 {% endhighlight %}
 
 참고: <https://ruby-doc.org/stdlib-2.5.1/libdoc/net/http/rdoc/Net/HTTP.html>

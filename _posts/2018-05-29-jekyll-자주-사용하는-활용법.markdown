@@ -16,9 +16,9 @@ $ bundle update jekyll
 
 {% highlight markdown %}
 {% raw %} {% {% endraw %}highlight ruby{% raw %} %} {% endraw %}
-	def foo
-		puts 'bar'
-	end
+  def foo
+    puts 'bar'
+  end
 {% raw %} {% {% endraw %}endhighlight{% raw %} %} {% endraw %}
 {% endhighlight %}
 

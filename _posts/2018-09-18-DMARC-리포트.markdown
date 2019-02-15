@@ -21,16 +21,16 @@ xml 파일로 온 실제 리포트를 단락씩 가져왔다.
 
 {% highlight xml %}
 <report_metadata>
-	<!-- report를 보내준 주체 -->
-	<org_name>google.com</org_name>
-	<email>noreply-dmarc-support@google.com</email>
-	<extra_contact_info>https://support.google.com/a/answer/2466580</extra_contact_info>
-	<report_id>#################</report_id>
-	<!-- 어느 기간의 리포트인가 -->
-	<date_range>
-		<begin>##########</begin>
-		<end>##########</end>
-	</date_range>
+  <!-- report를 보내준 주체 -->
+  <org_name>google.com</org_name>
+  <email>noreply-dmarc-support@google.com</email>
+  <extra_contact_info>https://support.google.com/a/answer/2466580</extra_contact_info>
+  <report_id>#################</report_id>
+  <!-- 어느 기간의 리포트인가 -->
+  <date_range>
+    <begin>##########</begin>
+    <end>##########</end>
+  </date_range>
 </report_metadata>
 {% endhighlight %}
 
@@ -41,19 +41,19 @@ xml 파일로 온 실제 리포트를 단락씩 가져왔다.
 {% highlight xml %}
 
 <policy_published>
-	<!-- 도메인 -->
-	<domain>yourdomain.com</domain>
-	<!-- dkim 설정. r / s 중 하나다. r은 느슨함, s는 엄격함. -->
-	<adkim>r</adkim>
-	<!-- spf 설정. r / s 중 하나다. r은 느슨함, s는 엄격함. -->
-	<aspf>r</aspf>
-	<!-- policy 설정. none / quarantine / reject 중 하나다. -->
-	<!-- none은 없음, quarantine은 스팸조치, reject는 메일 거부 -->
-	<p>none</p>
-	<!-- 서브도메인 policy 설정 -->
-	<sp>none</sp>
-	<!-- 퍼센트 설정. 전체 메일의 몇 퍼센트에 대해 설정된 DMARC 정책을 적용할 것인가. -->
-	<pct>100</pct>
+  <!-- 도메인 -->
+  <domain>yourdomain.com</domain>
+  <!-- dkim 설정. r / s 중 하나다. r은 느슨함, s는 엄격함. -->
+  <adkim>r</adkim>
+  <!-- spf 설정. r / s 중 하나다. r은 느슨함, s는 엄격함. -->
+  <aspf>r</aspf>
+  <!-- policy 설정. none / quarantine / reject 중 하나다. -->
+  <!-- none은 없음, quarantine은 스팸조치, reject는 메일 거부 -->
+  <p>none</p>
+  <!-- 서브도메인 policy 설정 -->
+  <sp>none</sp>
+  <!-- 퍼센트 설정. 전체 메일의 몇 퍼센트에 대해 설정된 DMARC 정책을 적용할 것인가. -->
+  <pct>100</pct>
 </policy_published>
 
 {% endhighlight %}
@@ -68,38 +68,38 @@ xml 파일로 온 실제 리포트를 단락씩 가져왔다.
 
 <!-- 여기서부터 각 리포트 시작 -->
 <record>
-	<row>
-		<!-- 메일이 발송된 IP. -->
-		<source_ip>###.###.###.###</source_ip>
-		<!-- 몇 통의 메일이 해당되는가 -->
-		<count>123</count>
-		<policy_evaluated>
-			<disposition>none</disposition>
-			<!-- DKIM pass 여부. pass / fail -->
-			<dkim>pass</dkim>
-			<!-- SPF pass 여부. pass / fail -->
-			<spf>fail</spf>
-		</policy_evaluated>
-	</row>
-	<identifiers>
-		<header_from>yourdomain.com</header_from>
-	</identifiers>
-	<auth_results>
-		<!-- DKIM 결과 리포트 -->
-		<dkim>
-			<domain>yourdomain.com</domain>
-			<!-- DKIM 결과. pass / fail -->
-			<result>pass</result>
-			<!-- selector를 통해서 어떤 메일서버의 DKIM인지 파악할 수 있다. DKIM을 생성할 때 selector를 정했을 것이다. -->
-			<selector>selector</selector>
-		</dkim>
-		<!-- SPF 결과 리포트 -->
-		<spf>
-			<domain>mailserver.com</domain>
-			<!-- SPF 결과. pass / fail -->
-			<result>fail</result>
-		</spf>
-	</auth_results>
+  <row>
+    <!-- 메일이 발송된 IP. -->
+    <source_ip>###.###.###.###</source_ip>
+    <!-- 몇 통의 메일이 해당되는가 -->
+    <count>123</count>
+    <policy_evaluated>
+      <disposition>none</disposition>
+      <!-- DKIM pass 여부. pass / fail -->
+      <dkim>pass</dkim>
+      <!-- SPF pass 여부. pass / fail -->
+      <spf>fail</spf>
+    </policy_evaluated>
+  </row>
+  <identifiers>
+    <header_from>yourdomain.com</header_from>
+  </identifiers>
+  <auth_results>
+    <!-- DKIM 결과 리포트 -->
+    <dkim>
+      <domain>yourdomain.com</domain>
+      <!-- DKIM 결과. pass / fail -->
+      <result>pass</result>
+      <!-- selector를 통해서 어떤 메일서버의 DKIM인지 파악할 수 있다. DKIM을 생성할 때 selector를 정했을 것이다. -->
+      <selector>selector</selector>
+    </dkim>
+    <!-- SPF 결과 리포트 -->
+    <spf>
+      <domain>mailserver.com</domain>
+      <!-- SPF 결과. pass / fail -->
+      <result>fail</result>
+    </spf>
+  </auth_results>
 </record>
 
 {% endhighlight %}

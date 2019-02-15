@@ -48,21 +48,21 @@ validates :amount, numericality: true
 validates :sequence, numericality: { only_integer: true }
 # http 혹은 https로 시작(allow nil 포함)
 validates :url,
-	format: { with: URI.regexp(%w(http https)) },
-		allow_nil: true
+  format: { with: URI.regexp(%w(http https)) },
+    allow_nil: true
 # 유효한 email 주소
 EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-	validates :email, 
-		length: { in: 6..50 }, 
-		format: { with: EMAIL_REGEX }
+  validates :email, 
+    length: { in: 6..50 }, 
+    format: { with: EMAIL_REGEX }
 {% endhighlight %}
 
 ## conditional validation
 
 {% highlight ruby %}
 validates :url,
-	format: { with: URI.regexp(%w(http https)) },
-		if: Proc.new { |company| !company.url.blank? }
+  format: { with: URI.regexp(%w(http https)) },
+    if: Proc.new { |company| !company.url.blank? }
 {% endhighlight %}
 
 ## inclusion validation

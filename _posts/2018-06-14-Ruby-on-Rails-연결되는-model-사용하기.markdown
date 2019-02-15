@@ -54,7 +54,7 @@ $ rails generate model Reply content:text post:references
 {% highlight ruby %}
 # app/models/post.rb
 class Post < ApplicationRecord
-	has_many :replies, dependent: :destroy
+  has_many :replies, dependent: :destroy
 end
 {% endhighlight %}
 
@@ -70,7 +70,7 @@ association을 사용할 때, nested URL을 쓰면 편하다.
 {% highlight ruby %}
 # routes.rb
 resources :posts do
-	resources :replies
+  resources :replies
 end
 {% endhighlight %}
 
@@ -83,22 +83,22 @@ end
 before_action :set_post
 
 def new
-	@reply = @post.replies.build
+  @reply = @post.replies.build
 end
 
 def create
-	@reply = @post.replies.build(reply_params)
-	if @reply.save
-		redirect_to post_reply_path(@post, @reply)
-	else
-		render :new
-	end
+  @reply = @post.replies.build(reply_params)
+  if @reply.save
+    redirect_to post_reply_path(@post, @reply)
+  else
+    render :new
+  end
 end
 
 private
-	def set_post
-		@post = Post.find(params[:post_id])
-	end
+  def set_post
+    @post = Post.find(params[:post_id])
+  end
 {% endhighlight %}
 
 실제 어플리케이션에서는 post의 show action에 form이 들어가기 때문에 new action이 필요 없겠지만, 예시로 적었다.
