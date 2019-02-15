@@ -4,7 +4,7 @@ title:  "jquery로 날짜 select form 제어하기"
 categories: [javascript, jquery]
 ---
 
-### javascript 날짜 format
+# javascript 날짜 format
 
 {% highlight javascript %}
 var date = new Date();			// 2018-04-12
@@ -25,7 +25,7 @@ var date = new Date("2020-01-01");
 // 2020-01-01
 {% endhighlight %}
 
-### jQuery로 selectbox의 날짜 제어하기
+# jQuery로 selectbox의 날짜 제어하기
 
 users table의 birthday 날짜를 원하는 날짜로 바꾸는 코드 예제
 

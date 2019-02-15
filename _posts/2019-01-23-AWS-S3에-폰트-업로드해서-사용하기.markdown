@@ -4,7 +4,7 @@ title: "AWS S3에 폰트 업로드해서 사용하기"
 categories: aws
 ---
 
-#### 웹폰트
+# 웹폰트
 
 웹사이트를 만들 때면 항상 폰트에 대한 고민을 하게 된다.
 CSS에 폰트만 지정되어 있다면, 해당 폰트는 사용자의 컴퓨터에서 불러온다.
@@ -21,7 +21,7 @@ CSS에 폰트만 지정되어 있다면, 해당 폰트는 사용자의 컴퓨터
 
 참고: <https://d2.naver.com/helloworld/4969726>
 
-#### 웹폰트 사용하기
+# 웹폰트 사용하기
 
 웹폰트를 사용할 때는 주로 CDN을 활용하게 된다.
 소규모의 웹사이트라면, AWS S3를 사용하면 된다.
@@ -37,7 +37,7 @@ MS 브라우저 9.0 이상 및 기타 브라우저에서 모두 사용 가능하
 
 참고: <https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=ko>
 
-#### CORS policy
+# CORS policy
 
 AWS S3에 폰트 파일을 올려도, 바로 사용할 수는 없다.
 CORS(Cross-Origin Resource Sharing) policy 때문이다.
@@ -50,14 +50,14 @@ CORS(Cross-Origin Resource Sharing) policy 때문이다.
 
 참고: <https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS>
 
-#### AWS S3 Bucket CORS policy 설정
+# AWS S3 Bucket CORS policy 설정
 
 CORS policy는 S3 Bucket에 선언한다.
 
-##### 1. 'AWS S3 버킷 홈'에서 해당 bucket 클릭
-##### 2. '권한' 클릭
-##### 3. 'CORS 구성' 클릭
-##### 4. 'CORS 구성 편집기'에 본인의 CORS configuration 입력
+## 1. 'AWS S3 버킷 홈'에서 해당 bucket 클릭
+## 2. '권한' 클릭
+## 3. 'CORS 구성' 클릭
+## 4. 'CORS 구성 편집기'에 본인의 CORS configuration 입력
 
 예시)
 
@@ -73,4 +73,6 @@ CORS policy는 S3 Bucket에 선언한다.
 </CORSConfiguration>
 {% endhighlight %}
 
-참고: <https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/dev/cors.html>
+# 참고
+
+* <https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/dev/cors.html>

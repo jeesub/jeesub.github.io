@@ -1,0 +1,80 @@
+---
+layout: post
+title: "G Suite 관리자 살펴보기"
+categories: etc
+---
+
+# G Suite
+
+Google Cloud에서 제공하는 cloud work platform.
+사용하는 주된 이유는 비즈니스 메일 주소 때문이다.
+회사마다 메일 시스템을 구축할 수도 있지만, G Suite을 사용하는 것이 여러모로 편리하다.
+G Suite을 사용하면 Google Drive, Hangout, Google Sites등 다양한 스마트 워크 툴을 활용할 수 있다.
+
+유사한 국내 서비스로는 [Line Works](https://line.worksmobile.com/kr/)가 있다.
+네이버로 대표되는 한국식 UI/UX가 익숙하다면 Line Works를 사용하는 것도 고려해볼 수 있다.
+
+# G Suite 시작하기
+
+<https://gsuite.google.com/>에서 회원가입 후 사용할 수 있다.
+이외에도 국내 영업을 담당하는 업체들을 통해 사용해도 된다.
+이제 막 시작하는 작은 조직이라면 월 $6/user의 Basic plan으로도 충분하다.
+보안 및 추가 저장공간을 위해서는 월 $12/user의 Business plan 이상을 사용하면 된다.
+(가격은 2019년 4월 2일 기준)
+
+# G Suite Admin
+
+![G Suite Admin]({{"/assets/img/2019-02-15/gsuite1.png"}})
+
+'관리 콘솔'은 S Suite Admin의 홈이다.
+이 곳에서 G Suite의 전반적인 관리를 할 수 있다.
+대부분의 경우 어렵지 않게 사용할 수 있을 것이다.
+
+[공식문서](https://support.google.com/a/answer/3035792?hl=ko&ref_topic=29157) 참고.
+
+## 도메인
+
+![G Suite Admin - 도메인]({{"/assets/img/2019-02-15/gsuite2.png"}})
+
+'도메인'에서 회사 소유의 도메인을 연동할 수 있다.
+본인 소유 확인을 거쳐 연동이 완료되면, 해당 도메인의 메일주소를 만들 수 있게 된다.
+참고로, 여러 도메인을 연동하는 것도 가능하다.
+여러 도메인을 연동하면, 연동된 모든 도메인의 메일주소를 만들 수 있게 된다.
+
+[공식문서](https://support.google.com/a/topic/29164?hl=ko&ref_topic=2426592) 참고.
+
+## 사용자
+
+![G Suite Admin - 사용자]({{"/assets/img/2019-02-15/gsuite3.png"}})
+
+'사용자'에서 사용자를 추가, 삭제 한다.
+이 사용자의 수대로 과금이 진행 된다.
+사용자는 맞춤 도메인 메일주소를 통해 G Suite을 활용할 수 있게 된다.
+'별칭' 기능이 있기 때문에 한 사용자가 최대 두 개의 메일 주소를 갖는 것도 가능하다.
+
+[공식문서](https://support.google.com/a/topic/14586?hl=ko&ref_topic=2425090) 참고.
+
+## 그룹
+
+![G Suite Admin - 그룹]({{"/assets/img/2019-02-15/gsuite4.png"}})
+
+'그룹'에서 팀을 지정하는 등의 행동을 할 수 있다.
+예를 들어 team 그룹에 모든 구성원을 추가한 다음 team@mycompany.com로 메일을 보내면 모든 구성원이 해당 메일을 받게 된다.
+그룹 메일은 회사 내부에서만 사용할 수 있다.
+조직 외부의 메일에서 보내는 그룹 메일을 수신하기 위해서는 설정에서 조직 외부 사용자도 '게시물 게시'를 할 수 있도록 권한 조정이 필요하다.
+
+[공식문서](https://support.google.com/a/answer/33343?hl=ko) 참고.
+
+## 관리자
+
+![G Suite Admin - 관리자]({{"/assets/img/2019-02-15/gsuite5.png"}})
+
+'관리자 역할'에서 특정 사용자에게 G Suite의 관리 권한을 부여할 수 있다.
+주어진 권한 세트 외에 커스텀 역할을 부여할 수도 있다.
+
+[공식문서](https://support.google.com/a/answer/33325?hl=ko&ref_topic=4514341) 참고.
+
+# 참고
+
+* <https://gsuite.google.com/>
+* <https://support.google.com/a#topic=7570177>

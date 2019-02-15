@@ -8,7 +8,7 @@ heroku에서 돌아가고 있는 web application에 SSL을 적용하는 방법�
 결론부터 이야기하면, heroku 유료 plan을 사용 중이라면, 추가 비용 없이 TLS 인증서를 적용할 수 있다.
 TLS는 SSL과 같은 것이라고 보고 넘어가자.
 
-### ACM
+# ACM
 [Automated Certificate Management](https://devcenter.heroku.com/articles/automated-certificate-management).<br>
 Let's Encrypt 인증서를 자동으로 관리해준다.
 custom domain이 추가될때마다 인증서도 등록되고, 마감 한 달 전에 자동 연장된다고 한다.<br>
@@ -23,6 +23,6 @@ $ heroku certs:auto:enable
 적용 되었다.<br>
 앞으로도 heroku를 이용하면 돈 주고 인증서를 구매하지 않아도 될 것 같다.
 
-#### 참고
-<https://devcenter.heroku.com/articles/automated-certificate-management><br>
-<https://letsencrypt.org/>
+# 참고
+* <https://devcenter.heroku.com/articles/automated-certificate-management>
+* <https://letsencrypt.org/>

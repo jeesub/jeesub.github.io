@@ -15,7 +15,7 @@ Address already in use - bind(2) for "0.0.0.0" port 8080 (Errno::EADDRINUSE)
 
 port8080이 이미 선점되어있기 때문으로 보인다.<br />
 
-### port8080에서 돌아가는 프로세스 확인하기
+# port8080에서 돌아가는 프로세스 확인하기
 
 {% highlight bash %}
 $ lsof -wni tcp:8080
@@ -35,6 +35,6 @@ $ kill -9 17873
 
 해결 완료
 
-#### 참고
-<https://stackoverflow.com/questions/31039998/address-already-in-use-bind2-errnoeaddrinuse><br />
-<https://www.lesstif.com/pages/viewpage.action?pageId=20776078>
+# 참고
+* <https://stackoverflow.com/questions/31039998/address-already-in-use-bind2-errnoeaddrinuse>
+* <https://www.lesstif.com/pages/viewpage.action?pageId=20776078>

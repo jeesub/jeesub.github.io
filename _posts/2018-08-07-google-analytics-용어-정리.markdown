@@ -9,7 +9,7 @@ categories: marketing
 구글 공식 문서만 보고는 이해하기 어려워서 나름대로 다시 정리를 해보았다.
 나름의 해석을 적어놓았고, 구글 공식 문서 링크를 적어 놓았다.
 
-#### 세션(Session)
+# 세션(Session)
 사용자의 웹사이트 접속.
 
 예를 들어, A라는 사람이 웹 사이트에 방문하는 경우 세션은 1이 증가한다.
@@ -25,12 +25,12 @@ A가 웹 사이트에 온 후 30분 동안 아무런 움직임이 없다가 그 
 
 <https://support.google.com/analytics/answer/2731565?hl=ko>
 
-#### 사용자(Users)
+# 사용자(Users)
 순수 사용자.
 
 어제 왔던 사용자가 오늘 또 오면, 세션은 새롭게 1이 증가 하지만, 사용자 수는 증가하지 않는다.
 
-#### 페이지뷰 수(Pageviews)
+# 페이지뷰 수(Pageviews)
 총 페이지뷰 수.
 
 사용자가 새로고침하는 것도 페이지뷰 수에 포함된다.
@@ -39,7 +39,7 @@ A가 웹 사이트에 온 후 30분 동안 아무런 움직임이 없다가 그 
 
 <https://support.google.com/analytics/answer/6086080?hl=ko>
 
-#### 순 페이지뷰 수(Unique Pageviews)
+# 순 페이지뷰 수(Unique Pageviews)
 세션이 방문한 순(net) 페이지뷰 수.
 
 세션 하나가 동일한 페이지를 여러번 볼 경우, 한 번으로 집계된다.
@@ -47,21 +47,21 @@ A가 웹 사이트에 온 후 30분 동안 아무런 움직임이 없다가 그 
 
 <https://support.google.com/analytics/answer/1257084#pageviews_vs_unique_views>
 
-#### 세션당 페이지뷰 수(Pages/Session)
+# 세션당 페이지뷰 수(Pages/Session)
 세션이 방문하는 평균 페이지 수.
 
 세션 생성 후 몇 페이지를 탐험하고 떠나는지를 나타낸다.
 
 <https://support.google.com/analytics/answer/1033861?hl=ko>
 
-#### 평균 세션 시간(Average Session Duration)
+# 평균 세션 시간(Average Session Duration)
 한 세션의 평균 시간.
 
 방문자들이 얼마동안 웹사이트에 머물다가 떠나는지를 나타낸다.
 
 <https://support.google.com/analytics/answer/1006253?hl=ko>
 
-#### 이탈률(Bounce Rate)
+# 이탈률(Bounce Rate)
 사용자가 단 하나의 페이지만 보고 나간 비율.
 
 A라는 사람이 '페이지1'에 왔다가 다른 페이지를 방문하지 않고 나가는 경우 이탈률에 포함된다.
@@ -71,13 +71,13 @@ B라는 사람이 '페이지1'에 왔다가 '페이지2'에 방문하고 나가�
 
 <https://support.google.com/analytics/answer/1009409?hl=ko&ref_topic=6156780>
 
-#### 종료율(Exit Rate)
+# 종료율(Exit Rate)
 종료율은 단일 페이지와 여러 페이지에 대해 함께 사용하기 때문에 헷갈린다.
 이해를 위해 임의로 '단일 페이지'와 '여러 페이지'를 나누어 보았다.
 
 <https://support.google.com/analytics/answer/2525491?hl=ko&ref_topic=6156780>
 
-##### 단일 페이지 종료율
+## 단일 페이지 종료율
 세션이 해당 페이지에 방문했을 때, 세션 종료 비율.
 
 쉽게 생각하자면, 몇 명의 사용자가 해당 페이지에서 웹사이트 창을 닫는가를 측정한 것이다.
@@ -87,7 +87,7 @@ B라는 사람이 '페이지1'에 왔다가 '페이지2'에 방문하고 나가�
 
 깔때기(Funnel) 마지막 단계 페이지에서 종료율이 높다면, 최적의 상태이다.
 
-##### 여러 페이지 종료율
+## 여러 페이지 종료율
 웹사이트 접속을 종료한 수 / 페이지뷰 수
 
 종료율은 여러 페이지에 대해서도 볼 수 있다. 그렇기때문에, 웹 사이트 전체의 종료율(%)도 존재한다.

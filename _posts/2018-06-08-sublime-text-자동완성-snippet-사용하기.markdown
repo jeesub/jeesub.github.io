@@ -4,7 +4,7 @@ title:  "sublime text 자동완성 snippet 사용하기"
 categories: etc
 ---
 
-### snippet - 스니펫
+# snippet - 스니펫
 스니펫이란, 단축키를 통해 자주 쓰는 문구를 자동 완성하는 기능이라고 생각하면 될 것 같다.<br>
 참고: <https://ko.wikipedia.org/wiki/스니펫><br>
 sublime text 3에서는 문구 + Tab을 통해 스니펫을 이용할 수 있다.
@@ -12,7 +12,7 @@ jekyll 블로그를 사용하다 보니 마크다운 형식을 많이 사용한�
 [메뉴 - Tools - Snippets]에 보면 사용 가능한 snippet을 확인할 수 있다.<br>
 
 
-### 새로운 스니펫 등록
+# 새로운 스니펫 등록
 새로운 스니펫의 등록은 [메뉴 - Tools - Developer - New Snippet...]에서 할 수 있다.
 위의 메뉴로 들어가면, 새 탭에 아래와 같은 코드가 나온다.
 

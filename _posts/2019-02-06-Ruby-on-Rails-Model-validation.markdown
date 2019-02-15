@@ -4,7 +4,7 @@ title: "Ruby on Rails Model validation"
 categories: rails
 ---
 
-#### Model validation
+# Model validation
 
 Ruby on Rails의 MVC 패턴 중 M에 해당하는 Model에서는 data validation을 적용하게 된다.
 Database에 data를 저장 혹은 업데이트하기 전, 적절한 data인지 확인한다.
@@ -12,13 +12,13 @@ Database에 data를 저장 혹은 업데이트하기 전, 적절한 data인지 �
 
 Ruby on Rails를 사용하며 자주 활용한 Model validation을 모아보았다.
 
-##### required validation
+## required validation
 
 {% highlight ruby %}
 validates :title, :description, :tags, presence: true
 {% endhighlight %}
 
-##### uniqueness validation
+## uniqueness validation
 
 {% highlight ruby %}
 validates :sequence, uniqueness: true
@@ -26,7 +26,7 @@ validates :sequence, uniqueness: true
 validates :permalink, uniquness: { case_sensitive: false }
 {% endhighlight %}
 
-##### length validation
+## length validation
 
 {% highlight ruby %}
 # 최단
@@ -39,7 +39,7 @@ validates :phone, length: { in: 10.. 15 }
 validates :pin, length: { is: 6 }
 {% endhighlight %}
 
-##### format validation
+## format validation
 
 {% highlight ruby %}
 # 숫자
@@ -57,7 +57,7 @@ EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 		format: { with: EMAIL_REGEX }
 {% endhighlight %}
 
-##### conditional validation
+## conditional validation
 
 {% highlight ruby %}
 validates :url,
@@ -65,11 +65,12 @@ validates :url,
 		if: Proc.new { |company| !company.url.blank? }
 {% endhighlight %}
 
-##### inclusion validation
+## inclusion validation
 
 {% highlight ruby %}
 validates :language, inclusion: { in: %w(ruby phtyon java c) }
 {% endhighlight %}
 
-#### 참고
-<https://guides.rubyonrails.org/active_record_validations.html>
+# 참고
+
+* <https://guides.rubyonrails.org/active_record_validations.html>

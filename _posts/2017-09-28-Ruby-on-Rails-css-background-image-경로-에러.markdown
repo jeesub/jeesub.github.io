@@ -14,12 +14,12 @@ rails는 asset pipeline을 사용하는데, 이 때 hash값이 생긴다.
 asset pipeline: <http://guides.rubyonrails.org/asset_pipeline.html>
 <br><br>
 
-### Sprockets 활용하기
+# Sprockets 활용하기
 sass를 이용 중이라면 쉽게 해결할 수 있다.<br>
 {% highlight css %}
 background-image: image-url("image.png")
 {% endhighlight %}
 와 같이 넣어주면 제대로 된 경로를 불러와준다.<br><br>
 
-#### 참고
-<https://stackoverflow.com/questions/15257555/how-to-reference-images-in-css-within-rails-4>
+# 참고
+* <https://stackoverflow.com/questions/15257555/how-to-reference-images-in-css-within-rails-4>

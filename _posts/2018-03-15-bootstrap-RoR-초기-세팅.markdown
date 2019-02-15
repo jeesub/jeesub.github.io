@@ -4,12 +4,12 @@ title:  "bootstrap RoR 초기 세팅"
 categories: rails
 ---
 
-### 환경
+# 환경
 ruby version: 2.3.4<br>
 rails version: 5.1.4<br>
 bootstrap version: 3.3<br>
 
-### gemfile 추가
+# gemfile 추가
 {% highlight ruby %}
 gem 'rails',              '~> 5.1.4'
 gem 'puma',               '~> 3.9.1'
@@ -28,7 +28,7 @@ gem 'jquery-rails',       '~> 4.3.1'
 
 * 본인이 구현할 application에 맞게 추가 수정 필요
 
-### javascript 파일에 부트스트랩 등 추가
+# javascript 파일에 부트스트랩 등 추가
 app/assets/javascripts/application.js<br>
 
 {% highlight javascript %}
@@ -40,7 +40,7 @@ app/assets/javascripts/application.js<br>
 //= require_tree .
 {% endhighlight %}
 
-### css import 추가
+# css import 추가
 app/assets/stylesheets/custom.scss
 
 {% highlight scss %}
@@ -49,7 +49,7 @@ app/assets/stylesheets/custom.scss
 @import "font-awesome";
 {% endhighlight %}
 
-### IE 대응을 위한 shim 추가
+# IE 대응을 위한 shim 추가
 app/views/layouts/_shim.html.erb
 
 
@@ -60,13 +60,13 @@ app/views/layouts/_shim.html.erb
 <![endif]-->
 {% endhighlight %}
 
-### header, footer 추가
+# header, footer 추가
 
 app/views/layouts/_header.html.erb
 app/views/layouts/_footer.html.erb
 
 
-### application.html.erb에 shim, header, footer 추가
+# application.html.erb에 shim, header, footer 추가
 + viewport 추가, debug를 위한 구문 추가
 app/views/layouts/application.html.erb
 
@@ -92,7 +92,7 @@ app/views/layouts/application.html.erb
 </html>
 {% endhighlight %}
 
-### time_zone 세팅
+# time_zone 세팅
 {% highlight ruby %}
 module Yourapp
   class Application < Rails::Application

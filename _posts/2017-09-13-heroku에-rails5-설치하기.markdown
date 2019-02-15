@@ -4,7 +4,7 @@ title:  "heroku에 rails5 설치하기"
 categories: [heroku, rails]
 ---
 
-### rails5 설치하기
+# rails5 설치하기
 rails5의 최신 버전을 확인한다.<br>
 <https://rubygems.org/gems/rails/versions/5.0.0.beta1>
 

@@ -4,18 +4,18 @@ title:  "jekyll 카테고리 만들기"
 categories: jekyll
 ---
 
-### 카테고리가 필요하다
+# 카테고리가 필요하다
 jekyll 블로그를 사용하다보니, 카테고리가 필요하다는 생각이 들어서 여러모로 알아봤다.
 그런데, 가장 편한 방법으로 카테고리를 사용하려면 github page를 사용하면 불가능했다.<br>
 출처: <https://jekyllrb.com/docs/plugins/><br>
 
-### 수동으로 카테고리 추가
+# 수동으로 카테고리 추가
 귀찮지만 수동으로 카테고리를 관리하는 방법을 찾아내어 적용했다.<br>
 출처: <https://cookieshake.github.io/posts/Jekyll-블로그에-Category-페이지-만들기><br>
 해당 글의 2번 방법을 사용했다.<br>
 `/category/[카테고리이름].html` 파일을 생성하고, 내용을 채워줬다.<br>
 
-### 카테고리 선택 페이지 만들기
+# 카테고리 선택 페이지 만들기
 카테고리들의 리스트를 고를 수 있는 페이지를 만들어주기 위해 상위 폴더에 `category.md` 파일을 만들었다.
 {% highlight html %}
 ---
@@ -32,7 +32,7 @@ title: Categories
 </div>
 {% endhighlight %}
 
-### 네비게이션에 categories 추가
+# 네비게이션에 categories 추가
 `_config.yml`에 navigation에 카테고리로 접근할 수 있는 방법을 추가했다.
 
 {% highlight html %}
@@ -47,6 +47,6 @@ navigation:
    url: /contact
 {% endhighlight %}
 
-#### 참고
-<https://jekyllrb.com/docs/plugins/><br>
-<https://letsencrypt.org/>
+# 참고
+* <https://jekyllrb.com/docs/plugins/>
+* <https://letsencrypt.org/>

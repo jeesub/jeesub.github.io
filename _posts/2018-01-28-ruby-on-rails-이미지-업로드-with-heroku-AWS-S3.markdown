@@ -6,7 +6,7 @@ categories: [rails, heroku, aws]
 heroku에서 돌아가고 있는 RoR 어플리케이션의 특정 Model에 이미지를 추가하기로 했다.
 그리고 선택한 방법은 AWS S3로 이미지를 저장하는 것.
 
-### gem
+# gem
 Gemfile에 필요한 gem을 추가한다.
 
 {% highlight ruby %}
@@ -26,7 +26,7 @@ $ bundle install
 * mini_magick: 이미지 편집 gem - <https://github.com/minimagick/minimagick><br>
 * fog: cloud에 파일 업로드 gem - <https://github.com/fog/fog><br>
 
-### uploader
+# uploader
 uploader를 생성한다.
 
 {% highlight bash %}
@@ -49,7 +49,7 @@ class Post < ApplicationRecord
 end
 {% endhighlight %}
 
-### View
+# View
 
 form field를 수정해준다. accept option을 통해 파일 validation을 적용할 수 있다.
 
@@ -67,7 +67,7 @@ form field를 수정해준다. accept option을 통해 파일 validation을 적�
 {% endhighlight %}
 
 
-### validation
+# validation
 
 uploader validation
 
@@ -110,7 +110,7 @@ jquery validation
 {% endhighlight %}
 
 
-### Imagemagick - 리사이징
+# Imagemagick - 리사이징
 
 Imagemagick 설치 
 
@@ -136,7 +136,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 end
 {% endhighlight %}
 
-### AWS S3
+# AWS S3
 
 AWS 가입, S3 bucket 생성.
 region은 seoul로 했다.
@@ -184,8 +184,8 @@ $ heroku config:set S3_BUCKET=<bucket name>
 $ heroku run rails db:migrate
 {% endhighlight %}
 
-#### 참고
-<https://www.railstutorial.org/><br>
-<https://github.com/carrierwaveuploader/carrierwave><br>
-<https://github.com/minimagick/minimagick><br>
-<https://github.com/fog/fog>
+# 참고
+* <https://www.railstutorial.org/>
+* <https://github.com/carrierwaveuploader/carrierwave>
+* <https://github.com/minimagick/minimagick>
+* <https://github.com/fog/fog>

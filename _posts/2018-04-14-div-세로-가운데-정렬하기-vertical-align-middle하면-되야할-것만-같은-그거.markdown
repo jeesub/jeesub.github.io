@@ -4,7 +4,7 @@ title:  "div 세로 가운데 정렬하기(vertical align: middle하면 되야�
 categories: css
 ---
 
-### div 세로 가운데 정렬
+# div 세로 가운데 정렬
 
 div 안의 div를 세로 가운데에 정렬하려는 시도는 오래전부터 있었지만, 계속 어려움으로 남아있다. w3 school, stack over flow등을 뒤져봐도 lineheight를 준다던지 하는 다양한 편법(?)들을 통해 구현한다.
 

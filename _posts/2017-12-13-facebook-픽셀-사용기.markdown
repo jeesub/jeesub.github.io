@@ -4,18 +4,18 @@ title:  "facebook 픽셀 사용기"
 categories: marketing
 ---
 
-### facebook 픽셀?
+# facebook 픽셀?
 facebook으로 광고를 돌리다 보면, 기본 기능의 한계를 느낄 수 있다.
 결국은 디테일한 설정들이 필요해지는데, 이 때 facebook 픽셀을 사용하면 된다.
 Google Analytics처럼 코드를 삽입해두면 트래킹이 되는 형식이다.
 facebook 픽셀을 심어놓으면, 다양한 트래킹이 가능해지고, 광고 최적화가 가능해진다.
 
-### facebook 픽셀로 디테일한 설정하기
+# facebook 픽셀로 디테일한 설정하기
 오랜만에 facebook 픽셀을 수정하려고 들어갔더니, 많이 바뀐 것 같다.
 예전에는 gui로 다양한 것들이 가능했던 것 같은데, 찾을 수 없었다.
 하지만 googling해서 스크립트를 적용시켜보니, 수동으로 달아주는 태그들은 아직도 잘 동작했다.
 
-### 전체 웹페이지에서 불러오는 코드 설치
+# 전체 웹페이지에서 불러오는 코드 설치
 기본적인 픽셀 코드는 전체 application에 적용되도록 해놓은 상태였다.
 만약, 해당 코드가 없다면, 전체 application에서 불러오도록 설정해주어야 한다.
 예를 들면, 다음과 같은 코드이다.
@@ -38,7 +38,7 @@ src="https://www.facebook.com/tr?id=<FB_PIXEL_ID>&ev=PageView&noscript=1"
 <!-- End Facebook Pixel Code -->  
 {% endhighlight %}
 
-### elements에 events 추가하기
+# elements에 events 추가하기
 예를 들면 다음과 같은 script를 추가하면 된다.
 
 {% highlight javascript %}
@@ -60,12 +60,12 @@ Parameters에 대한 정보, 더 자세한 내용은 다음 링크에서 참고�
 ![페이스북 픽셀 설치 결과]({{ "/assets/img/2017-12-13/01.png" | relative_url }})<br />
 픽셀 설치, 이벤트 설정이 끝났다면 수 분 뒤에 facebook 픽셀에서 이벤트가 측정되기 시작한다.
 
-### 맞춤전환 추가하기
+# 맞춤전환 추가하기
 [ 픽셀 > 설정 ] 으로 가면 맞춤 전환을 만들 수 있다.
 맞춤 전환의 이벤트로 위에서 만든 이벤트를 선택하고, URL 추가(옵션) 등 기타 설정을 적용해주면 맞춤전환이 만들어진다.
 이제, facebook 광고를 돌릴 때 목표로 해당 맞춤전환을 사용할 수도 있고, facebook analytics를 통해 이벤트를 분석해볼 수도 있다.
 
 * 업데이트(2018.07.30.): 페이스북 광고 담당자의 말에 따르면, 맞춤전환을 목표로 광고를 돌리기위해서는 7일 사이 500번 이상의 전환이 일어나야 한다. 그렇지 않을 경우 링크 클릭 광고를 돌리는 것이 낫다고 조언해주었다.
 
-#### 참고
-<https://developers.facebook.com/docs/ads-for-websites/pixel-events/v2.11>
+# 참고
+* <https://developers.facebook.com/docs/ads-for-websites/pixel-events/v2.11>

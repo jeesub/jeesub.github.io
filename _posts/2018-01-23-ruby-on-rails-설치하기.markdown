@@ -68,7 +68,7 @@ $ rails server
 설치 과정은 쉽지 않다. 시스템마다 생각지 못한 문제들이 발생하기 때문. google신을 활용해서 문제를 해결해야 한다.
 초심자라면, 구름 IDE, cloud9 등 IDE를 활용하면 난이도가 조금이나마 내려간다.
 
-#### 참고
-<https://www.ruby-lang.org/ko/><br>
-<https://rubyonrails.org/><br>
-<https://github.com/rbenv/rbenv>
+# 참고
+* <https://www.ruby-lang.org/ko/>
+* <https://rubyonrails.org/>
+* <https://github.com/rbenv/rbenv>

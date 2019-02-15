@@ -4,13 +4,13 @@ title:  "SEO"
 categories: marketing
 ---
 
-#### SEO
+# SEO
 
 Search Engine Optimization. 검색엔진 최적화.
 운영하는 웹사이트가 검색 사이트의 검색 결과에 노출되도록 하는 행위를 말한다.
 보통은 Google, 네이버의 검색 결과에 노출되는 것을 목적으로 한다.
 
-##### 유혹: 비정상적인 방법
+## 유혹: 비정상적인 방법
 
 인간의 욕심은 끝이 없고 어뷰저들은 언제나 존재한다.
 정상적인 방법은 훌륭한 콘텐츠가 있는 웹사이트를 만들고, 알맞는 SEO를 진행하면 된다.
@@ -21,7 +21,7 @@ Search Engine Optimization. 검색엔진 최적화.
 하지만, 그러지 말고 정도를 걷자.
 정상적인 방법을 사용해도 콘텐츠만 좋다면, 상단에 노출될 수 있다.
 
-#### 준비물: 콘텐츠
+# 준비물: 콘텐츠
 
 SEO만으로는 무에서 유를 창조하지 못한다.
 SEO를 위한 가장 기초적인 준비물은 콘텐츠다.
@@ -30,7 +30,7 @@ SEO를 위한 가장 기초적인 준비물은 콘텐츠다.
 
 양질의 오리지널 콘텐츠가 준비되었다면, SEO를 시작한다.
 
-#### title, description
+# title, description
 
 글에는 제목이 있다.
 웹 페이지에도 제목이 있다.
@@ -51,7 +51,7 @@ title과 description은 페이지마다 달라야 하고, 너무 길지 않아�
 </head>
 {% endhighlight %}
 
-#### Open Graph
+# Open Graph
 
 facebook의 부상과 함께 중요해졌다.
 외부에서 웹사이트를 참조할 때 활용할 수 있는 정보를 제공해주는 방법이다.
@@ -69,7 +69,7 @@ facebook의 부상과 함께 중요해졌다.
 
 이외에도 twitter 태그 등을 더 활용할 수 있다.
 
-#### sitemap
+# sitemap
 
 사이트맵은 웹사이트의 지도와 같다.
 웹사이트의 페이지들을 검색엔진이 이해하기 쉽도록 제공한다.
@@ -90,7 +90,7 @@ facebook의 부상과 함께 중요해졌다.
 
 위와 같은 xml 형태로 만든다.
 
-#### robots.txt
+# robots.txt
 
 검색엔진의 동작 규칙을 설정해놓은 파일.
 url/robots.txt에 위치시킨다.
@@ -107,7 +107,7 @@ Allow는 검색을 허용할 페이지이다. 모든 페이지를 허용하기 �
 Disallow는 검색을 불허할 페이지이다. /admin/ 디렉토리 아래 있는 페이지를 제외하기 위해 /admin/을 적었다.
 단, robots.txt는 외부에서 바로 볼 수 있기 때문에, 누구나 본다는 것을 염두해둬야 한다.
 
-#### 더 완벽한 SEO를 위해 챙겨야할 것들
+# 더 완벽한 SEO를 위해 챙겨야할 것들
 
 1. https - Google에서는 SSL 연결이 아닌 경우, 안전하지 않은 연결로 표시하고 있으며, 검색 순위를 점차 낮출것이라고 했다. 이제는 사용하자.
 2. canonical URL - 하나의 웹 페이지는 하나의 URL만 갖도록 하자.
@@ -121,8 +121,9 @@ Disallow는 검색을 불허할 페이지이다. /admin/ 디렉토리 아래 있
 각 엔진에서 자동화해놓은 툴들이 보완할 점을 알려준다.
 6. 빠른 로딩 - 검색엔진은 느린 웹사이트를 좋아하지 않는다. 파일 크기를 열심히 줄이고 캐시 및 CDN을 활용하는 등 속도를 개선하자.
 
-참고: 
-<https://static.googleusercontent.com/media/www.google.com/ko//intl/ko/webmasters/docs/search-engine-optimization-starter-guide-ko.pdf><br />
-<https://support.webmastertool.naver.com/><br />
-<https://search.google.com/search-console/about> <br />
-<https://webmastertool.naver.com/>
+# 참고 
+
+* <https://static.googleusercontent.com/media/www.google.com/ko//intl/ko/webmasters/docs/search-engine-optimization-starter-guide-ko.pdf>
+* <https://support.webmastertool.naver.com/>
+* <https://search.google.com/search-console/about>
+* <https://webmastertool.naver.com/>

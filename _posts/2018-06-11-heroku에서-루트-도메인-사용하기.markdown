@@ -4,24 +4,24 @@ title:  "heroku에서 루트 도메인 사용하기"
 categories: heroku
 ---
 
-### 루트 도메인
+# 루트 도메인
 zone apex(bare, naked, root) domain.<br>
 www 없이 표기되는 도메인이다. example.com 같은 도메인을 말한다.
 웹사이트를 운영할 경우, www 혹은 non-www 둘 중 하나로 통일해서 사용한다.
 대다수는 www로 시작하는 도메인을 사용한다.
 
-### CNAME
+# CNAME
 CNAME(Canonical NAME)은 DNS(Domain Name Server)에 별칭을 적용하는 것이라고 생각하면 된다.
 CNAME record에 목적지(target)을 지정해주면 된다.
 heroku에서는 www sub domain의 target으로 www.example.com.herokudns.com. 같은 주소를 제공한다.
 
-### heroku + CNAME의 문제
+# heroku + CNAME의 문제
 문제는, heroku와 같은 PaaS를 사용할 때 발생한다.
 www나 non-www 둘 다 접속은 되어야 하는데, 루트 도메인은 CNAME을 지원하지 않는다.<br>
 그렇다면 대안은 A record를 사용하는 것인데, A record는 IP 주소를 target으로 사용해야 한다.
 하지만 PaaS는 고정 IP를 제공하지 않기 때문에, A record는 사용할 수 없다.
 
-### 해결 방법
+# 해결 방법
 gabia를 비롯한 몇몇 업체에서는 루트 도메인에 대한 CNAME도 제공한다.
 호스트에 @, target에 PaaS에서 지원하는 target을 입력하면 된다.
 gabia를 사용하면 문제 해결.
@@ -32,8 +32,8 @@ godaddy에서는 CNAME은 제공하지 않지만 대안으로 포워딩을 사�
 * 18.09.06 업데이트: CNAME에 zone apex가 들어갈 경우, MX 설정에 문제를 일으킬 수 있다. 대부분의 메일 서비스에서 오는 메일은 잘 수신 되지만, 몇몇의 경우 제대로 전송되지 않는 문제가 발견되었다. 해결방안으로, ANAME이나 ALIAS Record를 지원하는 DNS를 사용하는 방법을 사용했다.<br>
 MX 설정 포스트 보러가기:<https://jeesub.github.io/blog/G-Suite-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%88%98%EC%8B%A0-%EB%B0%9C%EC%8B%A0-%EC%84%A4%EC%A0%95/>
 
-#### 참고
-<http://seapy.com/2079><br>
-<https://en.wikipedia.org/wiki/CNAME_record><br>
-<https://devcenter.heroku.com/articles/apex-domains><br>
-<https://devcenter.heroku.com/articles/custom-domains#add-a-custom-root-domain>
+## 참고
+* <http://seapy.com/2079>
+* <https://en.wikipedia.org/wiki/CNAME_record>
+* <https://devcenter.heroku.com/articles/apex-domains>
+* <https://devcenter.heroku.com/articles/custom-domains#add-a-custom-root-domain>
