@@ -26,7 +26,7 @@ C와 POSIX 방식을 사용하면 character code byte의 값으로 정렬하게 
 참고: <https://www.postgresql.org/docs/10/collation.html>
 
 # Collation 해결
-간단하게 문제를 해결하기 위해서는 query에 collate C를 지정해주면 된다.<br />
+간단하게 문제를 해결하기 위해서는 query에 collate C를 지정해주면 된다.
 
 {% highlight ruby %}
 @lists = List.order('name collate "C" asc')
@@ -34,6 +34,16 @@ C와 POSIX 방식을 사용하면 character code byte의 값으로 정렬하게 
 
 참고: <http://tech.jinto.pe.kr/165><br />
 참고: <http://susemi99.kr/2558><br />
+
+다른 DB를 사용하는 테스트 환경, 개발환경이 있다면 if/else를 사용해볼 수 있다.
+
+{% highlight ruby %}
+if ActiveRecord::Base.connection.adapter_name == "PostgreSQL"
+  @lists = List.order('name collate "C" asc')
+else
+  @lists = List.order(name: :asc)
+end
+{% endhighlight %}
 
 더 근본적인 해결을 위해서는 처음 postgreSQL을 설치할 때, 환경변수 설정에서 collate C를 지정해주어야 한다.<br />
 참고: <https://hashcode.co.kr/questions/2637/postgresql%EC%97%90%EC%84%9C-%ED%95%9C%EA%B8%80-%EC%88%9C%EC%84%9C%EB%8C%80%EB%A1%9C-%EC%A0%95%EB%A0%AC%EC%9D%B4-%EC%95%88%EB%90%A9%EB%8B%88%EB%8B%A4>
