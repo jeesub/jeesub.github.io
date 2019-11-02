@@ -1,0 +1,87 @@
+I"�<h1 id="elastic-beanstalk">Elastic Beanstalk</h1>
+
+<p>Elastic Beanstalk은 AWS의 EC2, DBS, CloudWatch, Auto Scaling 등을 편리하게 활용할 수 있도록 해준다.
+Elastic Beanstalk을 사용하면 EC2를 세팅하고, DBS를 연결하고, Deploy 하는 과정을 한번에 진행할 수 있다.
+Elastic Beanstalk을 사용해서 Ruby on Rails 웹사이트를 deploy해보았다.</p>
+
+<h1 id="deploy">Deploy</h1>
+
+<h2 id="1-ruby-on-rails-application-생성">1. Ruby on Rails Application 생성</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails new sample_app</code></pre></figure>
+
+<h2 id="2-gemfile에-postgresql-추가">2. Gemfile에 PostgreSQL 추가</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">'pg'</span></code></pre></figure>
+
+<h2 id="3-databaseyml-설정">3. database.yml 설정</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># /config/database.yml</span>
+
+<span class="ss">default: </span><span class="o">&amp;</span><span class="n">default</span>
+  <span class="ss">adapter: </span><span class="n">postgresql</span>
+  <span class="ss">encoding: </span><span class="n">unicode</span>
+  <span class="ss">pool: </span><span class="o">&lt;</span><span class="sx">%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %&gt;
+  timeout: 5000
+
+development:
+  &lt;&lt;: *default
+  database: sample_app_development
+  host: localhost
+  port: 5432
+
+test:
+  &lt;&lt;: *default
+  database: sample_app_test
+  host: localhost
+  port: 5432
+
+production:
+  &lt;&lt;: *default
+  database: &lt;%=</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'RDS_DB_NAME'</span><span class="p">]</span> <span class="o">%&gt;</span>
+  <span class="ss">username: </span><span class="o">&lt;</span><span class="sx">%= ENV['RDS_USERNAME'] %&gt;
+  password: &lt;%=</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'RDS_PASSWORD'</span><span class="p">]</span> <span class="o">%&gt;</span>
+  <span class="ss">host: </span><span class="o">&lt;</span><span class="sx">%= ENV['RDS_HOSTNAME'] %&gt;
+  port: &lt;%=</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'RDS_PORT'</span><span class="p">]</span> <span class="o">%&gt;</span></code></pre></figure>
+
+<h2 id="4-controller-model-view-생성">4. Controller, Model, View 생성</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails generate scaffold Post title:string content:text</code></pre></figure>
+
+<h2 id="5-migration-및-running-테스트">5. migration 및 running 테스트</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails db:create
+<span class="nv">$ </span>rails db:migrate
+<span class="nv">$ </span>rails server</code></pre></figure>
+
+<h2 id="6-secret-key-생성">6. secret key 생성</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rake secret</code></pre></figure>
+
+<p>생성된 secret key는 나중에 Elastic Beanstalk에서 사용한다.</p>
+
+<h2 id="7-aws-가입-elastic-beanstalk-새-애플리케이션-생성">7. AWS 가입, Elastic Beanstalk 새 애플리케이션 생성</h2>
+
+<ul>
+  <li>기본 구성: 미리 구성된 플랫폼에서 Ruby 선택</li>
+  <li>애플리케이션 코드: 코드 업로드. Local 환경에서 만든 sample_app을 압축해서 업로드 한다.</li>
+  <li>추가 구성: DB 연결을 선택하고, PostgreSQL DB를 생성한다.</li>
+</ul>
+
+<h2 id="8-secret_key-설정">8. SECRET_KEY 설정</h2>
+
+<p>구성 - 소프트웨어 - 환경 속성에 새로운 변수 key, value를 입력한다.
+key는 SECRET_KEY_BASE, 값은 아까 생성한 secret key를 입력한다.</p>
+
+<h2 id="9-완료">9. 완료</h2>
+
+<p>URL/posts 접속을 통해 동작을 확인한다.</p>
+
+<h1 id="참고">참고</h1>
+
+<ul>
+  <li><a href="https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/GettingStarted.html">https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/GettingStarted.html</a></li>
+  <li><a href="https://aws.amazon.com/ko/getting-started/tutorials/launch-an-app/?trk=gs_card">https://aws.amazon.com/ko/getting-started/tutorials/launch-an-app/?trk=gs_card</a></li>
+  <li><a href="https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create_deploy_Ruby.rds.html">https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create_deploy_Ruby.rds.html</a></li>
+</ul>
+:ET

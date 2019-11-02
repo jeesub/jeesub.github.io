@@ -1,0 +1,45 @@
+I"
+<h1 id="rails5-설치하기">rails5 설치하기</h1>
+<p>rails5의 최신 버전을 확인한다.<br />
+<a href="https://rubygems.org/gems/rails/versions/5.0.0.beta1">https://rubygems.org/gems/rails/versions/5.0.0.beta1</a></p>
+
+<p>rails를 설치한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>gem <span class="nb">install </span>rails <span class="nt">-v</span> 5.1.4</code></pre></figure>
+
+<p>새로운 app을 만든다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails _5.1.4_ new application_name</code></pre></figure>
+
+<p>gem file에서 sqlite3를 test, development에, pg를 production으로 이동 및 추가</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'sqlite3'</span><span class="p">,</span> <span class="s1">'1.3.13'</span>
+<span class="k">end</span>
+
+<span class="n">group</span> <span class="ss">:production</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'pg'</span><span class="p">,</span> <span class="s1">'0.20.0'</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>gem install 및 서버 구동 테스트</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bundle <span class="nb">install</span>
+<span class="nv">$ </span>rails server</code></pre></figure>
+
+<p>git 연동</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"Your Name"</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> user.email your@email.com
+<span class="nv">$ </span>git init
+<span class="nv">$ </span>git add <span class="nt">-A</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Initialize repository"</span></code></pre></figure>
+
+<p>github또는 bitbucket 등 git 서비스와 연동 후 push(설명 생략)</p>
+
+<p>heroku login(toolbelt가 설치되어있지 않다면 설치), heroku의 git에 push</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>heroku version
+<span class="nv">$ </span>heroku login
+<span class="nv">$ </span>git push heroku</code></pre></figure>
+
+:ET

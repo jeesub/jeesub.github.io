@@ -1,0 +1,24 @@
+I" <p>출처: jekyll 공식 블로그
+<br /><br /></p>
+
+<h1 id="jekyll-업데이트">jekyll 업데이트</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bundle update jekyll</code></pre></figure>
+
+<h1 id="코드-구문-작성하기">코드 구문 작성하기</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"> {% highlight ruby %} 
+  def foo
+    puts 'bar'
+  end
+ {% endhighlight %} </code></pre></figure>
+
+<h1 id="외부-링크-삽입">외부 링크 삽입</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nv">&lt;https://jeesub.github.io/&gt;</span></code></pre></figure>
+
+<h1 id="이미지-삽입">이미지 삽입</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">![</span><span class="nv">My image</span><span class="p">](</span><span class="sx">{{</span> <span class="nn">"/assets/image.jpg"</span> | absolute_url }}) </code></pre></figure>
+
+:ET

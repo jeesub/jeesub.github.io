@@ -1,0 +1,61 @@
+I"K<h1 id="model-validation">Model validation</h1>
+
+<p>Ruby on Rails의 MVC 패턴 중 M에 해당하는 Model에서는 data validation을 적용하게 된다.
+Database에 data를 저장 혹은 업데이트하기 전, 적절한 data인지 확인한다.
+이 때, validation을 통과하지 못하면 Query를 보내지 않는다.</p>
+
+<p>Ruby on Rails를 사용하며 자주 활용한 Model validation을 모아보았다.</p>
+
+<h2 id="required-validation">required validation</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">validates</span> <span class="ss">:title</span><span class="p">,</span> <span class="ss">:description</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">presence: </span><span class="kp">true</span></code></pre></figure>
+
+<h2 id="uniqueness-validation">uniqueness validation</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">validates</span> <span class="ss">:sequence</span><span class="p">,</span> <span class="ss">uniqueness: </span><span class="kp">true</span>
+<span class="c1"># case insensitive</span>
+<span class="n">validates</span> <span class="ss">:permalink</span><span class="p">,</span> <span class="ss">uniquness: </span><span class="p">{</span> <span class="ss">case_sensitive: </span><span class="kp">false</span> <span class="p">}</span></code></pre></figure>
+
+<h2 id="length-validation">length validation</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># 최단</span>
+<span class="n">validates</span> <span class="ss">:title</span><span class="p">,</span> <span class="ss">length: </span><span class="p">{</span> <span class="ss">minimum: </span><span class="mi">5</span> <span class="p">}</span>
+<span class="c1"># 최장</span>
+<span class="n">validates</span> <span class="ss">:content</span><span class="p">,</span> <span class="ss">length: </span><span class="p">{</span> <span class="ss">maximum: </span><span class="mi">40</span> <span class="p">}</span>
+<span class="c1"># 범위</span>
+<span class="n">validates</span> <span class="ss">:phone</span><span class="p">,</span> <span class="ss">length: </span><span class="p">{</span> <span class="ss">in: </span><span class="mi">10</span><span class="o">..</span> <span class="mi">15</span> <span class="p">}</span>
+<span class="c1"># 딱 정해진 길이</span>
+<span class="n">validates</span> <span class="ss">:pin</span><span class="p">,</span> <span class="ss">length: </span><span class="p">{</span> <span class="ss">is: </span><span class="mi">6</span> <span class="p">}</span></code></pre></figure>
+
+<h2 id="format-validation">format validation</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># 숫자</span>
+<span class="n">validates</span> <span class="ss">:amount</span><span class="p">,</span> <span class="ss">numericality: </span><span class="kp">true</span>
+<span class="c1"># 정수</span>
+<span class="n">validates</span> <span class="ss">:sequence</span><span class="p">,</span> <span class="ss">numericality: </span><span class="p">{</span> <span class="ss">only_integer: </span><span class="kp">true</span> <span class="p">}</span>
+<span class="c1"># http 혹은 https로 시작(allow nil 포함)</span>
+<span class="n">validates</span> <span class="ss">:url</span><span class="p">,</span>
+  <span class="ss">format: </span><span class="p">{</span> <span class="ss">with: </span><span class="no">URI</span><span class="p">.</span><span class="nf">regexp</span><span class="p">(</span><span class="sx">%w(http https)</span><span class="p">)</span> <span class="p">},</span>
+    <span class="ss">allow_nil: </span><span class="kp">true</span>
+<span class="c1"># 유효한 email 주소</span>
+<span class="no">EMAIL_REGEX</span> <span class="o">=</span> <span class="sr">/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</span>
+  <span class="n">validates</span> <span class="ss">:email</span><span class="p">,</span> 
+    <span class="ss">length: </span><span class="p">{</span> <span class="ss">in: </span><span class="mi">6</span><span class="o">..</span><span class="mi">50</span> <span class="p">},</span> 
+    <span class="ss">format: </span><span class="p">{</span> <span class="ss">with: </span><span class="no">EMAIL_REGEX</span> <span class="p">}</span></code></pre></figure>
+
+<h2 id="conditional-validation">conditional validation</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">validates</span> <span class="ss">:url</span><span class="p">,</span>
+  <span class="ss">format: </span><span class="p">{</span> <span class="ss">with: </span><span class="no">URI</span><span class="p">.</span><span class="nf">regexp</span><span class="p">(</span><span class="sx">%w(http https)</span><span class="p">)</span> <span class="p">},</span>
+    <span class="ss">if: </span><span class="no">Proc</span><span class="p">.</span><span class="nf">new</span> <span class="p">{</span> <span class="o">|</span><span class="n">company</span><span class="o">|</span> <span class="o">!</span><span class="n">company</span><span class="p">.</span><span class="nf">url</span><span class="p">.</span><span class="nf">blank?</span> <span class="p">}</span></code></pre></figure>
+
+<h2 id="inclusion-validation">inclusion validation</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">validates</span> <span class="ss">:language</span><span class="p">,</span> <span class="ss">inclusion: </span><span class="p">{</span> <span class="ss">in: </span><span class="sx">%w(ruby phtyon java c)</span> <span class="p">}</span></code></pre></figure>
+
+<h1 id="참고">참고</h1>
+
+<ul>
+  <li><a href="https://guides.rubyonrails.org/active_record_validations.html">https://guides.rubyonrails.org/active_record_validations.html</a></li>
+</ul>
+:ET

@@ -1,0 +1,82 @@
+I"0<h1 id="연결되는-model">연결되는 model</h1>
+<p>post와 댓글이 있다면, post와 댓글은 서로 연결되어 있다.
+댓글은 post 없이는 존재할 수 없다.
+이런 경우를 Ruby on Rails에서는 association이라고 표현한다.<br />
+참고: <a href="http://guides.rubyonrails.org/association_basics.html">http://guides.rubyonrails.org/association_basics.html</a><br /></p>
+
+<h1 id="references">references</h1>
+<p>댓글은 post 없이는 만들어질 수 없다.
+post가 먼저 있고, 해당 post에 대한 댓글만 만들 수 있다.
+댓글은 post를 reference로 한다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails generate model Reply content:text post:references</code></pre></figure>
+
+<h1 id="has_many-belongs_to">has_many, belongs_to</h1>
+<p>post는 여러 개의 댓글을 가질 수 있고, 댓글은 하나의 post에만 속해야 한다.
+이럴 경우, post는 ‘has_many’ 댓글이고, 댓글은 ‘belongs_to’ post이다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">has_many</span> <span class="ss">:replies</span>
+<span class="k">end</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Reply</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+   <span class="n">belongs_to</span> <span class="ss">:post</span>
+<span class="k">end</span></code></pre></figure>
+
+<h1 id="dependent-destroy">dependent: :destroy</h1>
+<p>post가 삭제된다면, 댓글도 지워져야 한다.
+post 없이 댓글 혼자서는 존재할 수 없기 때문이다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">has_many</span> <span class="ss">:replies</span><span class="p">,</span> <span class="ss">dependent: :destroy</span>
+<span class="k">end</span></code></pre></figure>
+
+<h1 id="post가-있을-경우-reply-만들기">post가 있을 경우, reply 만들기</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails generate model Reply content:text post:references</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/models/post.rb</span>
+<span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">has_many</span> <span class="ss">:replies</span><span class="p">,</span> <span class="ss">dependent: :destroy</span>
+<span class="k">end</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails db:migrate</code></pre></figure>
+
+<p>이후 본인의 application에 맞게 routes 설정을 해주고, create, edit, destroy등의 controller action과 view page들을 추가해주면 된다.</p>
+
+<h1 id="routes">Routes</h1>
+<p>association을 사용할 때, nested URL을 쓰면 편하다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># routes.rb</span>
+<span class="n">resources</span> <span class="ss">:posts</span> <span class="k">do</span>
+  <span class="n">resources</span> <span class="ss">:replies</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>위와 같이 routes 설정을 해주면, <code>/posts/1/replies/2</code>와 같이 사용할 수 있다.
+이렇게 설정할 경우, new, create, destroy 등의 action에서 post의 정보를 쉽게 활용할 수 있다.</p>
+
+<h1 id="controller">Controller</h1>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">before_action</span> <span class="ss">:set_post</span>
+
+<span class="k">def</span> <span class="nf">new</span>
+  <span class="vi">@reply</span> <span class="o">=</span> <span class="vi">@post</span><span class="p">.</span><span class="nf">replies</span><span class="p">.</span><span class="nf">build</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">create</span>
+  <span class="vi">@reply</span> <span class="o">=</span> <span class="vi">@post</span><span class="p">.</span><span class="nf">replies</span><span class="p">.</span><span class="nf">build</span><span class="p">(</span><span class="n">reply_params</span><span class="p">)</span>
+  <span class="k">if</span> <span class="vi">@reply</span><span class="p">.</span><span class="nf">save</span>
+    <span class="n">redirect_to</span> <span class="n">post_reply_path</span><span class="p">(</span><span class="vi">@post</span><span class="p">,</span> <span class="vi">@reply</span><span class="p">)</span>
+  <span class="k">else</span>
+    <span class="n">render</span> <span class="ss">:new</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="kp">private</span>
+  <span class="k">def</span> <span class="nf">set_post</span>
+    <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:post_id</span><span class="p">])</span>
+  <span class="k">end</span></code></pre></figure>
+
+<p>실제 어플리케이션에서는 post의 show action에 form이 들어가기 때문에 new action이 필요 없겠지만, 예시로 적었다.
+association을 사용할 경우 <code>@post.replies.build</code>와 같이 두 개체를 연결해서 사용할 수 있고, build가 new method와 같은 역할을 해준다.</p>
+:ET

@@ -1,0 +1,49 @@
+I"9
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># 해당 폴더의 콘텐츠 나열</span>
+<span class="nb">ls</span>
+ 
+<span class="c"># 디렉토리(폴더) 만들기</span>
+<span class="nb">mkdir</span> &lt;name&gt;
+ 
+<span class="c"># 디렉토리(폴더)로 이동</span>
+<span class="nb">cd</span> &lt;name&gt;
+ 
+<span class="c"># 홈 디렉토리로 이동</span>
+<span class="nb">cd</span>
+ 
+<span class="c"># 상위 디렉토리로 이동</span>
+<span class="nb">cd</span> ..
+ 
+<span class="c"># 파일 이동 or 이름 변경</span>
+<span class="nb">mv</span> &lt;origin&gt; &lt;target&gt;
+ 
+<span class="c"># 파일 복사</span>
+<span class="nb">cp</span> &lt;origin&gt; &lt;target&gt;
+ 
+<span class="c"># 파일 삭제</span>
+<span class="nb">rm</span> &lt;name&gt;
+ 
+<span class="c"># 빈 디렉토리 삭제</span>
+<span class="nb">rmdir</span> &lt;name&gt;
+ 
+<span class="c"># 디렉토리 및 하위 파일 강제 삭제</span>
+<span class="c"># * 강제 삭제이므로 주의해서 사용할 것!</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> &lt;name&gt;
+ 
+<span class="c"># 돌아가고 있는 프로세스 확인</span>
+top
+ps aux | <span class="nb">grep</span> <span class="s2">"process name"</span>
+ 
+<span class="c"># 프로세스 종료</span>
+<span class="nb">kill</span> <span class="nt">-KILL</span> &lt;process ID&gt;
+ 
+<span class="c"># 검색(하위 폴더)</span>
+find - <span class="nt">-name</span> <span class="s2">"&lt;name&gt;"</span>
+ 
+<span class="c"># 내용 검색</span>
+<span class="nb">grep</span> <span class="s2">"&lt;things&gt;"</span> &lt;file name&gt;
+ 
+<span class="c"># 내용 검색 후 해당 라인 넘버 출력</span>
+<span class="nb">grep</span> <span class="nt">-n</span> &lt;things&gt; &lt;file name&gt;
+ </code></pre></figure>
+:ET

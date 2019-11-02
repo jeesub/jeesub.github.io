@@ -1,0 +1,90 @@
+I"F<h1 id="dmarc">DMARC</h1>
+
+<p>DMARC: <a href="https://dmarc.org/">https://dmarc.org/</a></p>
+
+<p>Domain-based Message Authentication, Reporting &amp; Conformance.
+SPF와 DKIM을 사용하는 이메일 인증 프로토콜이다.
+이전 글에서 G Suite 세팅시 설정하는 방법을 다루었으므로, 자세한 설명은 생략한다.<br />
+G Suite DMARC 설정하기: <a href="https://jeesub.github.io/blog/G-Suite-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%88%98%EC%8B%A0-%EB%B0%9C%EC%8B%A0-%EC%84%A4%EC%A0%95/">https://jeesub.github.io/blog/G-Suite-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%88%98%EC%8B%A0-%EB%B0%9C%EC%8B%A0-%EC%84%A4%EC%A0%95/</a></p>
+
+<p>rua 옵션을 설정해 놓았을 경우, 리포트를 메일로 보내준다.
+xml 파일로 온 실제 리포트를 단락씩 가져왔다.
+각 라인에 주석으로 다음 줄의 의미를 적어놓았다.</p>
+
+<h1 id="메타데이터">메타데이터</h1>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;report_metadata&gt;</span>
+  <span class="c">&lt;!-- report를 보내준 주체 --&gt;</span>
+  <span class="nt">&lt;org_name&gt;</span>google.com<span class="nt">&lt;/org_name&gt;</span>
+  <span class="nt">&lt;email&gt;</span>noreply-dmarc-support@google.com<span class="nt">&lt;/email&gt;</span>
+  <span class="nt">&lt;extra_contact_info&gt;</span>https://support.google.com/a/answer/2466580<span class="nt">&lt;/extra_contact_info&gt;</span>
+  <span class="nt">&lt;report_id&gt;</span>#################<span class="nt">&lt;/report_id&gt;</span>
+  <span class="c">&lt;!-- 어느 기간의 리포트인가 --&gt;</span>
+  <span class="nt">&lt;date_range&gt;</span>
+    <span class="nt">&lt;begin&gt;</span>##########<span class="nt">&lt;/begin&gt;</span>
+    <span class="nt">&lt;end&gt;</span>##########<span class="nt">&lt;/end&gt;</span>
+  <span class="nt">&lt;/date_range&gt;</span>
+<span class="nt">&lt;/report_metadata&gt;</span></code></pre></figure>
+
+<h1 id="발행되어있는-정책">발행되어있는 정책</h1>
+
+<p>설정되어있는 정책. 본인 혹은 동료가 설정해놓은 것이다.</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;policy_published&gt;</span>
+  <span class="c">&lt;!-- 도메인 --&gt;</span>
+  <span class="nt">&lt;domain&gt;</span>yourdomain.com<span class="nt">&lt;/domain&gt;</span>
+  <span class="c">&lt;!-- dkim 설정. r / s 중 하나다. r은 느슨함, s는 엄격함. --&gt;</span>
+  <span class="nt">&lt;adkim&gt;</span>r<span class="nt">&lt;/adkim&gt;</span>
+  <span class="c">&lt;!-- spf 설정. r / s 중 하나다. r은 느슨함, s는 엄격함. --&gt;</span>
+  <span class="nt">&lt;aspf&gt;</span>r<span class="nt">&lt;/aspf&gt;</span>
+  <span class="c">&lt;!-- policy 설정. none / quarantine / reject 중 하나다. --&gt;</span>
+  <span class="c">&lt;!-- none은 없음, quarantine은 스팸조치, reject는 메일 거부 --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>none<span class="nt">&lt;/p&gt;</span>
+  <span class="c">&lt;!-- 서브도메인 policy 설정 --&gt;</span>
+  <span class="nt">&lt;sp&gt;</span>none<span class="nt">&lt;/sp&gt;</span>
+  <span class="c">&lt;!-- 퍼센트 설정. 전체 메일의 몇 퍼센트에 대해 설정된 DMARC 정책을 적용할 것인가. --&gt;</span>
+  <span class="nt">&lt;pct&gt;</span>100<span class="nt">&lt;/pct&gt;</span>
+<span class="nt">&lt;/policy_published&gt;</span></code></pre></figure>
+
+<h1 id="레코드">레코드</h1>
+
+<p>레코드는 여러개가 있을 수 있다.
+메일 서버가 여러개라면 여러개의 레코드가 나온다.
+각 레코드 별로 구조는 유사하다.</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- 여기서부터 각 리포트 시작 --&gt;</span>
+<span class="nt">&lt;record&gt;</span>
+  <span class="nt">&lt;row&gt;</span>
+    <span class="c">&lt;!-- 메일이 발송된 IP. --&gt;</span>
+    <span class="nt">&lt;source_ip&gt;</span>###.###.###.###<span class="nt">&lt;/source_ip&gt;</span>
+    <span class="c">&lt;!-- 몇 통의 메일이 해당되는가 --&gt;</span>
+    <span class="nt">&lt;count&gt;</span>123<span class="nt">&lt;/count&gt;</span>
+    <span class="nt">&lt;policy_evaluated&gt;</span>
+      <span class="nt">&lt;disposition&gt;</span>none<span class="nt">&lt;/disposition&gt;</span>
+      <span class="c">&lt;!-- DKIM pass 여부. pass / fail --&gt;</span>
+      <span class="nt">&lt;dkim&gt;</span>pass<span class="nt">&lt;/dkim&gt;</span>
+      <span class="c">&lt;!-- SPF pass 여부. pass / fail --&gt;</span>
+      <span class="nt">&lt;spf&gt;</span>fail<span class="nt">&lt;/spf&gt;</span>
+    <span class="nt">&lt;/policy_evaluated&gt;</span>
+  <span class="nt">&lt;/row&gt;</span>
+  <span class="nt">&lt;identifiers&gt;</span>
+    <span class="nt">&lt;header_from&gt;</span>yourdomain.com<span class="nt">&lt;/header_from&gt;</span>
+  <span class="nt">&lt;/identifiers&gt;</span>
+  <span class="nt">&lt;auth_results&gt;</span>
+    <span class="c">&lt;!-- DKIM 결과 리포트 --&gt;</span>
+    <span class="nt">&lt;dkim&gt;</span>
+      <span class="nt">&lt;domain&gt;</span>yourdomain.com<span class="nt">&lt;/domain&gt;</span>
+      <span class="c">&lt;!-- DKIM 결과. pass / fail --&gt;</span>
+      <span class="nt">&lt;result&gt;</span>pass<span class="nt">&lt;/result&gt;</span>
+      <span class="c">&lt;!-- selector를 통해서 어떤 메일서버의 DKIM인지 파악할 수 있다. DKIM을 생성할 때 selector를 정했을 것이다. --&gt;</span>
+      <span class="nt">&lt;selector&gt;</span>selector<span class="nt">&lt;/selector&gt;</span>
+    <span class="nt">&lt;/dkim&gt;</span>
+    <span class="c">&lt;!-- SPF 결과 리포트 --&gt;</span>
+    <span class="nt">&lt;spf&gt;</span>
+      <span class="nt">&lt;domain&gt;</span>mailserver.com<span class="nt">&lt;/domain&gt;</span>
+      <span class="c">&lt;!-- SPF 결과. pass / fail --&gt;</span>
+      <span class="nt">&lt;result&gt;</span>fail<span class="nt">&lt;/result&gt;</span>
+    <span class="nt">&lt;/spf&gt;</span>
+  <span class="nt">&lt;/auth_results&gt;</span>
+<span class="nt">&lt;/record&gt;</span></code></pre></figure>
+:ET

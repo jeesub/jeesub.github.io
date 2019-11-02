@@ -1,0 +1,46 @@
+I",<h1 id="카테고리가-필요하다">카테고리가 필요하다</h1>
+<p>jekyll 블로그를 사용하다보니, 카테고리가 필요하다는 생각이 들어서 여러모로 알아봤다.
+그런데, 가장 편한 방법으로 카테고리를 사용하려면 github page를 사용하면 불가능했다.<br />
+출처: <a href="https://jekyllrb.com/docs/plugins/">https://jekyllrb.com/docs/plugins/</a><br /></p>
+
+<h1 id="수동으로-카테고리-추가">수동으로 카테고리 추가</h1>
+<p>귀찮지만 수동으로 카테고리를 관리하는 방법을 찾아내어 적용했다.<br />
+출처: <a href="https://cookieshake.github.io/posts/Jekyll-블로그에-Category-페이지-만들기">https://cookieshake.github.io/posts/Jekyll-블로그에-Category-페이지-만들기</a><br />
+해당 글의 2번 방법을 사용했다.<br />
+<code class="highlighter-rouge">/category/[카테고리이름].html</code> 파일을 생성하고, 내용을 채워줬다.<br /></p>
+
+<h1 id="카테고리-선택-페이지-만들기">카테고리 선택 페이지 만들기</h1>
+<p>카테고리들의 리스트를 고를 수 있는 페이지를 만들어주기 위해 상위 폴더에 <code class="highlighter-rouge">category.md</code> 파일을 만들었다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: default
+title: Categories
+---
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"pageTitle"</span><span class="nt">&gt;</span>Categories<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"./rails"</span><span class="nt">&gt;</span>rails<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"./jekyll"</span><span class="nt">&gt;</span>jekyll<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h1 id="네비게이션에-categories-추가">네비게이션에 categories 추가</h1>
+<p><code class="highlighter-rouge">_config.yml</code>에 navigation에 카테고리로 접근할 수 있는 방법을 추가했다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Categories
+   url: /category
+ - title: Contact
+   url: /contact</code></pre></figure>
+
+<h1 id="참고">참고</h1>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/plugins/">https://jekyllrb.com/docs/plugins/</a></li>
+  <li><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+</ul>
+:ET

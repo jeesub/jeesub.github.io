@@ -1,0 +1,31 @@
+I"t
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails server</code></pre></figure>
+
+<p>명령어를 실행했지만 error가 났다. Error 메시지를 보니 이전 puma가 제대로 꺼지지 않은 것 같다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Address already <span class="k">in </span>use - <span class="nb">bind</span><span class="o">(</span>2<span class="o">)</span> <span class="k">for</span> <span class="s2">"0.0.0.0"</span> port 8080 <span class="o">(</span>Errno::EADDRINUSE<span class="o">)</span></code></pre></figure>
+
+<p>port8080이 이미 선점되어있기 때문으로 보인다.<br /></p>
+
+<h1 id="port8080에서-돌아가는-프로세스-확인하기">port8080에서 돌아가는 프로세스 확인하기</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>lsof <span class="nt">-wni</span> tcp:8080
+
+COMMAND   PID   USER   FD   TYPE     DEVICE SIZE/OFF NODE NAME
+ruby    17816 ubuntu   11u  IPv4 2009126466      0t0  TCP <span class="k">*</span>:http-alt <span class="o">(</span>LISTEN<span class="o">)</span>
+ruby    17873 ubuntu   11u  IPv4 2009126466      0t0  TCP <span class="k">*</span>:http-alt <span class="o">(</span>LISTEN<span class="o">)</span></code></pre></figure>
+
+<p>실행 결과 2개의 ruby 프로세스가 돌아가고 있다.<br />
+모두 종료해준다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">kill</span> <span class="nt">-9</span> 17816
+<span class="nv">$ </span><span class="nb">kill</span> <span class="nt">-9</span> 17873</code></pre></figure>
+
+<p>해결 완료</p>
+
+<h1 id="참고">참고</h1>
+<ul>
+  <li><a href="https://stackoverflow.com/questions/31039998/address-already-in-use-bind2-errnoeaddrinuse">https://stackoverflow.com/questions/31039998/address-already-in-use-bind2-errnoeaddrinuse</a></li>
+  <li><a href="https://www.lesstif.com/pages/viewpage.action?pageId=20776078">https://www.lesstif.com/pages/viewpage.action?pageId=20776078</a></li>
+</ul>
+:ET

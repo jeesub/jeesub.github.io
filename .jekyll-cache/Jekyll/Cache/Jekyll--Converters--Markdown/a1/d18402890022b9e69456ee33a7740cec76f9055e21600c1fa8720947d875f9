@@ -1,0 +1,49 @@
+I"�<h1 id="div-세로-가운데-정렬">div 세로 가운데 정렬</h1>
+
+<p>div 안의 div를 세로 가운데에 정렬하려는 시도는 오래전부터 있었지만, 계속 어려움으로 남아있다. w3 school, stack over flow등을 뒤져봐도 lineheight를 준다던지 하는 다양한 편법(?)들을 통해 구현한다.</p>
+
+<p>고정된 height에서는 다양한 편법들을 활용하면 쉽게 해결할 수 있지만, 요즘 유행하는 반응형 height에서는 위의 편법들이 무용지물이다.</p>
+
+<p>그대신 flexbox를 활용하면 세로 가운데 정렬을 할 수 있다.</p>
+
+<p>단, 구형 브라우저에서는 지원하지 않으니, 사용에 유의해야 한다. 익스플로러는 11부터 지원한다.</p>
+
+<p><img src="/assets/img/2018-04-01/01.png" alt="미니언즈인가" /> <br />
+위 그림과 같이 민트색 div 안에 미니언즈 뒤집어 놓은듯한 div 두개를 위치시키고자 한다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nc">.flex-container</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+      <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#66ffcc</span><span class="p">;</span>
+      <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.a</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#99ccff</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.b</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ffff66</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"a"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"b"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>감싸고 있는 div에 display: flex, align-items: center를 적용하면 안의 div들이 가운데에 위치하게 된다.</p>
+
+<p>flex-direction: column을 적용하면, 안의 div가 세로로 정렬된다.</p>
+:ET
