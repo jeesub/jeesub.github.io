@@ -18,6 +18,8 @@ navigation:
    url: /about
  - title: Categories
    url: /category
+# - title: Projects
+#   url: /project
  - title: Contact
    url: /contact
 
@@ -29,3 +31,4 @@ social:
 
 google_analytics: "UA-106476938-1"
 timezone: Asia/Seoul
+encoding: utf-8
