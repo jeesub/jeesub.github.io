@@ -12,6 +12,7 @@ title: Projects
 		<li><a href="./find-your-doggie">find your doggie</a></li>
 		<li><a href="./나와-닮은-기업가-찾기-게임">나와 닮은 기업가 찾기 게임</a></li>
 		<li><a href="./현판-3D-프린팅">현판 3D 프린팅</a></li>
+		<li><a href="./culture-deck">Culture Deck</a></li>
 		<li><a href="./스타트업-인재매칭-사업기획">스타트업 인재매칭 사업기획</a></li>
 		<li><a href="./arduino-theremin">Arduino Theremin</a></li>
 		<li><a href="./실시간-위치기반-소셜커머스-기획">실시간 위치기반 소셜커머스 기획</a></li>
@@ -27,6 +28,7 @@ title: Projects
 		<li><a href="./2018-entship">2018년 entship.kr</a></li>
 		<li><a href="./2017-startupinternz">2017년 startupinternz.com</a></li>
 		<li><a href="./2017-oecenter">2017년 oecenter.org</a></li>
+		<li><a href="./2016-startupcampus">2016년 startupcampus.com</a></li>
 		<li><a href="./2014-oecenter">2014년 oecenter.org</a></li>
 		<li><a href="./2014-entship">2014년 entship.kr</a></li>
 		<li><a href="./2013-oecenter">2013년 oecenter.org</a></li>

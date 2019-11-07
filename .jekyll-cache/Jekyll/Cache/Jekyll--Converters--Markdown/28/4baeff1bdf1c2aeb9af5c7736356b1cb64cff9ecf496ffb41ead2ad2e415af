@@ -1,0 +1,19 @@
+I"p<h1 id="oecenterorg">oecenter.org</h1>
+
+<h2 id="overview">overview</h2>
+
+<ul>
+  <li>date: 2013</li>
+  <li>main purpose: company brochure</li>
+  <li>role: PM, planning 참여, web development 전담</li>
+  <li>stacks: HTML, CSS, JavaScript, jQuery, PHP5, MySQL, Apache, Ubuntu</li>
+</ul>
+
+<p><img src="/assets/img/project/2013_oecenter_org.jpg" alt="oecenter.org" />
+(홈페이지 중 일부)</p>
+
+<h2 id="description">description</h2>
+
+<p>새롭게 business를 시작하면서 회사의 웹 브로셔로 사용하기 위해 만든 웹사이트. 
+회사의 소개, 행사 일정, 연락처 등의 정보를 제공했다.</p>
+:ET
