@@ -1,0 +1,20 @@
+I"�<h1 id="startupinternzcom">startupinternz.com</h1>
+
+<h2 id="overview">overview</h2>
+
+<ul>
+  <li>date: 2019</li>
+  <li>main purpose: 스타트업인턴즈 프로그램 website</li>
+  <li>role: planning, web development (HTML, CSS 제외)</li>
+  <li>stacks: HTML, SCSS, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3</li>
+</ul>
+
+<p><img src="/assets/img/project/2019_startupinternz_com.jpg" alt="startupinternz.com" />
+(홈페이지 중 일부)</p>
+
+<h2 id="description">description</h2>
+
+<p>오이씨에서 진행한 마지막 프로젝트. 
+2018년 리뉴얼한 startupintern.com의 문제를 보완했다. 
+정보의 재배열, 새로운 디자인 적용 등의 수정이 이루어졌다.</p>
+:ET

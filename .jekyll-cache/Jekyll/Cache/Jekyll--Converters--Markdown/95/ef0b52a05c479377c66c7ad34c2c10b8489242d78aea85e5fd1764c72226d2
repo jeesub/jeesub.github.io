@@ -1,0 +1,19 @@
+I"'<h1 id="startupinternzcom">startupinternz.com</h1>
+
+<h2 id="overview">overview</h2>
+
+<ul>
+  <li>date: 2018</li>
+  <li>main purpose: 스타트업인턴즈 프로그램 website</li>
+  <li>role: web development</li>
+  <li>stacks: HTML, SCSS, bootstrap, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3</li>
+</ul>
+
+<p><img src="/assets/img/project/2018_startupinternz_com.jpg" alt="startupinternz.com" />
+(홈페이지 중 일부)</p>
+
+<h2 id="description">description</h2>
+
+<p>개발자로만 참여한 프로젝트. 스타트업인턴즈 팀에서 기획하고, 새로 합류한 디자이너가 디자인을 진행했다. 
+기존 홈페이지에서의 일부 수정이 아닌 전체적인 리뉴얼이었기 때문에 기존 홈페이지를 수정하지 않고 새로 작업을 진행했다.</p>
+:ET
