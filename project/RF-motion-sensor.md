@@ -3,3 +3,52 @@ layout: default
 ---
 
 # RF motion sensor
+
+## description
+
+2012년 진행한 학술제를 위한 프로젝트. 
+Radio Frequency를 이용한 motion detecting sensor를 만들었다. 
+전자공학과 학생 4인 팀 프로젝트로 진행하였다. 
+제 13회 서강대학교 전자공학과 학술제 캡스톤디자인 부문 대상을 수상했다. 
+
+![capstone project 1st prize]({{"/assets/img/project/capstone_1st_prize.jpg"}})
+
+## Problem
+
+움직임 센서로는 주로 적외선 센서, 초음파 센서가 사용된다. 
+각 센서는 각각의 장단점을 지니고 있다. 
+적외선 센서는 야외 움직임을 감지할 때 오류의 가능성이 있다. 
+초음파 센서는 감지 거리가 짧고, 정밀측정이 불가능하다는 단점이 있다. 
+
+## Solution
+
+우리는 공학적으로 Radio Frequency motion sensor를 만드는 것이 가능할 것이라 생각했다. 
+RF motion sensor는 다른 방식의 motion sensor의 단점을 상쇄시켜줄 수 있을 것이기 때문에 단독으로, 혹은 다른 센서와 함께 사용했을 때 장점이 발휘될 수 있을 것으로 가정했다. 
+
+![capstone project]({{"/assets/img/project/design_project_1.jpg"}})
+
+![capstone project]({{"/assets/img/project/design_project_2.jpg"}})
+
+## Benefits
+
+실외에서도 사용할 수 있고, radio frequency를 사용하기 때문에 인체에 무해하다. 
+저전력으로 동작하기 때문에 휴대성을 갖춘 모듈을 만들 수 있다. 
+또한 통신 시스템과의 결합도 쉽게 이루어질 수 있다. 
+Radio frequency는 장애물을 통과할 수 있기 때문에 센서 모듈 자체가 가려져도 움직임을 감지할 수 있다. 
+
+## Process
+
+도플러 효과를 기반으로 하여 송수신 안테나, Band Pass Filter를 이용해 움직임을 감지하도록 설계를 진행했다. 
+계산, 시뮬레이션과 실제 테스트를 통해 움직임을 감지할 수 있음을 확인했으며, output으로 display light을 설치해 움직임 감지를 표시했다. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ya8FYZiWXB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Conclusion
+
+실제 만들어진 모듈은 60cm 범위에서 360도 모두 움직임 측정이 가능했고, 1m 범위에서 270도 움직임 측정이 가능했다. 
+이로서 기존 센서들의 단점을 극복할 수 있는 RF motion sensor를 제작했다. 
+소형화를 진행할 경우 여러 영역에 사용될 수 있을 것으로 생각된다. 
+
+![capstone project]({{"/assets/img/project/design_project_3.jpg"}})
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P76xvSg_ZTs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

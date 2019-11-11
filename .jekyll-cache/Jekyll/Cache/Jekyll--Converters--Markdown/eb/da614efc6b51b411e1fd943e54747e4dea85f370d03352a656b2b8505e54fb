@@ -1,4 +1,4 @@
-I"2<h1 id="entshipschoolcom">entshipschool.com</h1>
+I"D<h1 id="entshipschoolcom">entshipschool.com</h1>
 
 <h2 id="overview">overview</h2>
 
@@ -23,5 +23,5 @@
 비즈니스 측에서는 확장성을 고려한 대학생, 일반인 대상 프로그램이 함께 홈페이지에 노출되기를 요청했다. 
 다양한 프로그램을 고객 대상으로 카테고리화 하여 청소년, 청년, 기업 프로그램으로 나누었고, 각각의 페이지에서 세부 정보와 프로그램을 소개했다. 
 각 프로그램의 필요 정보들은 세부 페이지에서 보여주었으며, 관리자가 손쉽게 프로그램을 관리할 수 있도록 하였다. 
-프로그램 문의는 Slack의 webhook 기능과 연동해놓아서 등록되면 Slack 알림을 받도록 했다.</p>
+프로그램 문의 및 교육 신청은 Slack의 webhook 기능과 연동해놓아서 등록되면 Slack 알림을 받도록 했다.</p>
 :ET
