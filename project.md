@@ -17,7 +17,7 @@ title: Projects
 		<li><a href="./실시간-위치기반-소셜커머스-기획">실시간 위치기반 소셜커머스 기획</a></li>
 	</ul>
 	<div class="projectsContent">
-		Hobby Projects
+		Side Projects
 	</div>
 	<ul>
 		<li><a href="./find-your-doggie">find your doggie</a></li>
