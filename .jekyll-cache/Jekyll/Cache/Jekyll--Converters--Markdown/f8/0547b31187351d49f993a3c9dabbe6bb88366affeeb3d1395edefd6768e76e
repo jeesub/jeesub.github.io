@@ -1,0 +1,53 @@
+I"�
+<h1 id="현판-3d-프린팅">현판 3D 프린팅</h1>
+
+<h2 id="description">description</h2>
+
+<p>회사가 자리를 잡아갔고, 현판을 만들어 달자는 의견이 나왔다. 
+어떻게 만들지 고민을 해보았고, 회사의 아이덴티티가 담긴 현판을 만들고자 했다. 
+그리고 여러 방면으로 널리 쓰이기 시작한 3D 프린팅을 이용해 만들었다. 
+직접 모델링하고 디지털혁신파크의 3D 프린터를 이용해 출력했다.</p>
+
+<p><img src="/assets/img/project/signboard_1.jpg" alt="oeclab signboard" /></p>
+
+<h2 id="problem">Problem</h2>
+
+<p>보통 회사들은 나무로 조각 된 현판 혹은 플라스틱에 인쇄된 현판을 사용한다. 
+다른 회사들과 유사하게 진행할 경우 밋밋한 현판이 나올 것이라고 생각했다.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>Maker 교육에도 널리 쓰이는 3D 프린터를 활용해 현판을 만들어보기로 했다. 
+직접 모델링, 출력해서 독특한 현판을 완성할 수 있었다.</p>
+
+<h2 id="process">Process</h2>
+
+<p>먼저 어떤 형태로 만들어야할지 구상했다. 
+사용할 3D 프린터의 최대 출력 크기를 고려해 200mm * 200mm의 크기로 만들기로 했다. 
+그리고 3D 프린팅의 장점을 살려 입체로 구현하기로 했다. 
+간략한 수치 계산을 진행했다.</p>
+
+<p><img src="/assets/img/project/signboard_2.jpg" alt="oeclab signboard" /></p>
+
+<p>모델링 툴을 선택하고 익혀서 직접 모델링을 진행했다. 
+다양한 모델링 툴 중 Tinkercad를 사용했다. 
+무료로 사용할 수 있고, CAD 프로그램으로 유명한 Autodesk에서 만들었으며 STL 파일 형식을 지원하기 때문에 나에게는 최적의 프로그램이었다.</p>
+
+<p><img src="/assets/img/project/signboard_3.jpg" alt="oeclab signboard" /></p>
+
+<p>출력의 경우 디지털혁신파크에서 무료로 진행할 수 있었다. 
+완성된 STL 파일을 이용해 온라인으로 출력 신청을 진행했고, 약 1주일 뒤 완성된 출력물을 받아볼 수 있었다. 
+DP200 프린터로 출력했다. 최초의 테스트 출력물은 회사의 장식물로 사용했고, 두 번째 현판은 리브랜딩 전까지 사용했다.</p>
+
+<p><img src="/assets/img/project/signboard_4.jpg" alt="oeclab signboard" /></p>
+
+<p>두 번의 출력을 통해 배운 점들을 반영해 세번 째 디자인이 완성되었다.</p>
+
+<p><img src="/assets/img/project/signboard_5.jpg" alt="oeclab signboard" /></p>
+
+<p>완성된 현판에 아크릴 물감을 이용해 색을 입혔다. 
+색을 입히는 과정에는 모든 구성원이 함께 헀다. 
+이 과정을 통해 세상에 하나 뿐인 우리만의 현판을 만들었다.</p>
+
+<p><img src="/assets/img/project/signboard_6.jpg" alt="oeclab signboard" /></p>
+:ET
