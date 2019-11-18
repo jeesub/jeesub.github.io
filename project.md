@@ -35,6 +35,7 @@ title: Projects
 		<li><a href="./2017-oecenter">2017년 oecenter.org</a></li>
 		<li><a href="./2016-startupcampus">2016년 startupcampus.com</a></li>
 		<li><a href="./2014-oecenter">2014년 oecenter.org</a></li>
+		<li><a href="./2014-socialmuseumseoul">2014년 social museum seoul</a></li>
 		<li><a href="./2014-entship">2014년 entship.kr</a></li>
 		<li><a href="./2013-oecenter">2013년 oecenter.org</a></li>
 		<li><a href="./2011-upstart">2011년 upstart.kr</a></li>
