@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# entship.kr
+# social museum seoul
 
 ## overview
 
