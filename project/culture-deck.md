@@ -3,3 +3,79 @@ layout: default
 ---
 
 # culture deck
+
+## description
+
+2013년부터 2019년까지 약 6년간 오이씨에서 co-founder로 일하면서 기업문화의 일부를 만드는데 공을 들였다. 
+누구와 일을 할지, 조직과 개인의 지속적 발전은 어떻게 이룰 수 있을지 등을 고민했다. 
+
+## 누구와 일 할 것인가
+
+회사는 사람으로 이루어지기 때문에, 가장 중요한 문제라고 생각했다. 
+우리는 어떤 사람인지, 어떤 사람이고자 하는지 고민했고, 글로 정리했다. 
+
+![culture deck]({{"/assets/img/project/culturedeck_1.jpg"}})
+(함께 하고 싶은 사람 첫 버전)
+
+초기 버전 이후로 발전을 시킬 때는 Netflix, 우아한형제들, Valve 등 다른 기업들의 자료와 책을 많이 참고했다. 
+
+* [Netflix Culture: Freedom & Responsibility](https://www.slideshare.net/reed2001/culture-1798664)
+* [우아한형제들: 송파구에서 일을 더 잘하는 11가지 방법](https://www.woowahan.com/#/company/culture)
+* [Valve: Handbook for New Employees](https://steamcdn-a.akamaihd.net/apps/valve/Valve_NewEmployeeHandbook.pdf)
+* [수평적 조직문화 파헤치기](https://publy.co/set/163)
+* The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses
+* Work Rules! : Insights from Inside Google That Will Transform How You Live and Lead
+* Powerful: Building a Culture of Freedom and Responsibility
+
+이를 토대로 틀이 마련되었고, 구성원이 늘어갈 때마다 인턴 직원을 포함한 구성원 모두가 함께 고민했다. 
+새로운 구성원의 의견을 듣는 것은 중요한 절차였다. 
+첫째로, 우리가 채용을 제대로 하고 있는지를 확인할 수 있었고, 둘째로, 우리가 놓치고 있는 부분을 새로운 관점으로 잡아줄 수 있었다. 
+팀이 계속 커지는 상황이었기 때문에 새로 들어오는 구성원들의 도움으로 culture deck은 지속적으로 정제될 수 있었다. 
+
+![culture deck]({{"/assets/img/project/culturedeck_2.jpg"}})
+
+![culture deck]({{"/assets/img/project/culturedeck_3.png"}})
+(가장 최근 받았던 자리에 부착할 수 있는 버전)
+
+## 발전을 위한 Feedback
+
+조직과 구성원의 성장을 위해서는 솔직한 피드백이 필요하다고 생각했다. 
+좋은 피드백을 주는 것은 어렵지만 계속 연습을 통해 발전시키고자 했다. 
+한 달에 한 번씩 peer-to-peer feedback을 주는 자리를 만들었다. 
+공개적으로 모두의 앞에서 피드백을 전달하기 때문에 사람들은 신중하게 단어를 골랐고, 진심어린 피드백을 전달했다. 
+
+![culture deck]({{"/assets/img/project/culturedeck_4.jpg"}})
+
+판단의 기준은 우리가 만들어 놓은 culture 문서로 했다. 
+피드백은 긍정 피드백 하나, 부정 피드백 하나를 주도록 했다. 
+부정 피드백에는 본인이 생각하는 개선방안이 포함되었다. 
+좋은 구성원들과 함께 한 덕분에 서로에게 도움이 되는 시간이 되었다. 
+
+![culture deck]({{"/assets/img/project/culturedeck_5.jpg"}})
+
+실제로 받았던 피드백 포스트잇이다. 
+긍정 피드백은 주로 판단력을 받았다. 
+부정 피드백은 주로 소통과 함께였는데, 조금 더 인간적으로, 웃으면서 이야기해주면 좋겠다는 부분이 많았다. 
+이러한 피드백 덕분에 자주 웃으면서 구성원들과 인간적인 관계를 만들려는 변화를 만들 수 있었다. 
+
+## Learn everything
+
+배움을 위한 study 시간을 만들었다. 
+처음 스터디 제도를 만들 때 2회의 내부 prototyping을 거친 후 어느정도 최소한의 틀을 만들었다. 
+
+1. Google Slides를 사용: Slides를 꾸미는 데 시간을 들이지 말고 내용을 알차게 준비하자
+2. 1 주일에 한 번, 한 명씩 돌아가며 진행
+3. Q&A를 포함해 한시간을 진행
+4. 다른 사람의 1시간을 사용하는 만큼 책임감 있게 준비
+5. 소재는 자유롭게
+
+![culture deck]({{"/assets/img/project/culturedeck_7.jpg"}})
+
+나는 약 2년간 14회의 스터디를 진행했다. 
+잘 모르지만 관심이 있던 분야에 대해서는 새롭게 알게 되었고, 잘 알던 분야에 대해서는 한 번 더 깊게 살펴볼 수 있었다. 
+
+![culture deck]({{"/assets/img/project/culturedeck_6.jpg"}})
+
+스터디는 금요일 오후마다 진행되었고, 다양한 주제에 대한 배움의 자리가 열렸다. 
+기업가정신, 교육, 마케팅, 디자인, 개발, 경영, 기업문화 등 회사에 관련된 주제부터 글쓰기, 공부법, 화법 등 실용 스킬 및 여행, 맥주 같은 취미 분야까지 다양한 주제들을 다뤘다. 
+이를 통해 새로움을 접하고 배우는 문화를 만들었다. 
