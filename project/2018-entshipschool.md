@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2018
-* main purpose: program web brochure
-* role: PM, planning, web development (HTML, CSS 제외)
-* stacks: HTML, SCSS, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3
+* Date: 2018
+* Main Purpose: program web brochure
+* Project Size: 2 Web Developers and 1 Web Designer, 8 weeks
+* My Contribution: PM, planning, web development (HTML, CSS 제외)
+* Stacks: HTML, SCSS, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3
 
 ![entshipschool.com]({{"/assets/img/project/2018_entshipschool_com_1.jpg"}})
 

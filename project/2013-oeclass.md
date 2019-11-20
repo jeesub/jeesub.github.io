@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2013
-* main purpose: Massive Open Online Course (MOOC)
-* role: PM, planning, web development 전담
-* stacks: HTML, CSS, JavaScript, jQuery, PHP5, MySQL, Apache, Ubuntu
+* Date: 2013
+* Main Purpose: Massive Open Online Course (MOOC)
+* Project Size: 1 Web Developer and 1 Web Designer, 12 weeks
+* My Contribution: PM, planning, web development 전담
+* Stacks: HTML, CSS, JavaScript, jQuery, PHP5, MySQL, Apache, Ubuntu
 
 ![oeclass.com]({{"/assets/img/project/2013_oeclass_com.jpg"}})
 (홈페이지 이미지)

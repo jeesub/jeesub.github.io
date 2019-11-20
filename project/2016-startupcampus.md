@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2016
-* main purpose: program web brochure
-* role: PM, planning, web development
-* stacks: HTML, SCSS, bootstrap, JavaScript, Ruby on Rails, heroku
+* Date: 2016
+* Main Purpose: program web brochure
+* Project Size: 1 Web Developer and 1 Web Designer, 4 weeks
+* My Contribution: PM, planning, web development
+* Stacks: HTML, SCSS, bootstrap, JavaScript, Ruby on Rails, heroku
 
 ![startupcampus.com]({{"/assets/img/project/2016_startupcampus_com.jpg"}})
 (홈페이지 중 일부)

@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2014
-* main purpose: company brochure
-* role: PM, planning 참여, web development 전담
-* stacks: HTML, SCSS, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku
+* Date: 2014
+* Main Purpose: company brochure
+* Project Size: 1 Web Developer and 1 Web Designer, 6 weeks
+* My Contribution: PM, planning 참여, web development 전담
+* Stacks: HTML, SCSS, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku
 
 ![oecenter.org]({{"/assets/img/project/2014_oecenter_org.jpg"}})
 (홈페이지 중 일부)

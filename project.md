@@ -10,7 +10,6 @@ title: Projects
 	<ul>
 		<li><a href="./웹-사이트-이탈률-개선">웹 사이트 이탈률 개선</a></li>
 		<li><a href="./나와-닮은-기업가-찾기-게임">나와 닮은 기업가 찾기 게임</a></li>
-		<li><a href="./현판-3D-프린팅">현판 3D 프린팅</a></li>
 		<li><a href="./culture-deck">Culture Deck</a></li>
 		<li><a href="./스타트업-인재-매칭-사업">스타트업 인재 매칭 사업</a></li>
 		<li><a href="./RF-motion-sensor">RF motion sensor</a></li>
@@ -21,6 +20,7 @@ title: Projects
 	</div>
 	<ul>
 		<li><a href="./find-your-doggie">find your doggie</a></li>
+		<li><a href="./현판-3D-프린팅">현판 3D 프린팅</a></li>
 		<li><a href="./arduino-theremin">Arduino Theremin</a></li>
 	</ul>
 	<div class="projectsContent">

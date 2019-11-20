@@ -1,12 +1,13 @@
-I"�<h1 id="entshipkr">entship.kr</h1>
+I"<h1 id="entshipkr">entship.kr</h1>
 
 <h2 id="overview">overview</h2>
 
 <ul>
-  <li>date: 2018</li>
-  <li>main purpose: 앙트십 관련 새소식 전달 웹사이트 / 404 content redirection</li>
-  <li>role: PM, planning, web design, web development</li>
-  <li>stacks: HTML, SCSS, Bulma, JavaScript, Ruby on Rails, PostgreSQL, heroku, AWS S3</li>
+  <li>Date: 2018</li>
+  <li>Main Purpose: 앙트십 관련 새소식 전달 웹사이트 / 404 content redirection</li>
+  <li>Project Size: 1 Web Developer, 6 weeks</li>
+  <li>My Contribution: PM, planning, web design, web development</li>
+  <li>Stacks: HTML, SCSS, Bulma, JavaScript, Ruby on Rails, PostgreSQL, heroku, AWS S3</li>
 </ul>
 
 <p><img src="/assets/img/project/2018_entship_kr.jpg" alt="entship.kr" />

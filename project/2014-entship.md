@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2014
-* main purpose: 앙트십 교육 프로그램 플랫폼
-* role: PM, planning, wordpress setup
-* stacks: wordpress, CentOS
+* Date: 2014
+* Main Purpose: 앙트십 교육 프로그램 플랫폼
+* Project Size: 1 Web Developer, 8 weeks
+* My Contribution: PM, planning, wordpress setup
+* Stacks: wordpress, CentOS
 
 ![entship.kr]({{"/assets/img/project/2014_entship_kr_1.jpg"}})
 

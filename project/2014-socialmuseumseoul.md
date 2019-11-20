@@ -8,8 +8,9 @@ layout: default
 
 * date: 2014
 * main purpose: Social Museum Seoul 프로그램 브로셔 웹페이지
-* role: web development
-* stacks: HTML, CSS, JavaScript, PHP5, MySQL, Apache, Ubuntu
+* Project Size: 2 Project managers, 1 Web Designer, 1 Web Developer, 3 weeks
+* My Contribution: web development
+* Stacks: HTML, CSS, JavaScript, PHP5, MySQL, Apache, Ubuntu
 
 ![socialmuseumseoul]({{"/assets/img/project/2014_socialmuseumseoul.jpg"}})
 (홈페이지 중 일부)

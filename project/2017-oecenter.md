@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2017
-* main purpose: company website
-* role: PM, planning, web design, web development
-* stacks: HTML, SCSS, bootstrap, JavaScript, Ruby on Rails, PostgreSQL, heroku, AWS S3
+* Date: 2017
+* Main Purpose: company website
+* Project Size: 1 Web Developer, 6 weeks
+* My Contribution: PM, planning, web design, web development
+* Stacks: HTML, SCSS, bootstrap, JavaScript, Ruby on Rails, PostgreSQL, heroku, AWS S3
 
 ![oecenter.org]({{"/assets/img/project/2017_oecenter_org.jpg"}})
 (홈페이지 중 일부)

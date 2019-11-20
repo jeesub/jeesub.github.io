@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2018
-* main purpose: 스타트업인턴즈 프로그램 website
-* role: web development
-* stacks: HTML, SCSS, bootstrap, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3
+* Date: 2018
+* Main Purpose: 스타트업인턴즈 프로그램 website
+* Project Size: Multiple Project Managers, 1 Web Developer and 1 Web Designer, 8 weeks
+* My Contribution: web development
+* Stacks: HTML, SCSS, bootstrap, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3
 
 ![startupinternz.com]({{"/assets/img/project/2018_startupinternz_com.jpg"}})
 (홈페이지 중 일부)

@@ -6,10 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2018
-* main purpose: 앙트십 관련 새소식 전달 웹사이트 / 404 content redirection
-* role: PM, planning, web design, web development
-* stacks: HTML, SCSS, Bulma, JavaScript, Ruby on Rails, PostgreSQL, heroku, AWS S3
+* Date: 2018
+* Main Purpose: 앙트십 관련 새소식 전달 웹사이트 / 404 content redirection
+* Project Size: 1 Web Developer, 6 weeks
+* My Contribution: PM, planning, web design, web development
+* Stacks: HTML, SCSS, Bulma, JavaScript, Ruby on Rails, PostgreSQL, heroku, AWS S3
 
 ![entship.kr]({{"/assets/img/project/2018_entship_kr.jpg"}})
 (홈페이지 중 일부)

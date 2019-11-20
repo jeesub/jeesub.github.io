@@ -6,11 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2011
-* main purpose: crowd funding website
-* role: front-end 개발 전담, back-end 개발 서포트
-* stacks: HTML, CSS, JavaScript, PHP5, MySQL, Apache, Ubuntu
-
+* Date: 2011
+* Main Purpose: crowd funding website
+* Project Size: 2 Web Developers and 1 Web Designer, 16 weeks
+* My Contribution: front-end 개발 전담, back-end 개발 서포트
+* Stacks: HTML, CSS, JavaScript, PHP5, MySQL, Apache, Ubuntu
 
 ![upstart.kr]({{"/assets/img/project/2011_upstart_kr.jpg"}})
 

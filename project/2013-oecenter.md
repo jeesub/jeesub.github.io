@@ -6,11 +6,11 @@ layout: default
 
 ## overview
 
-* date: 2013
-* main purpose: company brochure
-* role: PM, planning 참여, web development 전담
-* stacks: HTML, CSS, JavaScript, jQuery, PHP5, MySQL, Apache, Ubuntu
-
+* Date: 2013
+* Main Purpose: company brochure
+* Project Size: 1 Web Developer and 1 Web Designer, 4 weeks
+* My Contribution: PM, planning 참여, web development 전담
+* Stacks: HTML, CSS, JavaScript, jQuery, PHP5, MySQL, Apache, Ubuntu
 
 ![oecenter.org]({{"/assets/img/project/2013_oecenter_org.jpg"}})
 (홈페이지 중 일부)
