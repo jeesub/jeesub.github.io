@@ -1,24 +1,34 @@
-I"�
-<h1 id="현판-3d-프린팅">현판 3D 프린팅</h1>
+I"�<h1 id="현판-3d-프린팅">현판 3D 프린팅</h1>
 
-<h2 id="description">description</h2>
+<h2 id="overview">Overview</h2>
 
-<p>회사가 자리를 잡아갔고, 현판을 만들어 달자는 의견이 나왔다. 
-어떻게 만들지 고민을 해보았고, 회사의 아이덴티티가 담긴 현판을 만들고자 했다. 
-그리고 여러 방면으로 널리 쓰이기 시작한 3D 프린팅을 이용해 만들었다. 
+<ul>
+  <li>Date: 2018</li>
+  <li>Category: <a href="https://www.google.com/search?q=3dprint">#3dprint</a></li>
+  <li>Project Size: 3 weeks</li>
+  <li>My Contribution: PM, Design</li>
+  <li>Tools: Tinkercad</li>
+</ul>
+
+<h2 id="description">Description</h2>
+
+<p>3D 프린팅을 이용해 회사 현판을 만들어 달았다. 
 직접 모델링하고 디지털혁신파크의 3D 프린터를 이용해 출력했다.</p>
 
 <p><img src="/assets/img/project/signboard_1.jpg" alt="oeclab signboard" /></p>
 
 <h2 id="problem">Problem</h2>
 
-<p>보통 회사들은 나무로 조각 된 현판 혹은 플라스틱에 인쇄된 현판을 사용한다. 
-다른 회사들과 유사하게 진행할 경우 밋밋한 현판이 나올 것이라고 생각했다.</p>
+<p>회사 사무실 앞에 현판을 만들어 달자는 의견이 나왔다. 
+보통 회사들은 나무로 조각 된 현판 혹은 플라스틱에 인쇄된 현판을 사용하고 있었다. 
+남들과 유사한 방법을 사용할 수도 있지만, 독창적인 방법을 사용해보고 싶었다.</p>
 
 <h2 id="solution">Solution</h2>
 
-<p>Maker 교육에도 널리 쓰이는 3D 프린터를 활용해 현판을 만들어보기로 했다. 
-직접 모델링, 출력해서 독특한 현판을 완성할 수 있었다.</p>
+<p>어떻게 만들지 고민을 해보았고, 회사의 아이덴티티가 담긴 현판을 만들고자 했다. 
+Maker 교육에도 널리 쓰이는 3D 프린터를 활용해 현판을 만들어보기로 했다. 
+3D 프린팅을 직접 해보는 것이 학생들을 교육할때도 도움이 될 것이라고 생각했다. 
+직접 모델링, 출력하고 색을 입혀서 독특한 현판을 완성했다.</p>
 
 <h2 id="process">Process</h2>
 
@@ -50,4 +60,14 @@ DP200 프린터로 출력했다. 최초의 테스트 출력물은 회사의 장�
 이 과정을 통해 세상에 하나 뿐인 우리만의 현판을 만들었다.</p>
 
 <p><img src="/assets/img/project/signboard_6.jpg" alt="oeclab signboard" /></p>
+
+<h2 id="one-more-thing">One more thing</h2>
+
+<p>모델링부터 출력까지 직접 해본 경험을 회사에서 스터디로 진행했다. 
+구성원 모두가 3D 프린팅에 대해 알아보고 간단한 모델링을 진행해보는 시간을 가졌다. 
+이 과정을 통해 모두가 3D 프린팅에 대한 경험을 했고, 교육 프로그램을 만드는데 활용할 수 있었다.</p>
+
+<ul>
+  <li><a href="https://docs.google.com/presentation/d/1YUEhRPqpmtTXcVWbBVlVI3wI3wemT3BH0AMSXxf1otc/edit?usp=sharing">3D 프린팅 스터디 자료</a></li>
+</ul>
 :ET

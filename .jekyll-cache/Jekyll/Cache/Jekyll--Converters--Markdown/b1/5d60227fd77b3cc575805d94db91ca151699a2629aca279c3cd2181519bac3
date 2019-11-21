@@ -1,6 +1,16 @@
-I"<h1 id="rf-motion-sensor">RF motion sensor</h1>
+I"h<h1 id="rf-motion-sensor">RF motion sensor</h1>
 
-<h2 id="description">description</h2>
+<h2 id="overview">Overview</h2>
+
+<ul>
+  <li>Date: 2012</li>
+  <li>Category: <a href="https://www.google.com/search?q=electronic+engineering">#electronic_engineering</a></li>
+  <li>Project Size: 1 Adviser(Professor) and 4 Electronic Engineers, 12 weeks</li>
+  <li>My Contribution: Electronic Engineer</li>
+  <li>Tools: PSpice</li>
+</ul>
+
+<h2 id="description">Description</h2>
 
 <p>2012년 진행한 학술제를 위한 프로젝트. 
 Radio Frequency를 이용한 motion detecting sensor를 만들었다. 

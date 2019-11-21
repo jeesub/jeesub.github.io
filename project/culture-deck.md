@@ -4,14 +4,25 @@ layout: default
 
 # culture deck
 
-## description
+## Overview
+
+* Date: 2013 ~ 2019
+* Category: [#business](https://www.google.com/search?q=business) [#culture](https://www.google.com/search?q=culture)
+* My Contribution: Build Company Culture
+
+## Description
 
 2013년부터 2019년까지 약 6년간 오이씨에서 co-founder로 일하면서 기업문화의 일부를 만드는데 공을 들였다. 
 누구와 일을 할지, 조직과 개인의 지속적 발전은 어떻게 이룰 수 있을지 등을 고민했다. 
 
-## 누구와 일 할 것인가
+## Problem - 누구와 일 할 것인가
 
-회사는 사람으로 이루어지기 때문에, 가장 중요한 문제라고 생각했다. 
+회사는 사람으로 이루어지기 때문에, 누구와 일을 하는가는 가장 중요한 문제라고 생각했다. 
+Co-founder 외의 사람을 들여야하는 순간이 왔을 때, 다른 회사들과 마찬가지로 끝나지 않는 고민이 시작되었다. 
+어떤 사람을 뽑아야 회사에게도, 들어오는 사람에게도 긍정적일지를 고민했다. 
+
+## Solution - 누구와 일 할 것인가
+
 우리는 어떤 사람인지, 어떤 사람이고자 하는지 고민했고, 글로 정리했다. 
 
 ![culture deck]({{"/assets/img/project/culturedeck_1.jpg"}})
@@ -37,9 +48,16 @@ layout: default
 ![culture deck]({{"/assets/img/project/culturedeck_3.png"}})
 (가장 최근 받았던 자리에 부착할 수 있는 버전)
 
-## 발전을 위한 Feedback
+## Problem - 발전을 위한 Feedback
 
-조직과 구성원의 성장을 위해서는 솔직한 피드백이 필요하다고 생각했다. 
+운이 좋게도, 회사는 좋은 사람들로 채워지기 시작했다. 
+조직문화는 성숙해졌고, 추가되는 구성원들로 인해 긍정적 시너지가 일어났다. 
+하지만 스타트업이기 때문에 더 빠른 성장을 지향하고자 했고, 조직과 구성원의 성장을 위해 체계화된 솔직한 피드백이 필요하다고 생각했다. 
+
+## Soultion - 발전을 위한 Feedback
+
+솔직한 피드백의 아이디어는 Ray Dalio로부터 얻었다. 
+그의 여러 영상들과 책 Principles에 나오는 개념을 회사의 상황에 맞게 활용했다. 
 좋은 피드백을 주는 것은 어렵지만 계속 연습을 통해 발전시키고자 했다. 
 한 달에 한 번씩 peer-to-peer feedback을 주는 자리를 만들었다. 
 공개적으로 모두의 앞에서 피드백을 전달하기 때문에 사람들은 신중하게 단어를 골랐고, 진심어린 피드백을 전달했다. 
@@ -54,11 +72,14 @@ layout: default
 ![culture deck]({{"/assets/img/project/culturedeck_5.jpg"}})
 
 실제로 받았던 피드백 포스트잇이다. 
-긍정 피드백은 주로 판단력을 받았다. 
-부정 피드백은 주로 소통과 함께였는데, 조금 더 인간적으로, 웃으면서 이야기해주면 좋겠다는 부분이 많았다. 
-이러한 피드백 덕분에 자주 웃으면서 구성원들과 인간적인 관계를 만들려는 변화를 만들 수 있었다. 
+매 달 팀원들의 애정어린 피드백을 받았고, 나의 발전에 활용할 수 있었다. 
 
-## Learn everything
+## Problem - 지속적으로 배우는 환경
+
+우리는 교육회사임에도 불구하고, 일이 바빠서 우리 자신의 배움에 투자할 수 있는 시간은 점점 줄어들고 있었다. 
+다양한 경험과 지속적인 배움이 필요한 순간이었다. 
+
+## Solution - 지속적으로 배우는 환경
 
 배움을 위한 study 시간을 만들었다. 
 처음 스터디 제도를 만들 때 2회의 내부 prototyping을 거친 후 어느정도 최소한의 틀을 만들었다. 

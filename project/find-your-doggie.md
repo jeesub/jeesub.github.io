@@ -4,7 +4,15 @@ layout: default
 
 # find your doggie
 
-## description
+## Overview
+
+* Date: 2018
+* Category: [#web_application](https://www.google.com/search?q=web+application)
+* Project Size: 2 Web Developers, 1 week
+* My Contribution: Web Development(Ruby on Rails)
+* Tools: Ruby on Rails, Heroku, Github
+
+## Description
 
 2018년 피츠버그에 갔을 때 선우와 진행한 side project. 
 질문에 대한 답변을 통해 나와 성격이 가장 유사한 강아지 종을 찾아준다. 

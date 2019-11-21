@@ -1,6 +1,16 @@
-I"c<h1 id="find-your-doggie">find your doggie</h1>
+I"�	<h1 id="find-your-doggie">find your doggie</h1>
 
-<h2 id="description">description</h2>
+<h2 id="overview">Overview</h2>
+
+<ul>
+  <li>Date: 2018</li>
+  <li>Category: <a href="https://www.google.com/search?q=web+application">#web_application</a></li>
+  <li>Project Size: 2 Web Developers, 1 week</li>
+  <li>My Contribution: Web Development(Ruby on Rails)</li>
+  <li>Tools: Ruby on Rails, Heroku, Github</li>
+</ul>
+
+<h2 id="description">Description</h2>
 
 <p>2018년 피츠버그에 갔을 때 선우와 진행한 side project. 
 질문에 대한 답변을 통해 나와 성격이 가장 유사한 강아지 종을 찾아준다.</p>

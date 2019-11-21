@@ -4,7 +4,15 @@ layout: default
 
 # RF motion sensor
 
-## description
+## Overview
+
+* Date: 2012
+* Category: [#electronic_engineering](https://www.google.com/search?q=electronic+engineering)
+* Project Size: 1 Adviser(Professor) and 4 Electronic Engineers, 12 weeks
+* My Contribution: Electronic Engineer
+* Tools: PSpice
+
+## Description
 
 2012년 진행한 학술제를 위한 프로젝트. 
 Radio Frequency를 이용한 motion detecting sensor를 만들었다. 
