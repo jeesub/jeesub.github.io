@@ -12,6 +12,7 @@ title: Projects
 		<li><a href="./나와-닮은-기업가-찾기-게임">나와 닮은 기업가 찾기 게임</a></li>
 		<li><a href="./culture-deck">Culture Deck</a></li>
 		<li><a href="./스타트업-인재-매칭-사업">스타트업 인재 매칭 사업</a></li>
+		<li><a href="./현금흐름-관리">현금흐름 관리</a></li>
 		<li><a href="./RF-motion-sensor">RF motion sensor</a></li>
 		<li><a href="./실시간-위치기반-소셜커머스-기획">실시간 위치기반 소셜커머스 기획</a></li>
 	</ul>
