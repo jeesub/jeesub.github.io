@@ -52,14 +52,14 @@ MBTI, 에니어그램 등의 성격 검사와 유사한 방식으로 질문과 �
 강아지의 종에 따른 성격은 Google 검색 결과값으로 보여주는 태그들을 활용했다. 
 성향의 카테고리 별로 점수를 매겨두고 질문자의 답변과 유사도를 계산해서 가장 유사한 강아지를 결과값으로 보여주도록 했다. 
 
-![binoo google analytics]({{"/assets/img/project/binoo_3.png"}})
+![binoo]({{"/assets/img/project/binoo_3.jpg"}})
 
 ### Coding
 
 선우는 front-end를, 나는 back-end를 맡아 진행했다. 
 개발은 자주 사용해본 Ruby on Rails로 진행했다. 
 
-![binoo google analytics]({{"/assets/img/project/binoo_4.png"}})
+![binoo]({{"/assets/img/project/binoo_4.jpg"}})
 
 DB에는 성격을 6가지로 카테고리화 하여 강아지의 종 별로 점수를 입력해놓았다. 
 질문자가 12개의 질문에 답변을 하면, 6개의 카테고리 점수가 계산이 된다. 
