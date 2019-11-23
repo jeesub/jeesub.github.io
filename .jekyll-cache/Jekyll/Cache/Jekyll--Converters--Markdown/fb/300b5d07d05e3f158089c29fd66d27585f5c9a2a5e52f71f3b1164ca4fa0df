@@ -1,8 +1,4 @@
----
-layout: default
-title: Projects
----
-<div id="contact">
+I"Ò<div id="contact">
 	<h1 class="pageTitle">Projects</h1>
 	<div class="projectsContent">
 		Web Development Projects
@@ -43,3 +39,4 @@ title: Projects
 		<li><a href="./arduino-theremin">2015ë…„ Arduino Theremin</a></li>
 	</ul>
 </div>
+:ET
