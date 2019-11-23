@@ -9,7 +9,7 @@ layout: default
 * Date: 2012
 * Category: [#electronic_engineering](https://www.google.com/search?q=electronic+engineering)
 * Project Size: 1 Adviser(Professor) and 4 Electronic Engineers, 12 weeks
-* My Contribution: Electronic Engineer
+* My Contribution: Electronic Engineering
 * Tools: PSpice
 
 ## Description
