@@ -4,7 +4,7 @@ layout: default
 
 # oeclass.com
 
-## overview
+## Overview
 
 * Date: 2013
 * Main Purpose: Massive Open Online Course (MOOC)
@@ -15,7 +15,7 @@ layout: default
 ![oeclass.com]({{"/assets/img/project/2013_oeclass_com.jpg"}})
 (홈페이지 이미지)
 
-## description
+## Description
 
 2013년 오이씨의 사업모델인 MOOC를 위한 웹사이트. 
 가르침을 현업으로 하지 않는 업계 경력자들이 실무를 가르치는 교육 서비스로 기획을 했다. 
@@ -31,3 +31,12 @@ Social learning을 추구했기 때문에 각 회차별로 다른 사람들과 �
 기획 시작부터 MVP 구축까지 약 3개월 정도가 소요되었고, 베타 테스트를 진행했다. 
 Seed funding으로 MVP 웹사이트 구축까지는 할 수 있었지만 디자이너 1인, 개발자 1인으로 진행하는데에는 한계가 있었다. 
 고도화를 위한 추가 funding을 받는데 실패하였고, 사업모델을 바꾸면서 웹사이트는 닫게 되었다. 
+
+## Takeaway
+
+* 동영상 보안에 대해 알게 되었다. 
+유료 동영상을 제공하고자 할때는 client에서 동영상을 녹화하지 못하도록 방지하는 등의 대처가 필요했다. 
+또한 client가 영상을 저장하지 못하도록 방지해야 했다. 
+* Text Editor에 대해 자세히 알게 되었다. 
+대부분의 Open source text editor들은 영어권에서 만들어졌고, 한글 사용이 원활하지 않다는 것을 알게 되었다. 
+그리고 직접 editor를 만드는 경우 발생하는 문제들과 어려움에 대해 알게 되었다. 
