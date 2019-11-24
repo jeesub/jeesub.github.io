@@ -1,11 +1,11 @@
-I"B<h1 id="startupinternzcom">startupinternz.com</h1>
+I"H<h1 id="startupinternzcom">startupinternz.com</h1>
 
-<h2 id="overview">overview</h2>
+<h2 id="overview">Overview</h2>
 
 <ul>
   <li>Date: 2017</li>
   <li>Main Purpose: 스타트업인턴즈 프로그램 website</li>
-  <li>Project Size: 1 Web Developer and 1 Web Designer, 10 weeks</li>
+  <li>Project Size: 1 Web Developer, 10 weeks</li>
   <li>My Contribution: PM, planning, web design, web development</li>
   <li>Stacks: HTML, SCSS, bootstrap, JavaScript, Ruby on Rails, PostgreSQL, heroku</li>
 </ul>
@@ -15,11 +15,21 @@
 <p><img src="/assets/img/project/2017_startupinternz_com_2.jpg" alt="startupinternz.com" />
 (홈페이지 중 일부)</p>
 
-<h2 id="description">description</h2>
+<h2 id="description">Description</h2>
 
 <p>기존의 ‘스타트업캠퍼스’가 이름을 ‘스타트업인턴즈’로 변경했다. 
 one-page 웹사이트에서 얻은 고객 피드백과 내부 피드백을 반영해 더 많은 기능을 제공하는 웹사이트를 구현했다. 
 첫 페이지에서는 잠재고객에게 필요한 정보들을 보여주었고, 세부 페이지들에서 더 상세한 정보들을 제공했다. 
 지원하기, 과제 제출, 참고자료 제공 등 스타트업인턴즈 프로그램을 진행하는 데 필요한 기능들을 제공했다. 
 어드민에서는 프로그램 일정 조정, 참고자료 관리, Q&amp;A 관리 등을 진행할 수 있도록 했다.</p>
+
+<h2 id="takeaway">Takeaway</h2>
+
+<ul>
+  <li>처음으로 mobile-first design으로 진행했다. 
+기존 웹사이트들과는 달리 20대가 타겟고, 20대는 mobile 비중이 높았기 때문에 mobile-first로 진행했다.</li>
+  <li>Information Architecture에 대한 많은 고민을 했다. 
+기존에는 없던 새로운 유형의 프로그램이기 때문에 사용자에게 전달해야 하는 정보량이 많았다. 
+이를 사용자 입장에서 파악하기 쉽게 정리하고 전달하고자 노력했다.</li>
+</ul>
 :ET

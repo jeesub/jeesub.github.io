@@ -18,8 +18,8 @@ navigation:
    url: /about
  - title: Categories
    url: /category
-# - title: Projects
-#   url: /project
+ - title: Projects
+   url: /project
  - title: Contact
    url: /contact
 

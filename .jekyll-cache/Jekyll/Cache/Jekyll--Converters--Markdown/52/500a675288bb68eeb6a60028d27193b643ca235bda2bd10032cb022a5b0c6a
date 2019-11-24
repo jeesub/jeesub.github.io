@@ -1,18 +1,18 @@
-I"�<h1 id="upstartkr">upstart.kr</h1>
+I"q<h1 id="upstartkr">upstart.kr</h1>
 
-<h2 id="overview">overview</h2>
+<h2 id="overview">Overview</h2>
 
 <ul>
   <li>Date: 2011</li>
   <li>Main Purpose: crowd funding website</li>
   <li>Project Size: 2 Web Developers and 1 Web Designer, 16 weeks</li>
   <li>My Contribution: front-end 개발 전담, back-end 개발 서포트</li>
-  <li>Stacks: HTML, CSS, JavaScript, PHP5, MySQL, Apache, Ubuntu</li>
+  <li>Stacks: HTML, CSS, JavaScript, PHP, MySQL, Apache, Ubuntu</li>
 </ul>
 
 <p><img src="/assets/img/project/2011_upstart_kr.jpg" alt="upstart.kr" /></p>
 
-<h2 id="description">description</h2>
+<h2 id="description">Description</h2>
 
 <p>crowd funding 웹사이트. 
 창작자와 후원자를 연결해주는 웹사이트로, 창작자의 프로젝트를 후원자들이 십시일반 후원할 수 있는 플랫폼이었다. 
@@ -21,4 +21,15 @@
 프레임워크 없이 하드코딩으로 제작 되었다. 
 PHP 일부 라이브러리를 사용하였다. 
 2011년부터 2012년까지 운영되었다.</p>
+
+<h2 id="takeaway">Takeaway</h2>
+
+<ul>
+  <li>웹개발에 대해 알게 되었다. 
+C 언어로 하는 개발과는 다른 새로운 경험이었다.</li>
+  <li>웹서버의 보안에 대해 알게 되었다. 
+웹사이트에서 결제가 일어나고 돈이 다뤄졌기 때문에 보안이 중요했다.</li>
+  <li>온라인 결제에 대해 알게 되었다.</li>
+  <li>데이터베이스 트랜잭션에 대해 알게 되었다.</li>
+</ul>
 :ET

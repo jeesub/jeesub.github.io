@@ -1,11 +1,11 @@
-I"�<h1 id="startupinternzcom">startupinternz.com</h1>
+I"�<h1 id="startupinternzcom">startupinternz.com</h1>
 
-<h2 id="overview">overview</h2>
+<h2 id="overview">Overview</h2>
 
 <ul>
   <li>Date: 2018</li>
   <li>Main Purpose: 스타트업인턴즈 프로그램 website</li>
-  <li>Project Size: Multiple Project Managers, 1 Web Developer and 1 Web Designer, 8 weeks</li>
+  <li>Project Size: Multiple Producers, 1 Web Developer and 1 Web Designer, 8 weeks</li>
   <li>My Contribution: web development</li>
   <li>Stacks: HTML, SCSS, bootstrap, JavaScript, jQuery, Ruby on Rails, PostgreSQL, heroku, AWS S3</li>
 </ul>
@@ -13,8 +13,16 @@
 <p><img src="/assets/img/project/2018_startupinternz_com.jpg" alt="startupinternz.com" />
 (홈페이지 중 일부)</p>
 
-<h2 id="description">description</h2>
+<h2 id="description">Description</h2>
 
 <p>개발자로만 참여한 프로젝트. 스타트업인턴즈 팀에서 기획하고, 새로 합류한 디자이너가 디자인을 진행했다. 
 기존 홈페이지에서의 일부 수정이 아닌 전체적인 리뉴얼이었기 때문에 기존 홈페이지를 수정하지 않고 새로 작업을 진행했다.</p>
+
+<h2 id="takeaway">Takeaway</h2>
+
+<ul>
+  <li>이번 회사에서 처음으로 웹 개발자의 역할만 맡아 진행한 프로젝트. 
+기획자들의 의견을 최대한 반영하는 개발을 진행했다. 
+오롯이 개발자로 일하는 경험을 했다.</li>
+</ul>
 :ET
