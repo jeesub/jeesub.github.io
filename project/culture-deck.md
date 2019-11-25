@@ -45,7 +45,7 @@ Co-founder 외의 사람을 들여야하는 순간이 왔을 때, 다른 회사�
 
 ![culture deck]({{"/assets/img/project/culturedeck_2.jpg"}})
 
-![culture deck]({{"/assets/img/project/culturedeck_3.png"}})
+![culture deck]({{"/assets/img/project/culturedeck_3.jpg"}})
 (가장 최근 받았던 자리에 부착할 수 있는 버전)
 
 ## Problem - 발전을 위한 Feedback
