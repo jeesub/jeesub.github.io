@@ -27,7 +27,7 @@ layout: default
 
 ## Takeaway
 
-* 처음으로 혼자 디자이너 역할까지 맡아 진행한 프로젝트. 
+* 혼자 디자이너, 개발자의 역할을 진행했다. 
 Bootstrap을 활용해 디자이너의 빈 자리를 메웠다. 
 모바일 사용자가 증가함에 따라 responsible design을 사용했다. 
 웹 디자인의 기본 내용은 [Treehouse](https://teamtreehouse.com/)를 이용해 공부했다. 

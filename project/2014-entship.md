@@ -28,8 +28,8 @@ layout: default
 
 ## Takeaway
 
-* wordpress, XE 등의 CMS에 대해 알게 되었다. 
+* wordpress, XE 등의 CMS를 테스트 했다. 
 특정 목적을 가진 웹사이트의 경우 이런 CMS를 활용하는 것이 큰 도움이 되는 것을 알게 되었다. 
 동시에 CMS의 한계에 대해서도 알게 되었다. 
-* wordpress 생태계에 대해 알게 되었다. 
+* wordpress 생태계를 활용했다. 
 Plugin, Theme 등 wordpress로부터 파생되는 생태계의 힘을 알게 되었다. 
