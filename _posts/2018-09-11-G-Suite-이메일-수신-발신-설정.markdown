@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "G Suite 이메일 수신, 발신 설정"
-categories: gsuite
+categories: etc
 ---
 
 # G Suite custom domain email

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails Controller Module 사용하기"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 # Controller Module

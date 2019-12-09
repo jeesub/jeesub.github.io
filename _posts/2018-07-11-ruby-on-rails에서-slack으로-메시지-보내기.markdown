@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails에서 slack으로 메시지 보내기"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 Ruby on Rails 어플리케이션에서 특정 이벤트 발생시 slack으로 알림을 주는 간단한 기능을 구현하려고 한다.

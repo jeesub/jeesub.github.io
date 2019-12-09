@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "bootstrap RoR 초기 세팅"
-categories: rails
+categories: [web-development, ruby-on-rails, css]
 ---
 
 # 환경

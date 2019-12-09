@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "S3에 업로드 된 한글 이름 파일 다운로드 설정"
-categories: aws
+categories: [web-development, aws]
 ---
 
 # Ruby on Rails에서의 파일 제공

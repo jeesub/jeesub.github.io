@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "elastic beanstalk으로 ruby on rails deploy 하기"
-categories: [rails, aws]
+categories: [web-development, ruby-on-rails, aws]
 ---
 
 # Elastic Beanstalk

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails 이미지 업로드 with heroku, AWS S3"
-categories: [rails, heroku, aws]
+categories: [web-development, ruby-on-rails, heroku, aws]
 ---
 heroku에서 돌아가고 있는 RoR 어플리케이션의 특정 Model에 이미지를 추가하기로 했다.
 그리고 선택한 방법은 AWS S3로 이미지를 저장하는 것.

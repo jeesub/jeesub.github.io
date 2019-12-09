@@ -1,0 +1,17 @@
+I"9<h1 id="categories">Categories</h1>
+
+<ul>
+  <li><a href="/category/web-development/">Web Development</a>
+    <ul>
+      <li><a href="/category/ruby-on-rails/">Ruby on Rails</a></li>
+      <li><a href="/category/javascript/">JavaScript</a></li>
+      <li><a href="/category/css/">CSS</a></li>
+      <li><a href="/category/heroku/">Heroku</a></li>
+      <li><a href="/category/aws/">AWS</a></li>
+    </ul>
+  </li>
+  <li><a href="/category/jekyll/">Jekyll</a></li>
+  <li><a href="/category/marketing/">Marketing</a></li>
+  <li><a href="/category/etc/">etc.</a></li>
+</ul>
+:ET

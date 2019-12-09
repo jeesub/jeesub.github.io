@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "postgreSQL 한글 정렬 문제 해결하기"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 # postgreSQL의 한글 정렬 문제

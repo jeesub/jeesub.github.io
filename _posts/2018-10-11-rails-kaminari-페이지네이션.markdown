@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "rails kaminari 페이지네이션"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 # Pagination

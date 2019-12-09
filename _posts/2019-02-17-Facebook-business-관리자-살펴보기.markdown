@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Facebook business 관리자 살펴보기"
-categories: [etc, marketing]
+categories: [marketing, etc]
 ---
 
 # Facebook Business

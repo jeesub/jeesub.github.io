@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CSS-framework-Bulma-소개"
-categories: [css]
+categories: [web-development, ruby-on-rails, css]
 ---
 
 # Bulma

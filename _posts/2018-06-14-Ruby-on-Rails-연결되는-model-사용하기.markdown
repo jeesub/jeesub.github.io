@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails 연결되는 model 사용하기"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 # 연결되는 model

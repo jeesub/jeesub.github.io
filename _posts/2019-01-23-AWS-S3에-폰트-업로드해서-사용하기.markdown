@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWS S3에 폰트 업로드해서 사용하기"
-categories: aws
+categories: [web-development, aws]
 ---
 
 # 웹폰트

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "linux 기본 명령어"
-categories: [linux, etc]
+categories: [web-development, etc]
 ---
 
 {% highlight bash %}

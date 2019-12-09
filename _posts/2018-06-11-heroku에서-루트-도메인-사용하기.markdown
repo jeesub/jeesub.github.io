@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "heroku에서 루트 도메인 사용하기"
-categories: heroku
+categories: [web-development, heroku]
 ---
 
 # 루트 도메인

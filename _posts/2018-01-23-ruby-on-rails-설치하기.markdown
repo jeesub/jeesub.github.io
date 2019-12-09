@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails 설치하기"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 설치환경: Mac OS
 <br><br>

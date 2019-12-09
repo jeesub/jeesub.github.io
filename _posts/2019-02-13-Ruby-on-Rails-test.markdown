@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby on Rails test"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 # test

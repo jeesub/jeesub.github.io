@@ -1,0 +1,43 @@
+I"P
+<h1 id="ruby-on-rails-카테고리의-글">Ruby on Rails 카테고리의 글</h1>
+
+<ul>
+  
+  <li><a href="/blog/css-framework-Bulma-%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2/">CSS-framework-Bulma-소개</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-test/">Ruby on Rails test</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-Model-validation/">Ruby on Rails Model validation</a></li>
+  
+  <li><a href="/blog/elastic-beanstalk%EC%9C%BC%EB%A1%9C-ruby-on-rails-deploy-%ED%95%98%EA%B8%B0/">elastic beanstalk으로 ruby on rails deploy 하기</a></li>
+  
+  <li><a href="/blog/rails-kaminari-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98/">rails kaminari 페이지네이션</a></li>
+  
+  <li><a href="/blog/postgreSQL-%ED%95%9C%EA%B8%80-%EC%A0%95%EB%A0%AC-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">postgreSQL 한글 정렬 문제 해결하기</a></li>
+  
+  <li><a href="/blog/ruby-on-rails%EC%97%90%EC%84%9C-slack%EC%9C%BC%EB%A1%9C-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B3%B4%EB%82%B4%EA%B8%B0/">Ruby on Rails에서 slack으로 메시지 보내기</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-%EC%97%B0%EA%B2%B0%EB%90%98%EB%8A%94-model-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">Ruby on Rails 연결되는 model 사용하기</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-test-with-devise-gem/">Ruby on Rails - test with devise gem</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-Controller-Module-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">Ruby on Rails Controller Module 사용하기</a></li>
+  
+  <li><a href="/blog/bootstrap-RoR-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85/">bootstrap RoR 초기 세팅</a></li>
+  
+  <li><a href="/blog/devise-gem-with-heroku/">devise gem with heroku</a></li>
+  
+  <li><a href="/blog/ruby-on-rails-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-with-heroku-AWS-S3/">Ruby on Rails 이미지 업로드 with heroku, AWS S3</a></li>
+  
+  <li><a href="/blog/ruby-on-rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">Ruby on Rails 설치하기</a></li>
+  
+  <li><a href="/blog/heroku-custom-%EB%8F%84%EB%A9%94%EC%9D%B8-ACM%EC%9C%BC%EB%A1%9C-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/">heroku custom 도메인 ACM으로 인증서 적용하기</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-css-background-image-%EA%B2%BD%EB%A1%9C-%EC%97%90%EB%9F%AC/">Ruby on Rails css background-image 경로 에러</a></li>
+  
+  <li><a href="/blog/Ruby-on-Rails-Address-already-in-use-error-%ED%95%B4%EA%B2%B0/">Ruby on Rails Address already in use error 해결</a></li>
+  
+  <li><a href="/blog/heroku%EC%97%90-rails5-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">heroku에 rails5 설치하기</a></li>
+  
+</ul>
+:ET

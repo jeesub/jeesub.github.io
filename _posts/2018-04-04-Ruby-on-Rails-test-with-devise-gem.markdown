@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby on Rails - test with devise gem"
-categories: rails
+categories: [web-development, ruby-on-rails]
 ---
 
 Rails test를 하다보면, session 상태에 따른 테스트를 해야할 경우가 많다.

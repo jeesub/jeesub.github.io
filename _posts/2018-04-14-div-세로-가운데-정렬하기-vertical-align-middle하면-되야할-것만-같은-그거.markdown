@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "div 세로 가운데 정렬하기(vertical align: middle하면 되야할 것만 같은 그거)"
-categories: css
+categories: [web-development, css]
 ---
 
 # div 세로 가운데 정렬

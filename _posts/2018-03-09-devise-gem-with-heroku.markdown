@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "devise gem with heroku"
-categories: [rails, heroku]
+categories: [web-development, ruby-on-rails, heroku]
 ---
 
 # devise
