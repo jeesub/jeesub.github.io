@@ -1,4 +1,4 @@
-I"H<h1 id="startupinternzcom">startupinternz.com</h1>
+I"<h1 id="startupinternzcom">startupinternz.com</h1>
 
 <h2 id="overview">Overview</h2>
 
@@ -26,8 +26,7 @@ one-page 웹사이트에서 얻은 고객 피드백과 내부 피드백을 반�
 <h2 id="takeaway">Takeaway</h2>
 
 <ul>
-  <li>처음으로 mobile-first design으로 진행했다. 
-기존 웹사이트들과는 달리 20대가 타겟고, 20대는 mobile 비중이 높았기 때문에 mobile-first로 진행했다.</li>
+  <li>기존 웹사이트들과는 달리 20대가 타겟이고, 20대는 mobile 비중이 높았기 때문에 mobile-first로 진행했다.</li>
   <li>Information Architecture에 대한 많은 고민을 했다. 
 기존에는 없던 새로운 유형의 프로그램이기 때문에 사용자에게 전달해야 하는 정보량이 많았다. 
 이를 사용자 입장에서 파악하기 쉽게 정리하고 전달하고자 노력했다.</li>

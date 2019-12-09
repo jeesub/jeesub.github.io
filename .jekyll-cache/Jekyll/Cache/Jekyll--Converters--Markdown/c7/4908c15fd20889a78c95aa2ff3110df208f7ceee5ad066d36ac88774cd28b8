@@ -1,4 +1,4 @@
-I"�<h1 id="웹-사이트-이탈률-개선">웹 사이트 이탈률 개선</h1>
+I"*<h1 id="웹-사이트-이탈률-개선">웹 사이트 이탈률 개선</h1>
 
 <h2 id="overview">Overview</h2>
 
@@ -34,9 +34,9 @@
 
 <p><img src="/assets/img/project/bounce_rate_2.jpg" alt="이탈률 개선" /></p>
 
-<p>Organic Search와 Direct에서는 이탈률이 올랐지만 목표3 전환율도 함께 올랐다. 
-목표3은 지원서 양식 다운로드이다. 
-반면 Paid Search와 Other의 이탈률이 상당히 많이 증가했으며, 목표3 전환율도 급감했다. 
+<p>Organic Search와 Direct에서는 이탈률이 올랐지만 목표 전환율도 함께 올랐다. 
+목표(Goal)는 지원서 양식 다운로드이다. 
+반면 Paid Search와 Other의 이탈률이 상당히 많이 증가했으며, 목표 전환율도 급감했다. 
 Organic Search와 Direct를 통해 들어오는 사람들의 대부분은 이미 스타트업인턴즈 프로그램을 인지하고 있는 사람들이고, Paid Search와 Other를 통해 들어오는 사람들의 대부분은 프로그램을 새롭게 접한 사람들로 분류할 수 있다. 
 따라서 기존에 스타트업인턴즈 프로그램을 알고 있던 사람들의 행동에는 큰 변화가 없었지만, 홈페이지 개편 이후 웹사이트에 방문한 사람들의 행동은 기존 사용자들과 크게 다르다는 이야기가 된다.</p>
 
@@ -72,15 +72,17 @@ entshipschool.com은 광고 없이 검색과 기타 채널로만 사용자가 �
 
 <h2 id="solution-entshipschoolcom">Solution (ENTSHIPSCHOOL.COM)</h2>
 
+<p><img src="/assets/img/project/bounce_rate_6.jpg" alt="이탈률 개선" /></p>
+
 <ol>
-  <li>방문자의 대부분은 선생님들이고 일과 시간에 PC를 통해 접속하고 있었다. 학교의 컴퓨터들 사양이 좋지 않은 점을 감안해 이미지 파일 크기를 대폭 줄였다. 약간의 퀄리티 감소가 있었으나, 로딩 속도 개선을 위해 희생하기로 했다.</li>
-  <li>PC 뷰의 navigation을 fixed-top navigation으로 수정해 스크롤 위치에 상관없이 navigation 메뉴를 클릭할 수 있도록 했다.</li>
-  <li>PC 방문시 클릭할 수 있는 영역들을 추가로 배치했다. 랜딩 페이지에 3 개의 버튼을 추가해 페이지의 어디에 있어도 클릭할 수 있는 영역이 존재하도록 했다.</li>
+  <li>방문자의 대부분은 선생님들이고 일과 시간에 데스크탑을 통해 접속하고 있었다. 학교의 컴퓨터들 사양이 좋지 않은 점을 감안해 이미지 파일 크기를 대폭 줄였다. 약간의 퀄리티 감소가 있었으나, 로딩 속도 개선을 위해 희생하기로 했다.</li>
+  <li>데스크탑 뷰의 navigation을 fixed-top navigation으로 수정해 스크롤 위치에 상관없이 navigation 메뉴를 클릭할 수 있도록 했다.</li>
+  <li>클릭할 수 있는 영역들을 추가로 배치했다. 랜딩 페이지에 3 개의 버튼을 추가해 페이지의 어디에 있어도 클릭할 수 있는 영역이 존재하도록 했다.</li>
   <li>클릭 영역에 mouse over action을 추가해 클릭 영역을 명확히 드러나도록 했다.</li>
 </ol>
 
-<p><img src="/assets/img/project/bounce_rate_6.jpg" alt="이탈률 개선" /></p>
+<p><img src="/assets/img/project/bounce_rate_7.jpg" alt="이탈률 개선" /></p>
 
-<p>entshipschool.com의 경우 PC 방문자가 압도적으로 많았기 때문에 PC 뷰에 대한 개선만으로도 상당한 효과를 낼 수 있었다. 
+<p>entshipschool.com의 경우 데스크탑 방문자가 압도적으로 많았기 때문에 데스크탑 뷰에 대한 개선만으로도 상당한 효과를 낼 수 있었다. 
 프로젝트 진행 이후 이탈률이 87.26%(8월)에서 36.31%(12월)로 개선되었다.</p>
 :ET

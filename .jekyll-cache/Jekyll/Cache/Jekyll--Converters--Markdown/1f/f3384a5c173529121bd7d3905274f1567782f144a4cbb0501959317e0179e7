@@ -1,6 +1,4 @@
-I"
-
-<h1 id="oeclasscom">oeclass.com</h1>
+I"�	<h1 id="oeclasscom">oeclass.com</h1>
 
 <h2 id="overview">Overview</h2>
 
@@ -35,11 +33,9 @@ Seed funding으로 MVP 웹사이트 구축까지는 할 수 있었지만 디자�
 <h2 id="takeaway">Takeaway</h2>
 
 <ul>
-  <li>동영상 보안에 대해 알게 되었다. 
-유료 동영상을 제공하고자 할때는 client에서 동영상을 녹화하지 못하도록 방지하는 등의 대처가 필요했다. 
+  <li>유료 동영상을 제공하고자 할때는 client에서 동영상을 녹화하지 못하도록 방지하는 등의 대처가 필요했다. 
 또한 client가 영상을 저장하지 못하도록 방지해야 했다.</li>
-  <li>Text Editor에 대해 자세히 알게 되었다. 
-대부분의 Open source text editor들은 영어권에서 만들어졌고, 한글 사용이 원활하지 않다는 것을 알게 되었다. 
+  <li>대부분의 Open source text editor들은 영어권에서 만들어졌고, 한글 사용이 원활하지 않다는 것을 알게 되었다. 
 그리고 직접 editor를 만드는 경우 발생하는 문제들과 어려움에 대해 알게 되었다.</li>
 </ul>
 :ET

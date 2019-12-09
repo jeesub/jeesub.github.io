@@ -1,3 +1,5 @@
+encoding: utf-8
+
 title: 섭사장의 블로그
 description: 섭사장의 스타트업, 기획, 개발, 마케팅 블로그입니다.
 
@@ -31,4 +33,3 @@ social:
 
 google_analytics: "UA-106476938-1"
 timezone: Asia/Seoul
-encoding: utf-8
