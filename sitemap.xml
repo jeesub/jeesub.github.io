@@ -1,0 +1,31 @@
+---
+layout: null
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://jeesub.github.io/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://jeesub.github.io/about/</loc>
+    <priority>0.10</priority>
+  </url>
+  <url>
+    <loc>https://jeesub.github.io/category/</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://jeesub.github.io/project/</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://jeesub.github.io/contact/</loc>
+    <priority>0.10</priority>
+  </url>
+  {% for post in site.posts %}
+  	<url>
+  		<loc>{{ site.url }}{{ post.url }}</loc>
+  		<priority>0.5</priority>
+  	</url>
+  {% endfor %}
+</urlset>
