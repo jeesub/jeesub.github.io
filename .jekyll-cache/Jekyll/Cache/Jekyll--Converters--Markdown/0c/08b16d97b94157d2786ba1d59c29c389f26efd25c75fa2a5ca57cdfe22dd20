@@ -1,0 +1,265 @@
+I"fO<div id="articles">
+  <h1>Articles</h1>
+  <ul class="posts noList">
+    
+      <li>
+      	<span class="date">09 Dec 2019</span>
+      	<h3><a href="/blog/css-framework-Bulma-%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2/">CSS-framework-Bulma-소개</a></h3>
+      	<p class="description">BulmaFlexbox 기반의 무료, 오픈소스 CSS framework. 2019년 12월 9일 현재, github에서 37.7k의 Star를 받은 나름 유명한 framework이다. Bulma 특유의 장점 때...</p>
+      </li>
+    
+      <li>
+      	<span class="date">17 Feb 2019</span>
+      	<h3><a href="/blog/Facebook-business-%EA%B4%80%EB%A6%AC%EC%9E%90-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/">Facebook business 관리자 살펴보기</a></h3>
+      	<p class="description">Facebook Business기업 입장에서 보면 Facebook은 유용한 광고 플랫폼이다.Facebook에서 광고를 하고, 고객과 관계를 유지하기 위해서는 페이지, 광고 계정 등을 활용해야 한다.이를 위한 도...</p>
+      </li>
+    
+      <li>
+      	<span class="date">15 Feb 2019</span>
+      	<h3><a href="/blog/G-Suite-%EA%B4%80%EB%A6%AC%EC%9E%90-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/">G Suite 관리자 살펴보기</a></h3>
+      	<p class="description">G SuiteGoogle Cloud에서 제공하는 cloud work platform.사용하는 주된 이유는 비즈니스 메일 주소 때문이다.회사마다 메일 시스템을 구축할 수도 있지만, G Suite을 사용하는 것이 ...</p>
+      </li>
+    
+      <li>
+      	<span class="date">13 Feb 2019</span>
+      	<h3><a href="/blog/Ruby-on-Rails-test/">Ruby on Rails test</a></h3>
+      	<p class="description">testRuby on Rails는 테스트 자동생성을 포함하고 있다.Model이나 Controller가 생성될 때 skeleton test code를 함께 만들기 때문에 쉽게 테스트를 작성하고 진행할 수 있다.t...</p>
+      </li>
+    
+      <li>
+      	<span class="date">11 Feb 2019</span>
+      	<h3><a href="/blog/%EB%84%A4%EC%9D%B4%EB%B2%84%EC%9B%B9%EB%A7%88%EC%8A%A4%ED%84%B0%EB%8F%84%EA%B5%AC/">네이버웹마스터도구</a></h3>
+      	<p class="description">네이버웹마스터도구한국에서 웹사이트를 운영하려면 필수적으로 고려해야할 것은 ‘네이버 검색에 얼마나 잘 노출이 되는가’이다.예전에는 사용자 등록 형태로 웹사이트를 등록할 수 있었지만, 이제는 구글처럼 로봇에 의해 ...</p>
+      </li>
+    
+      <li>
+      	<span class="date">06 Feb 2019</span>
+      	<h3><a href="/blog/Ruby-on-Rails-Model-validation/">Ruby on Rails Model validation</a></h3>
+      	<p class="description">Model validationRuby on Rails의 MVC 패턴 중 M에 해당하는 Model에서는 data validation을 적용하게 된다.Database에 data를 저장 혹은 업데이트하기 전, 적절한...</p>
+      </li>
+    
+      <li>
+      	<span class="date">23 Jan 2019</span>
+      	<h3><a href="/blog/AWS-S3%EC%97%90-%ED%8F%B0%ED%8A%B8-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">AWS S3에 폰트 업로드해서 사용하기</a></h3>
+      	<p class="description">웹폰트웹사이트를 만들 때면 항상 폰트에 대한 고민을 하게 된다.CSS에 폰트만 지정되어 있다면, 해당 폰트는 사용자의 컴퓨터에서 불러온다.하지만 사용자의 컴퓨터에 폰트가 설치되어있지 않다면?사용자는 우리가 생각...</p>
+      </li>
+    
+      <li>
+      	<span class="date">17 Dec 2018</span>
+      	<h3><a href="/blog/elastic-beanstalk%EC%9C%BC%EB%A1%9C-ruby-on-rails-deploy-%ED%95%98%EA%B8%B0/">elastic beanstalk으로 ruby on rails deploy 하기</a></h3>
+      	<p class="description">Elastic BeanstalkElastic Beanstalk은 AWS의 EC2, DBS, CloudWatch, Auto Scaling 등을 편리하게 활용할 수 있도록 해준다.Elastic Beanstalk을 ...</p>
+      </li>
+    
+      <li>
+      	<span class="date">20 Nov 2018</span>
+      	<h3><a href="/blog/SEO/">SEO</a></h3>
+      	<p class="description">SEOSearch Engine Optimization. 검색엔진 최적화.운영하는 웹사이트가 검색 사이트의 검색 결과에 노출되도록 하는 행위를 말한다.보통은 Google, 네이버의 검색 결과에 노출되는 것을 목적...</p>
+      </li>
+    
+      <li>
+      	<span class="date">15 Oct 2018</span>
+      	<h3><a href="/blog/google-tag-manager-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/">google tag manager 세팅하기</a></h3>
+      	<p class="description">Google Tag Managerhttps://marketingplatform.google.com/about/tag-manager/태그처음에는 태그의 개념이 잡히지 않아서 이해하기 어려웠다.태그란, Google...</p>
+      </li>
+    
+      <li>
+      	<span class="date">11 Oct 2018</span>
+      	<h3><a href="/blog/rails-kaminari-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98/">rails kaminari 페이지네이션</a></h3>
+      	<p class="description">Pagination페이지네이션은 게시판에서 흔히 볼 수 있다.전체 정보량이 많을 경우, 한 번에 보여줄 정보의 양을 정하고 페이지 별로 보여주는 방법이다.기본적으로는 책처럼 페이지를 만드는 형태로 구현한다.타임...</p>
+      </li>
+    
+      <li>
+      	<span class="date">18 Sep 2018</span>
+      	<h3><a href="/blog/DMARC-%EB%A6%AC%ED%8F%AC%ED%8A%B8/">DMARC 리포트</a></h3>
+      	<p class="description">DMARCDMARC: https://dmarc.org/Domain-based Message Authentication, Reporting &amp; Conformance.SPF와 DKIM을 사용하는 이메일 인증...</p>
+      </li>
+    
+      <li>
+      	<span class="date">11 Sep 2018</span>
+      	<h3><a href="/blog/G-Suite-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%88%98%EC%8B%A0-%EB%B0%9C%EC%8B%A0-%EC%84%A4%EC%A0%95/">G Suite 이메일 수신, 발신 설정</a></h3>
+      	<p class="description">G Suite custom domain emailG Suite을 사용하면 custom 도메인 이메일을 사용할 수 있다.예전엔 10개 계정까지 무료였기때문에 스타트업들의 사랑을 받았다.현재는 무료 가입은 불가능하...</p>
+      </li>
+    
+      <li>
+      	<span class="date">07 Aug 2018</span>
+      	<h3><a href="/blog/google-analytics-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/">google analytics 용어 정리</a></h3>
+      	<p class="description">일단은, 구글 공식 문서를 참고.구글 공식 문서만 보고는 이해하기 어려워서 나름대로 다시 정리를 해보았다.나름의 해석을 적어놓았고, 구글 공식 문서 링크를 적어 놓았다.세션(Session)사용자의 웹사이트 접속...</p>
+      </li>
+    
+      <li>
+      	<span class="date">01 Aug 2018</span>
+      	<h3><a href="/blog/postgreSQL-%ED%95%9C%EA%B8%80-%EC%A0%95%EB%A0%AC-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">postgreSQL 한글 정렬 문제 해결하기</a></h3>
+      	<p class="description">postgreSQL의 한글 정렬 문제Ruby on Rails Application에 postgreSQL을 DB로 쓰고 있는 프로그램에서 이름순 정렬을 적용했다.@lists = List.order(:name)그런...</p>
+      </li>
+    
+      <li>
+      	<span class="date">11 Jul 2018</span>
+      	<h3><a href="/blog/ruby-on-rails%EC%97%90%EC%84%9C-slack%EC%9C%BC%EB%A1%9C-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B3%B4%EB%82%B4%EA%B8%B0/">Ruby on Rails에서 slack으로 메시지 보내기</a></h3>
+      	<p class="description">Ruby on Rails 어플리케이션에서 특정 이벤트 발생시 slack으로 알림을 주는 간단한 기능을 구현하려고 한다.slack 메시지slack에 메시지를 보내기 위해서는 세 가지 중 한 방법을 사용하면 된다....</p>
+      </li>
+    
+      <li>
+      	<span class="date">14 Jun 2018</span>
+      	<h3><a href="/blog/Ruby-on-Rails-%EC%97%B0%EA%B2%B0%EB%90%98%EB%8A%94-model-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">Ruby on Rails 연결되는 model 사용하기</a></h3>
+      	<p class="description">연결되는 modelpost와 댓글이 있다면, post와 댓글은 서로 연결되어 있다.댓글은 post 없이는 존재할 수 없다.이런 경우를 Ruby on Rails에서는 association이라고 표현한다.참고: h...</p>
+      </li>
+    
+      <li>
+      	<span class="date">11 Jun 2018</span>
+      	<h3><a href="/blog/heroku%EC%97%90%EC%84%9C-%EB%A3%A8%ED%8A%B8-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">heroku에서 루트 도메인 사용하기</a></h3>
+      	<p class="description">루트 도메인zone apex(bare, naked, root) domain.www 없이 표기되는 도메인이다. example.com 같은 도메인을 말한다.웹사이트를 운영할 경우, www 혹은 non-www 둘 중...</p>
+      </li>
+    
+      <li>
+      	<span class="date">08 Jun 2018</span>
+      	<h3><a href="/blog/sublime-text-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-snippet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">sublime text 자동완성 snippet 사용하기</a></h3>
+      	<p class="description">snippet - 스니펫스니펫이란, 단축키를 통해 자주 쓰는 문구를 자동 완성하는 기능이라고 생각하면 될 것 같다.참고: https://ko.wikipedia.org/wiki/스니펫sublime text 3에서...</p>
+      </li>
+    
+      <li>
+      	<span class="date">30 May 2018</span>
+      	<h3><a href="/blog/sublime-text-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">sublime text 사용하기</a></h3>
+      	<p class="description">서브라임 텍스트 3스타트업에서 많이 활용하는 텍스트 에디터Python 기반으로, 플러그인 기능이 잘 활성화 되어 있다. 다른 에디터들에 비해 가볍게 동작한다.https://www.sublimetext.com/P...</p>
+      </li>
+    
+      <li>
+      	<span class="date">29 May 2018</span>
+      	<h3><a href="/blog/jekyll-%EC%9E%90%EC%A3%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%ED%99%9C%EC%9A%A9%EB%B2%95/">jekyll 자주 사용하는 활용법</a></h3>
+      	<p class="description">출처: jekyll 공식 블로그jekyll 업데이트$ bundle update jekyll코드 구문 작성하기 {% highlight ruby %}   def foo    puts 'bar'  end {% end...</p>
+      </li>
+    
+      <li>
+      	<span class="date">14 Apr 2018</span>
+      	<h3><a href="/blog/div-%EC%84%B8%EB%A1%9C-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-vertical-align-middle%ED%95%98%EB%A9%B4-%EB%90%98%EC%95%BC%ED%95%A0-%EA%B2%83%EB%A7%8C-%EA%B0%99%EC%9D%80-%EA%B7%B8%EA%B1%B0/">div 세로 가운데 정렬하기(vertical align: middle하면 되야할 것만 같은 그거)</a></h3>
+      	<p class="description">div 세로 가운데 정렬div 안의 div를 세로 가운데에 정렬하려는 시도는 오래전부터 있었지만, 계속 어려움으로 남아있다. w3 school, stack over flow등을 뒤져봐도 lineheight를 준...</p>
+      </li>
+    
+      <li>
+      	<span class="date">12 Apr 2018</span>
+      	<h3><a href="/blog/jquery%EB%A1%9C-%EB%82%A0%EC%A7%9C-select-form-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0/">jquery로 날짜 select form 제어하기</a></h3>
+      	<p class="description">javascript 날짜 formatvar date = new Date();			// 2018-04-12var year = date.getFullYear();  // 2018var month = date.get...</p>
+      </li>
+    
+      <li>
+      	<span class="date">10 Apr 2018</span>
+      	<h3><a href="/blog/facebook-%EC%9C%A0%EC%82%AC%ED%83%80%EA%B2%9F-%EB%A7%8C%EB%93%A4%EA%B8%B0/">facebook 유사타겟 만들기</a></h3>
+      	<p class="description">기존에는 facebook 광고를 위해 성별, 거주지, 관심사 등을 직접 지정해주기도 했다. 하지만 이런 분야는 컴퓨터에 맞기는게 더 효과적이다. facebook에서는 이를 위해 ‘유사타겟’ 기능을 제공한다.유사...</p>
+      </li>
+    
+      <li>
+      	<span class="date">04 Apr 2018</span>
+      	<h3><a href="/blog/Ruby-on-Rails-test-with-devise-gem/">Ruby on Rails - test with devise gem</a></h3>
+      	<p class="description">Rails test를 하다보면, session 상태에 따른 테스트를 해야할 경우가 많다.devise에서는 이를 위한 helper를 제공한다.공식문서를 참고했지만, 다양한 경우에 대한 문서는 없어서 조금 애를 먹...</p>
+      </li>
+    
+      <li>
+      	<span class="date">03 Apr 2018</span>
+      	<h3><a href="/blog/Ruby-on-Rails-Controller-Module-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">Ruby on Rails Controller Module 사용하기</a></h3>
+      	<p class="description">Controller ModuleRuby on Rails application을 만들다보면, Controller가 많아진다.이 때 module로 관리하면 정돈해서 사용할 수 있다.시작부터 controller mo...</p>
+      </li>
+    
+      <li>
+      	<span class="date">15 Mar 2018</span>
+      	<h3><a href="/blog/bootstrap-RoR-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85/">bootstrap RoR 초기 세팅</a></h3>
+      	<p class="description">환경ruby version: 2.3.4rails version: 5.1.4bootstrap version: 3.3gemfile 추가gem 'rails',              '~&gt; 5.1.4'gem '...</p>
+      </li>
+    
+      <li>
+      	<span class="date">14 Mar 2018</span>
+      	<h3><a href="/blog/S3%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C-%EB%90%9C-%ED%95%9C%EA%B8%80-%EC%9D%B4%EB%A6%84-%ED%8C%8C%EC%9D%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%84%A4%EC%A0%95/">S3에 업로드 된 한글 이름 파일 다운로드 설정</a></h3>
+      	<p class="description">Ruby on Rails에서의 파일 제공Ruby on Rails로 만든 웹 어플리케이션에서 유저들에게 파일 다운로드를 제공하고 있다.인코딩 문제로 인해 파일 명은 영어로 해놓았는데, 한글로 변경해달라는 요청이 ...</p>
+      </li>
+    
+      <li>
+      	<span class="date">09 Mar 2018</span>
+      	<h3><a href="/blog/devise-gem-with-heroku/">devise gem with heroku</a></h3>
+      	<p class="description">deviseRuby on Rails application의 유저 관리를 도와주는 gem이다. https://github.com/plataformatec/devisegemfile 설정gem 'devise'bund...</p>
+      </li>
+    
+      <li>
+      	<span class="date">28 Jan 2018</span>
+      	<h3><a href="/blog/ruby-on-rails-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-with-heroku-AWS-S3/">Ruby on Rails 이미지 업로드 with heroku, AWS S3</a></h3>
+      	<p class="description">heroku에서 돌아가고 있는 RoR 어플리케이션의 특정 Model에 이미지를 추가하기로 했다.그리고 선택한 방법은 AWS S3로 이미지를 저장하는 것.gemGemfile에 필요한 gem을 추가한다.# Gemf...</p>
+      </li>
+    
+      <li>
+      	<span class="date">23 Jan 2018</span>
+      	<h3><a href="/blog/ruby-on-rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">Ruby on Rails 설치하기</a></h3>
+      	<p class="description">설치환경: Mac OSMac의 system Ruby는 최신 버전이 아니기 때문에, ruby를 설치해줘야 한다.일단, Homebrew를 설치한다. 설치 방법은 url 참고https://brew.sh/index_k...</p>
+      </li>
+    
+      <li>
+      	<span class="date">23 Jan 2018</span>
+      	<h3><a href="/blog/linux-%EA%B8%B0%EB%B3%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/">linux 기본 명령어</a></h3>
+      	<p class="description"># 해당 폴더의 콘텐츠 나열ls # 디렉토리(폴더) 만들기mkdir &lt;name&gt; # 디렉토리(폴더)로 이동cd &lt;name&gt; # 홈 디렉토리로 이동cd # 상위 디렉토리로 이동cd .. # ...</p>
+      </li>
+    
+      <li>
+      	<span class="date">10 Jan 2018</span>
+      	<h3><a href="/blog/ms-office-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-%EA%B4%80%EB%A6%AC/">MS Office 2016 라이선스 관리</a></h3>
+      	<p class="description">MS Office 라이선스근래 들어서는 Office 365로 사용하는 경우도 많이 늘었지만, 회사에선 아직 MS Office 2016을 구매해서 사용하고 있다.그 이유는, MS Office 2016이 생각보다 ...</p>
+      </li>
+    
+      <li>
+      	<span class="date">13 Dec 2017</span>
+      	<h3><a href="/blog/facebook-%ED%94%BD%EC%85%80-%EC%82%AC%EC%9A%A9%EA%B8%B0/">facebook 픽셀 사용기</a></h3>
+      	<p class="description">facebook 픽셀?facebook으로 광고를 돌리다 보면, 기본 기능의 한계를 느낄 수 있다.결국은 디테일한 설정들이 필요해지는데, 이 때 facebook 픽셀을 사용하면 된다.Google Analytics...</p>
+      </li>
+    
+      <li>
+      	<span class="date">16 Nov 2017</span>
+      	<h3><a href="/blog/jekyll-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0/">jekyll 카테고리 만들기</a></h3>
+      	<p class="description">카테고리가 필요하다jekyll 블로그를 사용하다보니, 카테고리가 필요하다는 생각이 들어서 여러모로 알아봤다.그런데, 가장 편한 방법으로 카테고리를 사용하려면 github page를 사용하면 불가능했다.출처: h...</p>
+      </li>
+    
+      <li>
+      	<span class="date">06 Nov 2017</span>
+      	<h3><a href="/blog/heroku-custom-%EB%8F%84%EB%A9%94%EC%9D%B8-ACM%EC%9C%BC%EB%A1%9C-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/">heroku custom 도메인 ACM으로 인증서 적용하기</a></h3>
+      	<p class="description">heroku에서 돌아가고 있는 web application에 SSL을 적용하는 방법을 알아봤다.그런데, heroku 메뉴얼을 뒤지다 보니 Automated Certificate Management라는 새로운 기...</p>
+      </li>
+    
+      <li>
+      	<span class="date">01 Nov 2017</span>
+      	<h3><a href="/blog/heroku-custom-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90-ssl-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/">heroku custom 도메인에 SSL 적용하기</a></h3>
+      	<p class="description">heroku에서 돌아가고 있는 web application에 SSL을 적용했다.2월에 다른 web application에서 진행했었지만, 다시 하려니 잘 기억이 안나서 다시 기록한다.실제 web applicat...</p>
+      </li>
+    
+      <li>
+      	<span class="date">28 Sep 2017</span>
+      	<h3><a href="/blog/Ruby-on-Rails-css-background-image-%EA%B2%BD%EB%A1%9C-%EC%97%90%EB%9F%AC/">Ruby on Rails css background-image 경로 에러</a></h3>
+      	<p class="description">background-image를 적용시키기 위해 css 파일에 위와 같은 코드를 넣었다.background-image: url(/assets/image.png);local 테스트에서는 제대로 적용되었지만, pr...</p>
+      </li>
+    
+      <li>
+      	<span class="date">28 Sep 2017</span>
+      	<h3><a href="/blog/Ruby-on-Rails-Address-already-in-use-error-%ED%95%B4%EA%B2%B0/">Ruby on Rails Address already in use error 해결</a></h3>
+      	<p class="description">$ rails server명령어를 실행했지만 error가 났다. Error 메시지를 보니 이전 puma가 제대로 꺼지지 않은 것 같다.Address already in use - bind(2) for "0.0....</p>
+      </li>
+    
+      <li>
+      	<span class="date">14 Sep 2017</span>
+      	<h3><a href="/blog/jekyll-%ED%85%8C%EB%A7%88-%EB%B0%94%EA%BE%B8%EA%B8%B0/">jekyll 테마 바꾸기</a></h3>
+      	<p class="description">jekyll 블로그의 테마를 바꾸기로 했다.바꿀 테마 찾기가장 기본이 되는 방법은 jekyll의 테마가 공유되는 사이트에서 마음에 드는 테마를 찾으면 된다.http://jekyllthemes.org/하지만 귀찮...</p>
+      </li>
+    
+      <li>
+      	<span class="date">13 Sep 2017</span>
+      	<h3><a href="/blog/jekyll-blog-title-%EB%B0%94%EA%BE%B8%EA%B8%B0/">jekyll blog title 바꾸기</a></h3>
+      	<p class="description">jekyll 블로그를 만드니 header의 site의 이름 부분에 ‘Your awesome tilte’이라고 되어있다. footer 부분에도 기본적으로 적용되어 있는 문구들이 나타난다. 해당 부분은 간단하게 바...</p>
+      </li>
+    
+      <li>
+      	<span class="date">13 Sep 2017</span>
+      	<h3><a href="/blog/heroku%EC%97%90-rails5-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">heroku에 rails5 설치하기</a></h3>
+      	<p class="description">rails5 설치하기rails5의 최신 버전을 확인한다.https://rubygems.org/gems/rails/versions/5.0.0.beta1rails를 설치한다.$ gem install rails -v...</p>
+      </li>
+    
+      <li>
+      	<span class="date">12 Sep 2017</span>
+      	<h3><a href="/blog/jekyll-blog-%EB%A7%8C%EB%93%A4%EA%B8%B0/">jekyll blog 만들기</a></h3>
+      	<p class="description">heroku에 rails5로 만든 앱을 올리다 보니, rails4를 사용하던 때와는 다른 에러들이 나오기 시작했다. 홈페이지를 여러개 만들어야 하는 상황이라 문제와 해결방법을 기록할 블로그를 만들기로 했다. 기...</p>
+      </li>
+    
+  </ul>
+</div>
+:ET
