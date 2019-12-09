@@ -3,9 +3,7 @@ layout: default
 title: Contact
 ---
 
-<div id="contact">
-	<h1 class="pageTitle">Contact</h1>
-	<div class="contactContent">
-		<a href="https://www.facebook.com/jeesub.brad.lee">https://www.facebook.com/jeesub.brad.lee</a>
-	</div>
-</div>
+# Contact
+
+* <https://www.facebook.com/jeesub.brad.lee>
+* <https://github.com/jeesub>
