@@ -8,13 +8,12 @@ categories: [web-development, ruby-on-rails, css]
 
 Flexbox 기반의 무료, 오픈소스 CSS framework. 
 2019년 12월 9일 현재, github에서 37.7k의 Star를 받은 나름 유명한 framework이다. 
-Bulma 특유의 장점 때문에 프로젝트에 적용해 사용해보았다. 
 
 <https://bulma.io/>
 
 # 장단점
 
-Bulma를 사용해보기 전까지는 가장 유명한 CSS framework인 Bootstrap를 사용했었다. 
+가장 유명한 CSS framework인 Bootstrap과 비교를 해보았다. 
 Bootstrap에 비해 Bulma가 가지는 장단점은 다음과 같다. 
 
 ## 장점
@@ -34,7 +33,7 @@ Bootstrap에 비해 Bulma가 가지는 장단점은 다음과 같다.
 
 몇 가지의 단점이 있지만, 명확한 장점이 있기 때문에 프로젝트에 따라 Bulma의 장점이 빛을 발할 수 있다. 
 디자이너 없이 혼자 웹사이트를 만들어야 할 경우 Bulma를 사용하면 빠른 작업이 가능하다. 
-그리고 방문자들이 mobile 위주이거나 최신 브라우저를 사용할 경우 Bulma를 사용할 수 있다. 
+그리고 방문자들이 mobile 비중이 높고, 최신 브라우저를 사용할 경우 Bulma를 사용할 수 있다. 
 
 # Ruby on Rails에서 활용하기
 
@@ -74,7 +73,8 @@ viewport 메타 태그를 추가해준다.
 {% endhighlight %}
 
 CSS 적용이 끝났다. 
-이제는 활용하기만 하면 된다. 
+이제는 미리 지정된 class를 적용하는 방식으로 활용하기만 하면 된다. 
+공식 문서를 참고하면 쉽게 활용할 수 있을 것이다. 
 
 {% highlight html %}
 <div class="container">
