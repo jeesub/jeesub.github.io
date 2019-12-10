@@ -14,7 +14,7 @@ Bulma 특유의 장점 때문에 프로젝트에 적용해 사용해보았다.
 
 # 장단점
 
-아무래도 가장 유명한 CSS framework인 Bootstrap과 비교하게 된다. 
+Bulma를 사용해보기 전까지는 가장 유명한 CSS framework인 Bootstrap를 사용했었다. 
 Bootstrap에 비해 Bulma가 가지는 장단점은 다음과 같다. 
 
 ## 장점
@@ -32,6 +32,10 @@ Bootstrap에 비해 Bulma가 가지는 장단점은 다음과 같다.
 2. 브라우저 호환성이 낮다. JavaScript를 사용하지 않았고 CSS3의 최신 기술들을 활용하기 때문에 100% 호환되지 않는 브라우저들이 존재한다. 이는 구형 브라우저 사용이 많은 한국에서는 특히 심각한 단점이다. 
 3. 한국어 가이드 문서를 구하기 어렵다. 
 
+몇 가지의 단점이 있지만, 명확한 장점이 있기 때문에 프로젝트에 따라 Bulma의 장점이 빛을 발할 수 있다. 
+디자이너 없이 혼자 웹사이트를 만들어야 할 경우 Bulma를 사용하면 빠른 작업이 가능하다. 
+그리고 방문자들이 mobile 위주이거나 최신 브라우저를 사용할 경우 Bulma를 사용할 수 있다. 
+
 # Ruby on Rails에서 활용하기
 
 Bulma 홈페이지에 가면 여러 환경에서 활용하는 방법이 나와있다. 
@@ -42,16 +46,20 @@ Ruby on Rails로 프로젝트를 진행했기 때문에 gem을 활용했다.
 
 <https://rubygems.org/gems/bulma-rails>
 
+gem을 사용하기 위해 Gemfile에 bulma-rails gem을 추가해준다. 
+
 {% highlight ruby %}
 # Gemfile
 gem 'bulma-rails'
 {% endhighlight %}
 
+gem을 설치한다. 
+
 {% highlight bash %}
 $ bundle
 {% endhighlight %}
 
-CSS에 import 해준다.
+CSS에 import 해준다. 
 
 {% highlight css %}
 # app/assets/stylesheets/application.scss
@@ -77,6 +85,11 @@ CSS 적용이 끝났다.
     <h2 class="subtitle">
       Thanks, Bulma.
     </h2>
+    <div class="columns">
+	  <div class="column">column 1</div>
+	  <div class="column">column 2</div>
+	  <div class="column">column 3</div>
+	</div>
   </section>
 </div>
 {% endhighlight %}
