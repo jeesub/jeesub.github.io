@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "heroku에 rails5 설치하기"
+title:  "Heroku에 Rails5 설치하기"
 categories: [web-development, heroku, ruby-on-rails]
 ---
 
-# rails5 설치하기
-rails5의 최신 버전을 확인한다.<br>
+# Ruby on Rails 5 설치하기
+
+Rails 5의 최신 버전을 확인한다.<br>
 <https://rubygems.org/gems/rails/versions/5.0.0.beta1>
 
-rails를 설치한다.<br>
+Rails를 설치한다.<br>
 
 {% highlight bash %}
 $ gem install rails -v 5.1.4
@@ -49,9 +50,9 @@ $ git add -A
 $ git commit -m "Initialize repository"
 {% endhighlight %}
 
-github또는 bitbucket 등 git 서비스와 연동 후 push(설명 생략)
+GitHub또는 Bitbucket 등 git 서비스와 연동 후 push(설명 생략)
 
-heroku login(toolbelt가 설치되어있지 않다면 설치), heroku의 git에 push
+Heroku login(toolbelt가 설치되어있지 않다면 설치), Heroku의 git에 push
 
 {% highlight bash %}
 $ heroku version

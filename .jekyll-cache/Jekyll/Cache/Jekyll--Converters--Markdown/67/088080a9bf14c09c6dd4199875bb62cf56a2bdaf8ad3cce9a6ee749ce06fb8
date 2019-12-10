@@ -1,0 +1,164 @@
+I"�-<p>heroku에서 돌아가고 있는 RoR 어플리케이션의 특정 Model에 이미지를 추가하기로 했다. 
+그리고 선택한 방법은 AWS S3로 이미지를 저장하는 것.</p>
+
+<h1 id="gem">gem</h1>
+
+<p>Gemfile에 필요한 gem을 추가한다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Gemfile</span>
+<span class="n">gem</span> <span class="s1">'carrierwave'</span><span class="p">,</span> <span class="s1">'1.2.2'</span>
+<span class="n">gem</span> <span class="s1">'mini_magick'</span><span class="p">,</span> <span class="s1">'4.7.0'</span>
+<span class="n">group</span> <span class="ss">:production</span> <span class="k">do</span>
+    <span class="n">gem</span> <span class="s1">'fog'</span><span class="p">,</span> <span class="s1">'1.42'</span>
+<span class="k">end</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bundle <span class="nb">install</span></code></pre></figure>
+
+<ul>
+  <li>carrierwave: 파일 업로드 gem - <a href="https://github.com/carrierwaveuploader/carrierwave">https://github.com/carrierwaveuploader/carrierwave</a></li>
+  <li>mini_magick: 이미지 편집 gem - <a href="https://github.com/minimagick/minimagick">https://github.com/minimagick/minimagick</a></li>
+  <li>fog: cloud에 파일 업로드 gem - <a href="https://github.com/fog/fog">https://github.com/fog/fog</a></li>
+</ul>
+
+<h1 id="uploader">uploader</h1>
+
+<p>uploader를 생성한다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails generate uploader Picture</code></pre></figure>
+
+<p>예시를 위해 기본적인 요소들을 생성했다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rails generate scaffold Post post:text picture:string
+<span class="nv">$ </span>rails db:migrate</code></pre></figure>
+
+<p>Model에 uploader를 적용한다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/models/post.rb</span>
+<span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+    <span class="n">mount_uploader</span> <span class="ss">:picture</span><span class="p">,</span> <span class="no">PictureUploader</span>
+<span class="k">end</span></code></pre></figure>
+
+<h1 id="view">View</h1>
+
+<p>form field를 수정해준다. 
+accept option을 통해 파일 validation을 적용할 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/views/posts/_form.html.erb</span>
+<span class="o">&lt;</span><span class="sx">%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %&gt;</span></code></pre></figure>
+
+<p>이미지 태그를 생성해준다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/views/posts/index.html.erb</span>
+<span class="o">&lt;</span><span class="sx">%= image_tag(post.picture.url, alt: post.name) if post.picture? %&gt;</span></code></pre></figure>
+
+<h1 id="validation">validation</h1>
+
+<p>uploader validation</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/uploaders/picture_uploader.rb</span>
+<span class="k">class</span> <span class="nc">PictureUploader</span> <span class="o">&lt;</span> <span class="no">CarrierWave</span><span class="o">::</span><span class="no">Uploader</span><span class="o">::</span><span class="no">Base</span>
+    <span class="k">def</span> <span class="nf">extension_whitelist</span>
+        <span class="sx">%w(jpg jpeg gif png)</span>
+    <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>Model validation</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/models/teammate.rb</span>
+<span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">validate</span>  <span class="ss">:picture_size</span>
+  <span class="kp">private</span>
+    <span class="k">def</span> <span class="nf">picture_size</span>
+      <span class="k">if</span> <span class="n">picture</span><span class="p">.</span><span class="nf">size</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">.</span><span class="nf">megabyte</span>
+        <span class="n">errors</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="ss">:picture</span><span class="p">,</span> <span class="s2">"1MB 이하 사진을 선택해주세요."</span><span class="p">)</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>jquery validation</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"># app/views/teammates/_form.html.erb
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#post_picture</span><span class="dl">'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">change</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">pictureSize</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">files</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">size</span><span class="o">/</span><span class="mi">1024</span><span class="o">/</span><span class="mi">1024</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">pictureSize</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">1MB 이하 사진을 선택해주세요.</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<h1 id="imagemagick---리사이징">Imagemagick - 리사이징</h1>
+
+<p>Imagemagick 설치</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Ubuntu</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>imagemagick
+<span class="c"># Mac OS</span>
+<span class="nv">$ </span>brew <span class="nb">install </span>imagemagick</code></pre></figure>
+
+<p>Resize 설정 및 production mode에서만 cloud 업로드 설정</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/uploaders/picture_uploader.rb</span>
+<span class="k">class</span> <span class="nc">PictureUploader</span> <span class="o">&lt;</span> <span class="no">CarrierWave</span><span class="o">::</span><span class="no">Uploader</span><span class="o">::</span><span class="no">Base</span>
+    <span class="kp">include</span> <span class="no">CarrierWave</span><span class="o">::</span><span class="no">MiniMagick</span>
+    <span class="n">process</span> <span class="ss">resize_to_limit: </span><span class="p">[</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">]</span>
+    <span class="k">if</span> <span class="no">Rails</span><span class="p">.</span><span class="nf">env</span><span class="p">.</span><span class="nf">production?</span>
+        <span class="n">storage</span> <span class="ss">:fog</span>
+    <span class="k">else</span>
+        <span class="n">storage</span> <span class="ss">:file</span>
+    <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<h1 id="aws-s3">AWS S3</h1>
+
+<p>AWS 가입, S3 bucket 생성. 
+region은 seoul로 했다.</p>
+
+<p>주의할점: butcket 이름에 “.”이 들어가면 Rails가 경로를 제대로 읽어오지 못해 에러가 난다.</p>
+
+<p>carrier wave 설정</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># /app/config/initializers/carrier_wave.rb</span>
+<span class="k">if</span> <span class="no">Rails</span><span class="p">.</span><span class="nf">env</span><span class="p">.</span><span class="nf">production?</span>
+  <span class="no">CarrierWave</span><span class="p">.</span><span class="nf">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+    <span class="n">config</span><span class="p">.</span><span class="nf">fog_credentials</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="ss">:provider</span>              <span class="o">=&gt;</span> <span class="s1">'AWS'</span><span class="p">,</span>
+      <span class="ss">:aws_access_key_id</span>     <span class="o">=&gt;</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'S3_ACCESS_KEY'</span><span class="p">],</span>
+      <span class="ss">:aws_secret_access_key</span> <span class="o">=&gt;</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'S3_SECRET_KEY'</span><span class="p">],</span>
+      <span class="ss">:region</span>                <span class="o">=&gt;</span> <span class="s1">'ap-northeast-2'</span>
+    <span class="p">}</span>
+    <span class="n">config</span><span class="p">.</span><span class="nf">fog_directory</span>     <span class="o">=</span>  <span class="no">ENV</span><span class="p">[</span><span class="s1">'S3_BUCKET'</span><span class="p">]</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<ul>
+  <li>region은 본인이 사용중인 S3의 region을 기입한다.</li>
+</ul>
+
+<p>region 찾기 - <a href="https://docs.aws.amazon.com/ko_kr/general/latest/gr/rande.html">https://docs.aws.amazon.com/ko_kr/general/latest/gr/rande.html</a></p>
+
+<p>heroku config. 보안을 위해, 파일에 직접 기입하지 않는다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>heroku config:set <span class="nv">S3_ACCESS_KEY</span><span class="o">=</span>&lt;access key&gt;
+<span class="nv">$ </span>heroku config:set <span class="nv">S3_SECRET_KEY</span><span class="o">=</span>&lt;secret key&gt;
+<span class="nv">$ </span>heroku config:set <span class="nv">S3_BUCKET</span><span class="o">=</span>&lt;bucket name&gt;</code></pre></figure>
+
+<p>테스트용 업로드는 .gitignore</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># .gitingore</span>
+/public/uploads</code></pre></figure>
+
+<p>완료. 
+heroku에 upload한 후 db:migrate을 해주면 끝이 난다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>heroku run rails db:migrate</code></pre></figure>
+
+<h1 id="참고">참고</h1>
+
+<ul>
+  <li><a href="https://www.railstutorial.org/">https://www.railstutorial.org/</a></li>
+  <li><a href="https://github.com/carrierwaveuploader/carrierwave">https://github.com/carrierwaveuploader/carrierwave</a></li>
+  <li><a href="https://github.com/minimagick/minimagick">https://github.com/minimagick/minimagick</a></li>
+  <li><a href="https://github.com/fog/fog">https://github.com/fog/fog</a></li>
+</ul>
+:ET

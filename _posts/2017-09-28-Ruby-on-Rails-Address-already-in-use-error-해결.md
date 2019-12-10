@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby on Rails Address already in use error 해결"
 categories: [web-development, ruby-on-rails]
 ---
+
 {% highlight bash %}
 $ rails server
 {% endhighlight %}
@@ -25,8 +26,8 @@ ruby    17816 ubuntu   11u  IPv4 2009126466      0t0  TCP *:http-alt (LISTEN)
 ruby    17873 ubuntu   11u  IPv4 2009126466      0t0  TCP *:http-alt (LISTEN)
 {% endhighlight %}
 
-실행 결과 2개의 ruby 프로세스가 돌아가고 있다.<br>
-모두 종료해준다.<br>
+실행 결과 2개의 Ruby 프로세스가 돌아가고 있다. <br>
+모두 종료해준다. <br>
 
 {% highlight bash %}
 $ kill -9 17816

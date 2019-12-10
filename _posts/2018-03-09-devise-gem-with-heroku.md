@@ -5,7 +5,9 @@ categories: [web-development, ruby-on-rails, heroku]
 ---
 
 # devise
-Ruby on Rails application의 유저 관리를 도와주는 gem이다. <br />
+
+Ruby on Rails application의 유저 관리를 도와주는 gem이다. 
+
 <https://github.com/plataformatec/devise>
 
 ## gemfile 설정
@@ -58,8 +60,9 @@ config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.c
 $ rails generate devise:views admins
 {% endhighlight %}
 
-## model에서 confirmation 활성화<br />
-mail confirmation을 사용할 경우에만 설정해주면 된다.
+## model에서 confirmation 활성화
+
+mail confirmation을 사용할 경우에만 설정해주면 된다. 
 
 {% highlight ruby %}
 # app/models/admin.rb
@@ -89,7 +92,7 @@ add_index :admins, :confirmation_token,   unique: true
 $ rails db:migrate
 {% endhighlight %}
 
-설치가 완료 되면, 다양한 helper를 사용할 수 있다.
+설치가 완료 되면, 다양한 helper를 사용할 수 있다. 
 
 {% highlight ruby %}
 before_action :authenticate_member!
@@ -98,16 +101,16 @@ current_member
 member_session
 {% endhighlight %}
 
-rails routes를 통해 생성된 routes를 살펴보고 활용하면 끝.
+rails routes를 통해 생성된 routes를 살펴보고 활용하면 끝. 
 
 {% highlight bash %}
 $ rails routes
 {% endhighlight %}
 
 ## 추가. admin email 검증 설정
-admin을 만들 경우, 특정 도메인의 메일로만 가입이 가능하도록 해야 한다.
-직접 model을 만들었을 때와 마찬가지로, model 파일에 메일 주소를 검증하는 코드를 넣어주면 된다.
-정규식을 원하는 검증 형태로 바꾸어 사용하면 된다.
+admin을 만들 경우, 특정 도메인의 메일로만 가입이 가능하도록 해야 한다. 
+직접 model을 만들었을 때와 마찬가지로, model 파일에 메일 주소를 검증하는 코드를 넣어주면 된다. 
+정규식을 원하는 검증 형태로 바꾸어 사용하면 된다. 
 
 {% highlight ruby %}
 # /app/models/admin.rb
@@ -116,9 +119,10 @@ validates :email, format: { with: EMAIL_REGEX }
 {% endhighlight %}
 
 # devise with heroku
-하지만 이대로는 heroku에서 production mode로 사용이 불가능하다.
-confirm mail을 보낼 수 없기 때문이다.
-add-on을 추가함으로써 해결할 수 있다.
+
+하지만 이대로는 heroku에서 production mode로 사용이 불가능하다. 
+confirm mail을 보낼 수 없기 때문이다. 
+add-on을 추가함으로써 해결할 수 있다. 
 
 ## sendgrid 추가
 
@@ -134,7 +138,7 @@ $ heroku addons:create sendgrid:starter
 $ heroku config:get SENDGRID_USERNAME
 {% endhighlight %}
 
-heroku add-on 설정시 자동으로 입력된 변수 출력을 확인한다.
+heroku add-on 설정시 자동으로 입력된 변수 출력을 확인한다. 
 
 ## SMTP 설정
 
@@ -156,6 +160,7 @@ ActionMailer::Base.smtp_settings = {
 {% endhighlight %}
 
 # 참고
+
 * <https://github.com/plataformatec/devise>
 * <https://www.railstutorial.org/book/account_activation>
 * <https://guides.rubyonrails.org/action_mailer_basics.html>
