@@ -1,0 +1,84 @@
+I"<h1 id="bulma">Bulma</h1>
+
+<p>Flexbox 기반의 무료, 오픈소스 CSS framework. 
+2019년 12월 9일 현재, github에서 37.7k의 Star를 받은 나름 유명한 framework이다.</p>
+
+<p><a href="https://bulma.io/">https://bulma.io/</a></p>
+
+<h1 id="장단점">장단점</h1>
+
+<p>가장 유명한 CSS framework인 Bootstrap과 비교를 해보았다. 
+Bootstrap에 비해 Bulma가 가지는 장단점은 다음과 같다.</p>
+
+<h2 id="장점">장점</h2>
+
+<ol>
+  <li>가볍다. JavaScript 없이 CSS만을 사용하기 때문에 엄청 가볍다.</li>
+  <li>CSS3의 최신 기술들을 활용하기 때문에 상황에 따라 굉장히 편리하다.</li>
+  <li>Learning curve가 낮은 편이다. Element에 class를 추가하는 형태로 동작하기 때문에 익히고 적용하기가 쉽다.</li>
+  <li>Customize가 쉽다. 애초에 customize를 많이 염두에 둔 듯 하다. 변수 선언을 통해 customize할 수 있다.</li>
+  <li>Bulma가 정해놓은 class를 지정해야지만 style이 적용되기 때문에 내가 적용한 다른 CSS를 오염시키지 않는다. 가장 마음에 들었던 장점이다. Bulma에서 제공하는 class를 적용시키지 않으면, 내 HTML 문서는 전혀 변하지 않는다. 이 덕분에 custom은 더 쉬워지고, CSS error를 발견하기 쉬워진다.</li>
+  <li>Bootstrap보다 사용자가 적기 때문에, 참신한 느낌을 준다. 이미 사용자들은 Bootstrap으로 만든 웹사이트에 익숙해졌고, 개발자들은 참신함을 주기 위해 Bootstrap의 느낌을 빼는데 시간을 들인다. Bulma로 만든 웹사이트는 아직까지는 기시감을 주지 않는다.</li>
+</ol>
+
+<h2 id="단점">단점</h2>
+
+<ol>
+  <li>JavaScript 없이 동작하기때문에 한계가 있다. 아직까지는 CSS만으로 역동적인 frontend를 만드는데 제약이 존재한다.</li>
+  <li>브라우저 호환성이 낮다. JavaScript를 사용하지 않았고 CSS3의 최신 기술들을 활용하기 때문에 100% 호환되지 않는 브라우저들이 존재한다. 이는 구형 브라우저 사용이 많은 한국에서는 특히 심각한 단점이다.</li>
+  <li>한국어 가이드 문서를 구하기 어렵다.</li>
+</ol>
+
+<p>몇 가지의 단점이 있지만, 명확한 장점이 있기 때문에 프로젝트에 따라 Bulma의 장점이 빛을 발할 수 있다. 
+디자이너 없이 혼자 웹사이트를 만들어야 할 경우 Bulma를 사용하면 빠른 작업이 가능하다. 
+그리고 방문자들이 mobile 비중이 높고, 최신 브라우저를 사용할 경우 Bulma를 사용할 수 있다.</p>
+
+<h1 id="ruby-on-rails에서-활용하기">Ruby on Rails에서 활용하기</h1>
+
+<p>Bulma 홈페이지에 가면 여러 환경에서 활용하는 방법이 나와있다. 
+다운로드 가능한 파일로도 제공이 되고, CDN도 있고, npm으로 설치하는 방법도 잘 설명되어 있다.</p>
+
+<p>Ruby on Rails로 프로젝트를 진행했기 때문에 gem을 활용했다. 
+21만 다운로드를 기록한 bulma-rails gem을 사용했다.</p>
+
+<p><a href="https://rubygems.org/gems/bulma-rails">https://rubygems.org/gems/bulma-rails</a></p>
+
+<p>gem을 사용하기 위해 Gemfile에 bulma-rails gem을 추가해준다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Gemfile</span>
+<span class="n">gem</span> <span class="s1">'bulma-rails'</span></code></pre></figure>
+
+<p>gem을 설치한다.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bundle</code></pre></figure>
+
+<p>CSS에 import 해준다.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="err">#</span> <span class="nt">app</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">application</span><span class="nc">.scss</span>
+<span class="k">@import</span> <span class="s2">'bulma'</span><span class="p">;</span></code></pre></figure>
+
+<p>viewport 메타 태그를 추가해준다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"># app/views/layouts/application.html.erb
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>CSS 적용이 끝났다. 
+이제는 미리 지정된 class를 적용하는 방식으로 활용하기만 하면 된다. 
+공식 문서를 참고하면 쉽게 활용할 수 있을 것이다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+      Hello, World!
+    <span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>
+      Thanks, Bulma.
+    <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>column 1<span class="nt">&lt;/div&gt;</span>
+	  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>column 2<span class="nt">&lt;/div&gt;</span>
+	  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>column 3<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+:ET

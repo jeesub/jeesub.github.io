@@ -1,0 +1,46 @@
+I"k	<h1 id="seo">SEO</h1>
+
+<p>Search Engine Optimization. 
+자세한 내용은 <a href="/blog/SEO/">이전 포스트</a> 참고.</p>
+
+<h1 id="jekyll-seo">Jekyll SEO</h1>
+
+<p>Jekyll의 기능을 활용해 다음과 같은 SEO를 진행할 수 있다.</p>
+
+<h2 id="permalink">permalink</h2>
+
+<p>URL에 해당 포스트의 제목이 들어갈 경우, SEO에 더욱 유리하다. 
+이를 위해 Jekyll blog의 URL이 제목을 활용하도록 바꿔줄 필요가 있다. 
+아래의 코드를 _config.yml 파일에 넣어준다.</p>
+
+<figure class="highlight"><pre><code class="language-md" data-lang="md">permalink: blog/:title/</code></pre></figure>
+
+<h2 id="sitemap">sitemap</h2>
+
+<p>root 폴더에 sitemap.xml 파일을 만든다. 
+post가 새로 작성되면 sitemap이 갱신되도록 하려면 아래와 같이 작성하면 된다.</p>
+
+<figure class="highlight"><pre><code class="language-md" data-lang="md"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="no">null</span>
+<span class="nn">---</span>
+<span class="nt">&lt;urlset</span> <span class="na">xmlns=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xsi:schemaLocation=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;url&gt;</span>
+    <span class="nt">&lt;loc&gt;</span>{{ site.url }}/<span class="nt">&lt;/loc&gt;</span>
+    <span class="nt">&lt;priority&gt;</span>1.00<span class="nt">&lt;/priority&gt;</span>
+  <span class="nt">&lt;/url&gt;</span>
+  {% for post in site.posts %}
+    <span class="nt">&lt;url&gt;</span>
+      <span class="nt">&lt;loc&gt;</span>{{ site.url }}{{ post.url }}<span class="nt">&lt;/loc&gt;</span>
+      <span class="nt">&lt;priority&gt;</span>0.5<span class="nt">&lt;/priority&gt;</span>
+    <span class="nt">&lt;/url&gt;</span>
+  {% endfor %}
+<span class="nt">&lt;/urlset&gt;</span></code></pre></figure>
+
+<h2 id="robotstxt">robots.txt</h2>
+
+<p>root 폴더에 robots.txt 파일을 만든다. 
+모든 검색엔진에게 열어줄 경우 아래와 같이 작성한다.</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">User-agent: *
+Allow: /</code></pre></figure>
+:ET
