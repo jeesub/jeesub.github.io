@@ -29,7 +29,7 @@ title: Projects
 - [2013년 Culture Deck]({% link project/culture-deck.md %})
 - [2013년 현금흐름 관리]({% link project/현금흐름-관리.md %})
 - [2012년 RF motion sensor]({% link project/RF-motion-sensor.md %})
-- [2011년 실시간 위치기반 소셜커</li>]({% link project/실시간-위치기반-소셜커머스-기획.md %})
+- [2011년 실시간 위치기반 소셜커머스]({% link project/실시간-위치기반-소셜커머스-기획.md %})
 
 ## Side Projects
 
