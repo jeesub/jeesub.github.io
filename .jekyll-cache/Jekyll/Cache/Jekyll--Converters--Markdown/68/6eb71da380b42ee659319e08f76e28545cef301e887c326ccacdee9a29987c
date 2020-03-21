@@ -1,0 +1,120 @@
+I"�.<h1 id="카테고리가-필요하다">카테고리가 필요하다</h1>
+
+<p>Jekyll 블로그를 사용하다보니, 카테고리가 필요하다는 생각이 들어서 여러모로 알아봤다. 
+그런데, 가장 편한 방법은 GitHub page에서는 불가능했다. 
+만약 Github page를 사용하지 않는다면, 플러그인을 통해 해결하면 편할 듯 하다.</p>
+
+<p>출처: <a href="https://jekyllrb.com/docs/plugins/">https://jekyllrb.com/docs/plugins/</a></p>
+
+<h1 id="수동으로-카테고리-추가">수동으로 카테고리 추가</h1>
+
+<p>귀찮지만 수동으로 카테고리를 관리하는 방법을 찾아내어 적용했다.</p>
+
+<p>출처: <a href="https://cookieshake.github.io/posts/Jekyll-블로그에-Category-페이지-만들기">https://cookieshake.github.io/posts/Jekyll-블로그에-Category-페이지-만들기</a></p>
+
+<p>해당 글의 2번 방법을 응용했다. 
+<code class="highlighter-rouge">/category/[카테고리이름].md</code> 파일을 생성하고, 내용을 채워줬다. 
+예를 들어, <code class="highlighter-rouge">web-development.md</code> 파일의 내용을 아래와 같이 작성했다.</p>
+
+<figure class="highlight"><pre><code class="language-md" data-lang="md"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="nn">---</span>
+
+<span class="gh"># Web Development 카테고리의 글</span>
+
+<span class="nt">&lt;ul&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/css-framework-Bulma-%EC%86%8C%EA%B0%9C/"</span><span class="nt">&gt;</span>CSS-framework-Bulma-소개<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-test/"</span><span class="nt">&gt;</span>Ruby on Rails test<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-Model-validation/"</span><span class="nt">&gt;</span>Ruby on Rails Model validation<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/AWS-S3%EC%97%90-%ED%8F%B0%ED%8A%B8-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>AWS S3에 폰트 업로드해서 사용하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/elastic-beanstalk%EC%9C%BC%EB%A1%9C-ruby-on-rails-deploy-%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>elastic beanstalk으로 ruby on rails deploy 하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/rails-kaminari-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98/"</span><span class="nt">&gt;</span>rails kaminari 페이지네이션<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/postgreSQL-%ED%95%9C%EA%B8%80-%EC%A0%95%EB%A0%AC-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>postgreSQL 한글 정렬 문제 해결하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/ruby-on-rails%EC%97%90%EC%84%9C-slack%EC%9C%BC%EB%A1%9C-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B3%B4%EB%82%B4%EA%B8%B0/"</span><span class="nt">&gt;</span>Ruby on Rails에서 slack으로 메시지 보내기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-%EC%97%B0%EA%B2%B0%EB%90%98%EB%8A%94-model-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>Ruby on Rails 연결되는 model 사용하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/heroku%EC%97%90%EC%84%9C-%EB%A3%A8%ED%8A%B8-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>heroku에서 루트 도메인 사용하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/div-%EC%84%B8%EB%A1%9C-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-vertical-align-middle%ED%95%98%EB%A9%B4-%EB%90%98%EC%95%BC%ED%95%A0-%EA%B2%83%EB%A7%8C-%EA%B0%99%EC%9D%80-%EA%B7%B8%EA%B1%B0/"</span><span class="nt">&gt;</span>div 세로 가운데 정렬하기(vertical align: middle하면 되야할 것만 같은 그거)<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/jquery%EB%A1%9C-%EB%82%A0%EC%A7%9C-select-form-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>jquery로 날짜 select form 제어하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-test-with-devise-gem/"</span><span class="nt">&gt;</span>Ruby on Rails - test with devise gem<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-Controller-Module-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>Ruby on Rails Controller Module 사용하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/bootstrap-RoR-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85/"</span><span class="nt">&gt;</span>bootstrap RoR 초기 세팅<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/S3%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C-%EB%90%9C-%ED%95%9C%EA%B8%80-%EC%9D%B4%EB%A6%84-%ED%8C%8C%EC%9D%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%84%A4%EC%A0%95/"</span><span class="nt">&gt;</span>S3에 업로드 된 한글 이름 파일 다운로드 설정<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/devise-gem-with-heroku/"</span><span class="nt">&gt;</span>devise gem with heroku<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/ruby-on-rails-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-with-heroku-AWS-S3/"</span><span class="nt">&gt;</span>Ruby on Rails 이미지 업로드 with heroku, AWS S3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/ruby-on-rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>Ruby on Rails 설치하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/linux-%EA%B8%B0%EB%B3%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/"</span><span class="nt">&gt;</span>linux 기본 명령어<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/heroku-custom-%EB%8F%84%EB%A9%94%EC%9D%B8-ACM%EC%9C%BC%EB%A1%9C-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>heroku custom 도메인 ACM으로 인증서 적용하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/heroku-custom-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90-ssl-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>Heroku custom 도메인에 SSL 적용하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-css-background-image-%EA%B2%BD%EB%A1%9C-%EC%97%90%EB%9F%AC/"</span><span class="nt">&gt;</span>Ruby on Rails css background-image 경로 에러<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/Ruby-on-Rails-Address-already-in-use-error-%ED%95%B4%EA%B2%B0/"</span><span class="nt">&gt;</span>Ruby on Rails Address already in use error 해결<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/heroku%EC%97%90-rails5-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/"</span><span class="nt">&gt;</span>Heroku에 Rails5 설치하기<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+<h1 id="카테고리-선택-페이지-만들기">카테고리 선택 페이지 만들기</h1>
+
+<p>카테고리들의 리스트를 고를 수 있는 페이지를 만들어주기 위해 상위 폴더에 <code class="highlighter-rouge">category.md</code> 파일을 만들었다.</p>
+
+<figure class="highlight"><pre><code class="language-md" data-lang="md"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Categories</span>
+<span class="nn">---</span>
+
+<span class="gh"># Categories</span>
+<span class="p">
+*</span> <span class="p">[</span><span class="nv">Web Development</span><span class="p">](</span><span class="sx">/category/web-development/</span><span class="p">)</span>
+<span class="p">	-</span> <span class="p">[</span><span class="nv">Ruby on Rails</span><span class="p">](</span><span class="sx">/category/ruby-on-rails/</span><span class="p">)</span>
+<span class="p">	-</span> <span class="p">[</span><span class="nv">JavaScript</span><span class="p">](</span><span class="sx">/category/javascript/</span><span class="p">)</span>
+<span class="p">	-</span> <span class="p">[</span><span class="nv">CSS</span><span class="p">](</span><span class="sx">/category/css/</span><span class="p">)</span>
+<span class="p">	-</span> <span class="p">[</span><span class="nv">Heroku</span><span class="p">](</span><span class="sx">/category/heroku/</span><span class="p">)</span>
+<span class="p">	-</span> <span class="p">[</span><span class="nv">AWS</span><span class="p">](</span><span class="sx">/category/aws/</span><span class="p">)</span>
+<span class="p">*</span> <span class="p">[</span><span class="nv">Jekyll</span><span class="p">](</span><span class="sx">/category/jekyll/</span><span class="p">)</span>
+<span class="p">*</span> <span class="p">[</span><span class="nv">Marketing</span><span class="p">](</span><span class="sx">/category/marketing/</span><span class="p">)</span>
+<span class="p">*</span> <span class="p">[</span><span class="nv">etc.</span><span class="p">](</span><span class="sx">/category/etc/</span><span class="p">)</span></code></pre></figure>
+
+<h1 id="네비게이션에-categories-추가">네비게이션에 categories 추가</h1>
+
+<p><code class="highlighter-rouge">_config.yml</code>에 navigation에 카테고리로 접근할 수 있는 방법을 추가했다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Categories
+   url: /category
+ - title: Contact
+   url: /contact</code></pre></figure>
+
+<h1 id="참고">참고</h1>
+
+<ul>
+  <li><a href="https://jekyllrb.com/docs/plugins/">https://jekyllrb.com/docs/plugins/</a></li>
+  <li><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+</ul>
+:ET
