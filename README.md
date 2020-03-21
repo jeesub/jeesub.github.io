@@ -1,4 +1,10 @@
-![preview Long Haul](/preview.jpg)
+# SPECIFICATION
+
+Ruby: 2.6.5
+Jekyll: 4.0.0
+
+
+# THEME: Long Haul
 
 Long Haul is a minimal jekyll theme built with SASS / GULP / BROWSERSYNC / AUTOPREFIXER and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
 
